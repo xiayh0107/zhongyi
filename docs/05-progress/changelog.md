@@ -37,6 +37,66 @@ supersedes: []
 
 ## 2026
 
+### 2026-05-23（第十批 · M3 全部完成 = MVP 可发布）
+
+#### ✨ feature · M3 知识地图 + 白纸召回 + 内容到 30/250
+
+**F04 知识地图（主页）**
+- 主页 `/`：未登录跳 `/login`、已登录显示 → 问候 + 状态概览（4 档分布条 + legend）+ 想做点什么 4 入口 + 大纲树
+- 大纲树按 layer + category 分组（中医基础理论 / 五脏六腑 / 六淫 / 气血津液 / 关系 / 中药 / 经穴 / 八纲）
+- 每行末 StatusBar 显示节点状态
+- 右侧栏 ReviewSidebar 推荐补强（按 urgency）
+
+**全局搜索（/search）**
+- FlexSearch Document index（title + summary + body 三字段）
+- 客户端 + 服务端混合：服务端命中后客户端展示
+- 关键词高亮（body 中匹配位置 ±60 字 snippet）
+- 中文 forward tokenize，CJK 友好
+
+**F05 白纸召回（/nodes/[id]/recall）**
+- 三态：intro → active → result
+- 进入前：说明 + 「开始」CTA
+- 进行中：textarea + 向上计时（不倒计时）+ 字数行数实时显示
+- 提交后：命中 / 你没写出 / 选填遗漏 / 待评估 四组分类反馈
+- 用户自评（不太行/还可以/不错）→ FSRS Rating Again/Good/Easy
+- 关键词匹配：normalize（去空格 + 标点 + 大小写）+ aliases + 切片
+- 启发式：覆盖率 ≥ 0.5 → 默认对
+
+**内容扩展到 30 / 250**
+- 4 L1 公理（阴阳/五行/整体观/辨证论治）
+- 5 L2 六腑（胃/小肠/胆/大肠/膀胱）
+- 3 L2 气血津液（气/血/津液）
+- 2 L2 八纲（eight-principles/exterior-interior-cold-heat）
+- 2 L3 关系（肝肾同源/心肾相交，节点 id 含中文）
+- 3 L4 要药（麻黄/柴胡/黄芪）+ 1 L4 经穴（合谷）
+- 题目：100 → 250，覆盖五种题型，含大量跨节点综合题
+
+#### 🏛 arch · 节点 id 允许中文字符
+
+L3 关系节点的 id 含中文（如 `liver-kidney-同源` / `heart-kidney-相交`）。zod regex 放宽为 `/^[一-龥a-z0-9-]+$/`。文档 schema 同步更新。
+
+#### 🏗 arch · 新增模块
+
+- `lib/content/outline.ts` — 大纲树构建
+- `lib/content/search.ts` — FlexSearch 索引
+- `lib/content/recall-match.ts` — 白纸召回关键词匹配
+- `lib/progress/overview.ts` — 主页一次性取数据
+- `lib/progress/recommend.ts` — 推荐复习 + 探索算法
+- `app/nodes/[id]/recall/` — F05 三态
+- `app/search/` — 全局搜索页
+- `components/home/` — 主页 3 件套（StatusOverview/EntryCards/OutlineTree）
+
+#### 🎯 完成
+
+**MVP 可发布**。任何用户登录后可：
+1. 主页看到知识全貌 + 自己的状态
+2. 点击「探索新节点」→ 学新节点
+3. 节点页：模板表 + 双向链接 hover + 测试自己（5 种题型）+ 白纸召回
+4. 搜索任意关键词
+5. 推荐补强自动给出衰减节点
+
+---
+
 ### 2026-05-23（第九批 · M2 全部完成）
 
 #### ✨ feature · M2 题型扩展 + 双向链接 + 推荐

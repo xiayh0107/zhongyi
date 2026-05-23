@@ -129,7 +129,8 @@ export const SourceSchema = z.object({
 
 export const NodeFrontmatterSchema = z.object({
   // 必填
-  id: z.string().regex(/^[a-z0-9-]+$/, "id 必须为 kebab-case"),
+  // id 允许 kebab-case + 中文字符（部分节点 id 含中文如"liver-kidney-同源"）
+  id: z.string().regex(/^[一-龥a-z0-9-]+$/, "id 必须为 kebab-case 或含中文"),
   title: z.string().min(1),
   layer: LayerSchema,
   summary: z.string().min(1).max(100, "summary 应该简短（≤100 字）"),

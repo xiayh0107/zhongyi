@@ -209,36 +209,55 @@ export default async function NodePage({
           </div>
 
           <aside className="flex flex-col gap-6 sticky top-6 self-start">
-            {questions.length > 0 ? (
-              <Link
-                href={`/nodes/${id}/quiz`}
-                className="block text-center"
-                style={{
-                  background: TOKENS_A.ink,
-                  color: TOKENS_A.paper,
-                  padding: "14px 18px",
-                  fontSize: 13,
-                  letterSpacing: "0.08em",
-                  textDecoration: "none",
-                }}
-              >
-                测试自己 · {questions.length} 题
-              </Link>
-            ) : (
-              <div
-                className="block text-center"
-                style={{
-                  background: TOKENS_A.paper,
-                  color: TOKENS_A.ink3,
-                  padding: "14px 18px",
-                  fontSize: 13,
-                  letterSpacing: "0.08em",
-                  border: `1px dashed ${TOKENS_A.line2}`,
-                }}
-              >
-                这个节点暂未配题
-              </div>
-            )}
+            <div className="flex flex-col gap-2">
+              {questions.length > 0 ? (
+                <Link
+                  href={`/nodes/${id}/quiz`}
+                  className="block text-center"
+                  style={{
+                    background: TOKENS_A.ink,
+                    color: TOKENS_A.paper,
+                    padding: "14px 18px",
+                    fontSize: 13,
+                    letterSpacing: "0.08em",
+                    textDecoration: "none",
+                  }}
+                >
+                  测试自己 · {questions.length} 题
+                </Link>
+              ) : (
+                <div
+                  className="block text-center"
+                  style={{
+                    background: TOKENS_A.paper,
+                    color: TOKENS_A.ink3,
+                    padding: "14px 18px",
+                    fontSize: 13,
+                    letterSpacing: "0.08em",
+                    border: `1px dashed ${TOKENS_A.line2}`,
+                  }}
+                >
+                  这个节点暂未配题
+                </div>
+              )}
+              {(node.recall_keypoints?.required.length ?? 0) > 0 && (
+                <Link
+                  href={`/nodes/${id}/recall`}
+                  className="block text-center"
+                  style={{
+                    background: "transparent",
+                    color: TOKENS_A.ink,
+                    padding: "12px 18px",
+                    fontSize: 12,
+                    letterSpacing: "0.08em",
+                    border: `1px solid ${TOKENS_A.ink}`,
+                    textDecoration: "none",
+                  }}
+                >
+                  白纸召回 · 最强检索
+                </Link>
+              )}
+            </div>
 
             <TemplateTable template={node.template} />
 

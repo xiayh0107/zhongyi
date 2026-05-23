@@ -73,12 +73,12 @@ supersedes: []                          # 替代了哪些旧文档
 
 ## 当前项目状态
 
-- **阶段**：🟩 M0 文档 + 🟩 M0.5 设计 + 🟩 M1 + 🟩 M2 → 准备 🟦 M3
-- **下一里程碑**：M3 知识地图 + 白纸召回
+- **阶段**：🟩 M0 + M0.5 + M1 + M2 + M3 = **MVP 可发布**
+- **下一里程碑**：M4 应用层（病-证-方推理链 / L5）
 - **仓库**：https://github.com/xiayh0107/zhongyi
 - **设计师入口**：[`_meta/design-brief.md`](_meta/design-brief.md)
 - **设计交付物**：[`/design/`](../design/) — A 变体 26+26 画板 · 评审 [`/design/REVIEW.md`](../design/REVIEW.md)
-- **应用代码**：[`/app/`](../app/) — 10 节点 / 100 题 / 5 种题型 / Next 16 + Tailwind 4 + Prisma 7 + Auth.js v5
+- **应用代码**：[`/app/`](../app/) — **30 节点 / 250 题 / 5 种题型 / 主页地图 / 全局搜索 / 白纸召回 / 双向链接 hover**
 - 详见 [`05-progress/milestones.md`](05-progress/milestones.md)
 
 ## 写作风格约定
