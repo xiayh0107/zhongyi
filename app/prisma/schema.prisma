@@ -15,8 +15,7 @@ generator client {
 
 datasource db {
   provider = "sqlite" // MVP 用 sqlite；上线切 postgresql
-  // Prisma 7+: url 已移到 prisma.config.ts（datasource.url）
-  // PrismaClient 通过 driver adapter（@prisma/adapter-better-sqlite3 等）连接
+  // Prisma 7: url 已移到 prisma.config.ts（datasource.url）
 }
 
 // =====================================================================

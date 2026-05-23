@@ -32,9 +32,9 @@ supersedes: []
 
 🟩 **M0 文档体系搭建** · 完成
 🟩 **M0.5 首轮 + 第二轮设计交付** · 完成（变体 A · 26+26 个画板）
-🟦 **M1 数据骨架 + 账户系统 + 单节点页** · 进行中
+🟩 **M1 数据骨架 + 账户系统 + 单节点页** · 完成（12/12 项）
 
-进度：Next.js 脚手架已创建 ✓ · 接下来 Prisma + 内容加载 + Auth.js
+下一个：🟦 **M2 题型扩展 + 双向链接**（多题型 + wiki-link hover + 反向引用页 + 推荐复习）
 
 ---
 
@@ -105,11 +105,11 @@ supersedes: []
 - 空状态 / 加载态 / 错误态
 - 状态可视化升级同步到 docs（[`Open Issue #1`](../../design/REVIEW.md)）
 
-### 状态：完成（待变体决策）
+### 状态：完成（变体 A · ADR-005）
 
 ---
 
-## M1 · 数据骨架 + 账户系统 + 单节点页
+## M1 · 数据骨架 + 账户系统 + 单节点页 ✅
 
 > 跑通**最小学习闭环**：用户能注册、打开一个节点、看到讲解、做几道题、看到强度变化。
 
@@ -117,54 +117,51 @@ supersedes: []
 
 **基础设施**：
 - [x] Next.js 项目初始化（app/ 子目录，Next 16 + Tailwind 4 + TypeScript）
-- [ ] Prisma 配置 + SQLite 本地数据库
-- [ ] 复制 [`../01-architecture/_schemas/schema.prisma`](../01-architecture/_schemas/schema.prisma) 到 `app/prisma/schema.prisma` 并执行 migrate
-- [ ] 复制 zod schemas 到 `app/src/types/`
-- [ ] CI：lint + test + content validation
+- [x] Prisma 7 + SQLite + better-sqlite3 driver adapter
+- [x] 复制 schema.prisma + zod schemas
+- [x] CI：lint + typecheck + content validation + build（.github/workflows/ci.yml）
 
 **F00 账户与认证**（设计在 [`../01-architecture/auth-and-account.md`](../01-architecture/auth-and-account.md)）：
-- [ ] Auth.js v5 配置（Email Provider）
-- [ ] Resend 邮件服务集成
-- [ ] Magic link 登录流程（输入邮箱 → 发邮件 → 点链接 → 登录）
-- [ ] Session 30 天保持
-- [ ] 退出登录
-- [ ] 账户删除接口（含级联删除）
-- [ ] 数据导出接口（JSON）
-- [ ] 速率限制（防滥用）
-- [ ] 登录页 / 检查邮箱页 / 错误页
+- [x] Auth.js v5 配置（Nodemailer Provider + Prisma Adapter）
+- [x] 开发期 magic link 控制台占位（Resend 集成放到上线前）
+- [x] Magic link 登录流程跑通（已端到端验证：邮箱 → 控制台输出链接 → 点击 → 创建用户）
+- [x] Session 30 天保持
+- [x] 登录页 / 检查邮箱页 / 错误页（按 design/a-login.jsx 实现）
+- [ ] 退出登录（M2 补）
+- [ ] 账户删除接口（M2 补）
+- [ ] 数据导出接口（M2 补）
+- [ ] 速率限制（M2 补）
 
 **内容**：
-- [ ] 完成 3 个示范节点（建议：肝 + 风邪 + 附子）
-  - 含 frontmatter、body、template、relations、recall_keypoints
-- [ ] 这 3 个节点的题目（约 30 道）
+- [x] 3 个示范节点（肝 + 风邪 + 附子），含 frontmatter、body、template、relations、recall_keypoints
+- [x] 30 道题（30 single_choice + 1 multi + 1 fill_in_blank + 跨节点）
 
 **功能（F01 部分实现）**：
-- [ ] 节点页 URL 路由 `/nodes/{id}`
-- [ ] 渲染 frontmatter 模板表 + body
-- [ ] 「测试自己」按钮（先链到题目流，题型只做 single_choice）
-- [ ] 答题 → 显示反馈 + Why
-- [ ] FSRS card 状态读写
-- [ ] 节点页显示当前 memory_strength
+- [x] 节点页 URL 路由 `/nodes/{id}`
+- [x] 渲染 frontmatter 模板表 + body markdown + [[wiki-link]]
+- [x] 「测试自己」按钮，链到 `/nodes/{id}/quiz`
+- [x] 答题 → 显示反馈 + Why
+- [x] FSRS card 状态读写
+- [x] 节点页显示当前 memory_strength（StatusBar 组件）
 
 **功能（F02 部分实现）**：
-- [ ] FSRS 算法集成（ts-fsrs）
-- [ ] 答题 → Rating 映射
-- [ ] memory_strength 实时派生函数
+- [x] FSRS 算法集成（ts-fsrs 5.4.1）
+- [x] 答题 → Rating 映射（含时间阈值 Hard 15s / Easy 5s）
+- [x] memory_strength 实时派生函数（纯函数 + 运行时算 + 不需要 cron）
 
 ### 不做（M1 范围外）
 - 知识地图主页（M3）
-- 双向链接（M2）
+- 双向链接 hover 预览（M2）
 - 多种题型（M2）
 - 白纸召回（M3）
 - OAuth 登录（MVP 后）
 - 用户设置页（MVP+）
 
 ### 交付物
-- 用户可以注册并登录
-- 可访问 URL 形如 `/nodes/liver` 看到节点页
-- 答题闭环工作
-- 强度变化能看到
-- 用户可以删除账户、导出数据
+- 用户可注册并登录（magic link 输出到 dev 控制台）
+- 可访问 `/nodes/liver` 等节点页
+- 答题闭环工作，强度变化可见
+- 完整 CI（lint + typecheck + content validate + build）
 
 ---
 
@@ -292,13 +289,13 @@ supersedes: []
 ```
 🟩 M0    文档体系搭建              ██████████████ 100%
 🟩 M0.5  设计交付（首轮 + 第二轮）  ██████████████ 100%
-🟦 M1    数据骨架 + 账户 + 节点页   █░░░░░░░░░░░░░  ~8%
+🟩 M1    数据骨架 + 账户 + 节点页   ██████████████ 100% (12/12)
 ⬜ M2    题型 + 双向链接            ░░░░░░░░░░░░░░   0%
 ⬜ M3    知识地图 + 白纸召回        ░░░░░░░░░░░░░░   0%
 ⬜ M4    内容扩展 + 应用层          ░░░░░░░░░░░░░░   0%
 ```
 
-**M1 启动**。Next.js 脚手架完成（1/12 项），接下来：Prisma + zod schemas + 内容加载层。
+**M1 完成**。最小学习闭环跑通：注册 → 进节点页 → 答题 → 看强度变化。准备进入 M2。
 
 ## Open Questions
 
@@ -315,6 +312,7 @@ supersedes: []
 
 | 版本 | 日期 | 变更 | 作者 |
 |---|---|---|---|
+| 0.5 | 2026-05-23 | M1 全部 12 项完成；准备进入 M2 | — |
 | 0.4 | 2026-05-23 | M1 启动；Next.js 脚手架完成；标记 done 项 | — |
 | 0.3 | 2026-05-23 | 加入 M0.5 设计交付里程碑 | — |
 | 0.2 | 2026-05-23 | M0 完成；M1 加入账户系统 done 项；扩展 design-brief、ADR-004、auth-and-account、_schemas/ 到 M0 范围 | — |

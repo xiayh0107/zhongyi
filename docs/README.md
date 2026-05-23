@@ -73,11 +73,12 @@ supersedes: []                          # 替代了哪些旧文档
 
 ## 当前项目状态
 
-- **阶段**：🟩 M0 文档 + 🟩 M0.5 首轮设计 → 🟦 进入 M1
-- **下一里程碑**：M1 数据骨架 + 账户系统 + 单节点页跑通
+- **阶段**：🟩 M0 文档 + 🟩 M0.5 设计 + 🟩 M1 最小闭环 → 准备 🟦 M2
+- **下一里程碑**：M2 题型扩展 + 双向链接
 - **仓库**：https://github.com/xiayh0107/zhongyi
 - **设计师入口**：[`_meta/design-brief.md`](_meta/design-brief.md)
-- **设计交付物**：[`/design/`](../design/) — A/B 两个变体 + 评审在 [`/design/REVIEW.md`](../design/REVIEW.md)
+- **设计交付物**：[`/design/`](../design/) — A 变体 26+26 画板 · 评审 [`/design/REVIEW.md`](../design/REVIEW.md)
+- **应用代码**：[`/app/`](../app/) — Next.js 16 + Tailwind 4 + Prisma 7 + Auth.js v5
 - 详见 [`05-progress/milestones.md`](05-progress/milestones.md)
 
 ## 写作风格约定

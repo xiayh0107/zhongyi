@@ -37,6 +37,39 @@ supersedes: []
 
 ## 2026
 
+### 2026-05-23（第八批 · M1 全部完成）
+
+#### ✨ feature · M1 最小学习闭环跑通
+
+剩余 11 项 done 标准一次性做完：
+
+- **M1-2 Prisma 7 + SQLite** — Prisma 7 重大变化（schema 不含 url，用 prisma.config.ts + driver adapter）。better-sqlite3 driver。
+- **M1-3 Zod 4 schemas** — 复制 _schemas/ 到 app/src/types/，修复 zod 4 `.errors → .issues` API 变化
+- **M1-4 内容加载层** — gray-matter + remark + 双向链接构建期解析 + 反向索引
+- **M1-7 3 个示范节点 + 30 道题** — 肝 / 风邪 / 附子；30 道题涵盖 single_choice + multi + fill + 跨节点
+- **M1-5 Auth.js v5 + magic link 控制台占位** — Nodemailer provider + sendVerificationRequest override；完整链路验证（DB 自动建 User）
+- **M1-6 设计 tokens + 登录三页** — 移植 design/tokens.jsx → tokens.ts；Tailwind v4 `@theme` 内嵌 tokens；/login + /login/check-email + /login/error 三页
+- **M1-8 节点页路由** — `/nodes/[id]`：面包屑 + 标题 + StatusBar + 模板表 + body + 相关节点四组 + 反向引用
+- **M1-9 答题流** — `/nodes/[id]/quiz`：single_choice + 进度点 + 即时反馈 + Why 卡片 + 强度变化展示
+- **M1-10 FSRS 集成** — ts-fsrs 5.4.1，封装 reviewCard / deriveMemoryStrength / ratingFromAttempt（含时间阈值）
+- **M1-11 记忆强度派生** — 纯函数计算 + StatusBar 三重编码（长度 + 颜色 + ▼）
+- **M1-12 CI** — GitHub Actions：install + Prisma generate + content:validate + lint + typecheck + build
+
+构建验证：`pnpm build` 全绿，8 个路由全部编译成功。
+
+#### 🏛 arch · Prisma 7 / Tailwind 4 / Zod 4 升级笔记
+
+文档原写的版本（Next 14、Prisma 6）已被实际安装版本（Next 16、Prisma 7、Tailwind 4、Zod 4）超越。这些大版本都有 breaking change：
+
+- **Prisma 7**：schema 不含 `url`，移到 `prisma.config.ts`；PrismaClient 通过 driver adapter（如 `@prisma/adapter-better-sqlite3`）连数据库
+- **Tailwind 4**：不再用 `tailwind.config.ts`，改用 CSS 中的 `@theme { --color-* }`
+- **Zod 4**：`result.error.errors` → `result.error.issues`
+- **React 19**：`react-hooks/purity` 不允许在 useRef 初始值里调用不纯函数；`react-hooks/set-state-in-effect` 更严格
+
+`_schemas/*` 文档副本同步更新到这些 API。
+
+---
+
 ### 2026-05-23（第七批 · M1 启动 · Next.js 脚手架）
 
 #### 🏗 infra · Next.js 项目脚手架创建

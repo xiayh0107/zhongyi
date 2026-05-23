@@ -144,7 +144,7 @@ export const NodeFrontmatterSchema = z.object({
 
   // 状态跟踪
   status: z.enum(["draft", "generated", "reviewed", "live", "rejected"]).default("draft"),
-  // YAML date 字面量被 gray-matter 解析为 Date；同时接受 ISO 字符串
+  // YAML 的 date 字面量会被 gray-matter 解析为 Date 对象；同时接受 ISO 字符串
   created: z.union([z.string(), z.date()]).transform((v) =>
     v instanceof Date ? v.toISOString().slice(0, 10) : v,
   ),

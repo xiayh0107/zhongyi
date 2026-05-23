@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  app:
+    name: App (lint + typecheck + content validate + build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./app
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: app/pnpm-lock.yaml
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Approve build scripts (Prisma + better-sqlite3)
+        run: pnpm rebuild prisma @prisma/client @prisma/engines better-sqlite3
+
+      - name: Generate Prisma client
+        run: npx prisma generate
+        env:
+          DATABASE_URL: file:./prisma/dev.db
+
+      - name: Content validation
+        run: pnpm content:validate
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Build
+        run: pnpm build
+        env:
+          DATABASE_URL: file:./prisma/dev.db
+          AUTH_SECRET: ci-dummy-secret-32-chars-minimum-1234567890
+          AUTH_TRUST_HOST: "true"
+          EMAIL_DRIVER: console
