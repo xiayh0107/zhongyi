@@ -30,21 +30,28 @@ python3 -m http.server 8000
 ```
 design/
 ├── README.md             ← 你在这里
-├── REVIEW.md             ← 对照 design-brief 的逐项评审
-├── index.html            ← 入口，挂载所有变体
+├── REVIEW.md             ← 两轮交付的逐项评审
+├── ROUND-2-BRIEF.md      ← 第二轮任务简报
+├── index.html            ← 入口，挂载所有变体 + 第二轮画板
 │
 ├── tokens.jsx            ← 设计 tokens（两套色板共用 4 档 tier 语义）
-├── design-system.jsx     ← 设计系统总览页（色板 / 字体 / 状态条 / 组件基元）
+├── design-system.jsx     ← 设计系统总览页
 ├── design-canvas.jsx     ← 多画板布局容器
 ├── tweaks-panel.jsx      ← 右侧可调节面板
 │
-├── a-home.jsx            ← 变体 A · F04 主页（桌面 + 手机）
-├── a-node.jsx            ← 变体 A · F01 节点页（桌面 + 手机）
-├── a-quiz.jsx            ← 变体 A · F03 题目流（桌面 + 手机）
+│  ─── 首轮 · 三个核心页面 ───────────────
+├── a-home.jsx            ← F04 主页（桌面 + 手机）
+├── a-node.jsx            ← F01 节点页（桌面 + 手机）
+├── a-quiz.jsx            ← F03 题目流（桌面 + 手机）
+├── b-home.jsx            ← 变体 B（保留作为未来皮肤）
+├── b-node.jsx
+├── b-quiz.jsx
 │
-├── b-home.jsx            ← 变体 B · F04 主页（桌面 + 手机）
-├── b-node.jsx            ← 变体 B · F01 节点页（桌面 + 手机）
-└── b-quiz.jsx            ← 变体 B · F03 题目流（桌面 + 手机）
+│  ─── 第二轮 · A 变体补稿 ──────────────
+├── a-login.jsx           ← F00 登录三页（12 画板：4 + 2 + 3 reason + 3 手机）
+├── a-email.html          ← F00-4 Email HTML 模板（inline style + table）
+├── a-states.jsx          ← 空状态 + 加载态 + 错误页（9 画板）
+└── a-recall.jsx          ← F05 白纸召回三态
 ```
 
 **注**：`uploads/` 目录是设计师上传到 AI 工具的文档副本（design-brief 等），已被 `.gitignore` 排除——避免与 `docs/` 重复。
@@ -120,11 +127,14 @@ design/
 
 ---
 
-## 下一轮工作
+## 交付历史
 
-第二轮任务简报：[`ROUND-2-BRIEF.md`](ROUND-2-BRIEF.md)
+| 轮次 | 时间 | 交付 | Brief | Review |
+|---|---|---|---|---|
+| 1 | 2026-05-23 | F01/F03/F04 + Design System，A/B 两变体 | [`../docs/_meta/design-brief.md`](../docs/_meta/design-brief.md) | [REVIEW · 首轮](REVIEW.md#首轮交付评审) |
+| 2 | 2026-05-23 | F00 三页 + Email + 空/错/loading + F05 | [`ROUND-2-BRIEF.md`](ROUND-2-BRIEF.md) | [REVIEW · 第二轮](REVIEW.md#第二轮交付评审) |
 
-待补：
-- F00 登录三页 + Email 模板（M1 必须）
-- 空状态 / 加载态 / 错误页（M1 必须）
-- F05 白纸召回三态（M3）
+R2 交付完整覆盖 M1 必须的页面，开发可直接基于此进入实现阶段。
+
+⚠️ **协作提醒**：设计师用的 AI 工具会做"全量同步"——上传时只覆盖它知道的文件类型（.jsx / .html），但可能误删 `.md` 文件（README、REVIEW、BRIEF）。第二轮交付时已观察到此现象，已通过 `git restore` 恢复。  
+**建议**：每次设计师交付后，立即检查 `git status`，如有 `deleted: design/*.md`，用 `git restore` 恢复，再 commit。

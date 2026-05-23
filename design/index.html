@@ -35,6 +35,9 @@
 <script type="text/babel" src="b-home.jsx"></script>
 <script type="text/babel" src="b-node.jsx"></script>
 <script type="text/babel" src="b-quiz.jsx"></script>
+<script type="text/babel" src="a-login.jsx"></script>
+<script type="text/babel" src="a-states.jsx"></script>
+<script type="text/babel" src="a-recall.jsx"></script>
 
 <script type="text/babel" data-presets="env,react">
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
@@ -43,6 +46,7 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "showDesignSystem": true,
   "showDesktop": true,
   "showMobile": true,
+  "showRound2": true,
   "barStyle": "bar"
 }/*EDITMODE-END*/;
 
@@ -96,6 +100,72 @@ function App() {
           </DCSection>
         )}
 
+        {/* ── Round 2 · A 变体补稿 ── */}
+        {t.showRound2 && (
+          <DCSection id="r2-login" title="R2 · F00 登录三页" subtitle="窄居中 480 · 桌面 + 手机 · 含输入态/格式错/提交中/可重发/三种 reason">
+            <DCArtboard id="r2-login-d"        label="F00-1 · 登录入口"            width={1280} height={840}><A_Login_Desktop /></DCArtboard>
+            <DCArtboard id="r2-login-typ"      label="F00-1 · 输入中"               width={1280} height={840}><A_Login_Typing_Desktop /></DCArtboard>
+            <DCArtboard id="r2-login-inv"      label="F00-1 · 格式错"               width={1280} height={840}><A_Login_Invalid_Desktop /></DCArtboard>
+            <DCArtboard id="r2-login-sub"      label="F00-1 · 提交中"               width={1280} height={840}><A_Login_Submitting_Desktop /></DCArtboard>
+            <DCArtboard id="r2-checkemail"     label="F00-2 · 检查邮箱 (倒计时)"     width={1280} height={840}><A_CheckEmail_Desktop /></DCArtboard>
+            <DCArtboard id="r2-checkemail-rd"  label="F00-2 · 检查邮箱 (可重发)"     width={1280} height={840}><A_CheckEmail_Ready_Desktop /></DCArtboard>
+            <DCArtboard id="r2-err-exp"        label="F00-3 · 链接过期"             width={1280} height={840}><A_LoginError_Expired_Desktop /></DCArtboard>
+            <DCArtboard id="r2-err-inv"        label="F00-3 · 链接无效"             width={1280} height={840}><A_LoginError_Invalid_Desktop /></DCArtboard>
+            <DCArtboard id="r2-err-used"       label="F00-3 · 链接已用"             width={1280} height={840}><A_LoginError_Used_Desktop /></DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showRound2 && (
+          <DCSection id="r2-login-m" title="R2 · F00 登录 · 手机" subtitle="单列全宽">
+            <DCArtboard id="r2-login-m"     label="F00-1 · 登录入口"   width={390} height={844}><A_Login_Mobile /></DCArtboard>
+            <DCArtboard id="r2-check-m"     label="F00-2 · 检查邮箱"   width={390} height={844}><A_CheckEmail_Mobile /></DCArtboard>
+            <DCArtboard id="r2-err-m"       label="F00-3 · 链接过期"   width={390} height={844}><A_LoginError_Mobile /></DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showRound2 && (
+          <DCSection id="r2-email" title="R2 · F00-4 Email HTML 模板" subtitle="inline style + table · 兼容主流客户端 · 暗色适配 · 点击下方画板可放大查看">
+            <DCArtboard id="r2-email-light" label="明色模式 (Gmail / Apple Mail)" width={720} height={900}>
+              <iframe src="a-email.html" style={{ width: '100%', height: '100%', border: 'none', display: 'block' }} title="Email · Light" />
+            </DCArtboard>
+            <DCArtboard id="r2-email-mobile" label="明色模式 · 手机 (520px)" width={520} height={900}>
+              <iframe src="a-email.html" style={{ width: '100%', height: '100%', border: 'none', display: 'block' }} title="Email · Mobile" />
+            </DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showRound2 && (
+          <DCSection id="r2-empty" title="R2 · 空状态" subtitle="新用户首次进入主页 · 反任务式承诺·节点数从 graph.json 读">
+            <DCArtboard id="r2-newuser-d" label="新用户主页 · 桌面" width={1280} height={900}><A_NewUserHome_Desktop /></DCArtboard>
+            <DCArtboard id="r2-newuser-m" label="新用户主页 · 手机" width={390}  height={844}><A_NewUserHome_Mobile /></DCArtboard>
+            <DCArtboard id="r2-node-noq"  label="节点页 · 暂未配题" width={1280} height={900}><A_NodeNoQuestions_Desktop /></DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showRound2 && (
+          <DCSection id="r2-skel" title="R2 · 加载态" subtitle="Skeleton · 不用 spinner · pulse 1.2s">
+            <DCArtboard id="r2-skel-node" label="节点页 Skeleton" width={1280} height={900}><A_NodeSkeleton_Desktop /></DCArtboard>
+            <DCArtboard id="r2-skel-quiz" label="题目流 Skeleton" width={1280} height={840}><A_QuizSkeleton_Desktop /></DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showRound2 && (
+          <DCSection id="r2-err" title="R2 · 错误页" subtitle="告诉用户发生了什么 + 能做什么 · 不过度安抚">
+            <DCArtboard id="r2-404"     label="404 · 节点不存在" width={1280} height={840}><A_404_Desktop /></DCArtboard>
+            <DCArtboard id="r2-500"     label="500 · 服务器错误" width={1280} height={840}><A_500_Desktop /></DCArtboard>
+            <DCArtboard id="r2-offline" label="Offline · 网络断开" width={1280} height={840}><A_Offline_Desktop /></DCArtboard>
+            <DCArtboard id="r2-offline-m" label="Offline · 手机" width={390}  height={844}><A_Offline_Mobile /></DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showRound2 && (
+          <DCSection id="r2-recall" title="R2 · F05 白纸召回 (P1)" subtitle="主动检索 · 三态 · 计时向上不向下 · 三组反馈">
+            <DCArtboard id="r2-recall-1" label="F05-1 · 进入前"   width={1280} height={900}><A_Recall_Intro_Desktop /></DCArtboard>
+            <DCArtboard id="r2-recall-2" label="F05-2 · 进行中"   width={1280} height={900}><A_Recall_Active_Desktop /></DCArtboard>
+            <DCArtboard id="r2-recall-3" label="F05-3 · 提交反馈" width={1280} height={1280}><A_Recall_Result_Desktop /></DCArtboard>
+          </DCSection>
+        )}
+
       </DesignCanvas>
 
       <TweaksPanel title="Tweaks">
@@ -103,6 +173,7 @@ function App() {
           <TweakToggle  label="变体 A · 含蓄专业"  value={t.showVariantA}   onChange={v => setTweak('showVariantA', v)} />
           <TweakToggle  label="变体 B · 古典书页"  value={t.showVariantB}   onChange={v => setTweak('showVariantB', v)} />
           <TweakToggle  label="设计系统页"          value={t.showDesignSystem} onChange={v => setTweak('showDesignSystem', v)} />
+          <TweakToggle  label="第二轮补稿 (F00 / 空 / 错 / F05)"  value={t.showRound2} onChange={v => setTweak('showRound2', v)} />
         </TweakSection>
         <TweakSection title="尺寸">
           <TweakToggle  label="桌面"  value={t.showDesktop} onChange={v => setTweak('showDesktop', v)} />

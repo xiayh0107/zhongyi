@@ -37,6 +37,29 @@ supersedes: []
 
 ## 2026
 
+### 2026-05-23（第六批 · 设计师第二轮交付）
+
+#### 🎨 design · 第二轮设计交付（4 份新文件 + 26 个新画板）
+
+设计师按 [`ROUND-2-BRIEF.md`](../../design/ROUND-2-BRIEF.md) 完整交付：
+
+- `a-login.jsx` — F00 三页：登录入口（4 态）+ 检查邮箱（2 态）+ 链接失败（3 reason）+ 手机端
+- `a-email.html` — Email HTML 模板（inline style + table，兼容主流客户端）
+- `a-states.jsx` — 新用户主页 + 节点暂无题 + 节点/题目 skeleton + 404/500/Offline
+- `a-recall.jsx` — F05 白纸召回三态
+
+**Brief 完成度 12/12 + 多做 2 项**（节点暂无题、Offline 手机版）。约束（A tokens、6 原则、12 反模式、拒绝过度安抚）全部遵守。
+
+评价：A+，无需返修，可直接用于 M1 开发。详见 [`/design/REVIEW.md`](../../design/REVIEW.md) 第二轮章节。
+
+#### 🐛 process · AI 设计工具全量同步问题
+
+设计师用的 AI 工具会做"全量同步"——上传时只覆盖它知道的文件类型，可能误删 `.md`。本次交付后观察到 design/README.md / REVIEW.md / ROUND-2-BRIEF.md 被删除，已通过 `git restore` 恢复。
+
+已在 design/README.md 加入协作提醒；未来 review 时把这条流程化（每次交付先 git status 检查删除项）。
+
+---
+
 ### 2026-05-23（第五批 · 设计师第二轮任务简报）
 
 #### 📝 design · ROUND-2-BRIEF 发布
