@@ -37,6 +37,34 @@ supersedes: []
 
 ## 2026
 
+### 2026-05-23（第七批 · M1 启动 · Next.js 脚手架）
+
+#### 🏗 infra · Next.js 项目脚手架创建
+
+在仓库根 `app/` 子目录创建 Next.js 项目：
+- Next.js **16.2.6**（比初版文档的 14 更新）+ App Router + Turbopack
+- React **19.2.4**
+- Tailwind CSS **4.3.0**（v4 不再用 tailwind.config.ts）
+- TypeScript 5.9.3 + ESLint 9 + src 目录 + `@/*` import alias
+
+Dev server 验证：HTTP 200，Turbopack 启动 200ms ⚡。
+
+Next.js 16 自动生成 `app/AGENTS.md` + `app/CLAUDE.md` 警告 AI agents：This is NOT the Next.js you know（需要查最新文档，不能依赖训练数据）。
+
+#### 🏛 arch · tech-stack v0.2
+
+更新 tech-stack 反映实际版本：
+- 版本号全部对齐
+- 目录结构改为「仓库根 + app/ 子目录」
+- 加邮件层（Resend / 控制台占位）
+- 关键选型说明加入版本警告
+
+#### 🎯 decision · 邮件服务 M1 用控制台占位
+
+为加快 M1 开发，magic link 暂时输出到 dev console 而非真发邮件。开发可继续推进，Resend 集成放到 M1 后期或上线前。
+
+---
+
 ### 2026-05-23（第六批 · 设计师第二轮交付）
 
 #### 🎨 design · 第二轮设计交付（4 份新文件 + 26 个新画板）

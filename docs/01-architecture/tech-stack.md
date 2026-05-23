@@ -25,36 +25,47 @@ supersedes: []
 
 ---
 
-## 全栈一览
+## 全栈一览（实际安装版本）
 
-| 层 | 选型 | 备选 |
-|---|---|---|
-| 前端框架 | Next.js 14 (App Router) | Vue/Nuxt（如团队偏好） |
-| UI 库 | Tailwind CSS + Radix UI | shadcn/ui（基于 Radix）|
-| 状态管理 | React Server Components + Zustand（客户端局部） | Jotai |
-| 动画 | Framer Motion | （MVP 可不用） |
-| 内容存储 | Markdown + frontmatter，Git 管理 | — |
-| 内容解析 | `gray-matter` + `remark` + `unified` | MDX（如需 React 组件嵌入） |
-| 搜索 | FlexSearch（客户端） | Algolia（用户量大时） |
-| 用户数据库 | SQLite（MVP） → PostgreSQL（生产） | Turso（边缘 SQLite） |
-| ORM | Prisma | Drizzle |
-| 认证 | Auth.js (NextAuth v5) | Clerk |
-| SRS 算法 | `ts-fsrs` | 自实现简化版 |
-| 部署 | Vercel | Cloudflare Pages / Fly.io |
-| 内容生产 | LLM API (Claude/GPT) + 自研脚本 | — |
-| 测试 | Vitest + Playwright | — |
-| 类型系统 | TypeScript 严格模式 | — |
+| 层 | 选型 | 实际版本 | 备选 |
+|---|---|---|---|
+| 前端框架 | **Next.js (App Router + Turbopack)** | 16.2.6 | Vue/Nuxt |
+| React | React 19 | 19.2.4 | — |
+| UI 库 | **Tailwind CSS v4** + Radix UI | 4.3.0 | shadcn/ui |
+| 状态管理 | React Server Components + Zustand | TBD | Jotai |
+| 动画 | Framer Motion | TBD | （MVP 可不用） |
+| 内容存储 | Markdown + frontmatter，Git 管理 | — | — |
+| 内容解析 | `gray-matter` + `remark` + `unified` | TBD | MDX |
+| 搜索 | FlexSearch（客户端） | TBD | Algolia |
+| 用户数据库 | SQLite（MVP） → PostgreSQL（生产） | TBD | Turso |
+| ORM | Prisma | TBD | Drizzle |
+| 认证 | Auth.js (NextAuth v5) + Email Magic Link | TBD | Clerk |
+| 邮件 | Resend（生产）/ 控制台占位（M1 开发期） | TBD | AWS SES |
+| SRS 算法 | `ts-fsrs` | TBD | 自实现简化版 |
+| 部署 | Vercel | — | Cloudflare Pages / Fly.io |
+| 内容生产 | LLM API + 自研脚本 | — | — |
+| 测试 | Vitest + Playwright | TBD | — |
+| 类型系统 | TypeScript 严格模式 | 5.9.3 | — |
+
+**版本更新（2026-05-23）**：脚手架创建时实际安装的版本比文档初稿（Next.js 14）更新——Next.js 已升到 16、React 升到 19、Tailwind 升到 4。这些是 breaking change 较多的大版本，注意：
+
+- **Tailwind 4**：不再用 `tailwind.config.ts`，改用 CSS 中的 `@import "tailwindcss"` + `@theme` 指令
+- **Next.js 16**：脚手架自动生成 `AGENTS.md` / `CLAUDE.md` 提醒 AI agents "this is NOT the Next.js you know"——开发时务必通过 `node_modules/next/dist/docs/` 或 context7 MCP 查最新 API
+- **React 19**：Server Components 默认更激进，部分 hook 改名（useActionState 等）
 
 ---
 
 ## 关键选型说明
 
-### Next.js (App Router)
+### Next.js 16 (App Router + Turbopack)
 **为什么**：
 - 服务端渲染对 SEO 和首屏快
 - App Router 的 React Server Components 让"内容主导"的页面（节点页就是）几乎不需要客户端 JS
+- Turbopack 取代 Webpack，dev server 启动从秒级到 200ms（实测）
 - Vercel 一键部署
 - 中文生态成熟
+
+**为什么 16 而不是文档原写的 14**：脚手架创建时 npm registry 上的最新版就是 16。Next.js 13→14→15→16 一年一大版，跟随最新版避免后期升级压力。
 
 **不选 Vue**：纯团队偏好；如果团队 Vue 更强，切换没有架构层面阻力。
 
@@ -109,9 +120,17 @@ Vercel 自动部署 + GitHub Actions 跑 lint/test/build，够了。
 
 ## 目录结构（约定）
 
+仓库根：
 ```
 fast-memory/
 ├── docs/                          ← 本文档体系
+├── design/                        ← 设计交付物（jsx + html 设计稿）
+└── app/                           ← Next.js 应用（M1 创建）
+```
+
+`app/` 内部（脚手架已创建 + 计划扩展）：
+```
+app/
 ├── content/                       ← 学习内容（Markdown + JSON）
 │   ├── nodes/
 │   ├── questions.json
@@ -124,12 +143,14 @@ fast-memory/
 │   ├── app/                       ← Next.js App Router
 │   │   ├── page.tsx               ← 主页（知识地图）
 │   │   ├── nodes/[id]/page.tsx    ← 节点页
+│   │   ├── login/
 │   │   └── api/
 │   ├── components/
 │   ├── lib/
 │   │   ├── srs/                   ← FSRS 封装
 │   │   ├── content/               ← 内容加载层
 │   │   └── progress/              ← 进度计算
+│   ├── design/                    ← tokens.ts / 共享 UI 基元
 │   └── types/
 ├── prisma/
 │   ├── schema.prisma
@@ -143,12 +164,12 @@ fast-memory/
 
 ## 环境与版本约定
 
-| 工具 | 版本 |
-|---|---|
-| Node.js | ≥ 20 LTS |
-| pnpm | ≥ 9 |
-| TypeScript | ≥ 5.4 |
-| Next.js | 14.x |
+| 工具 | 要求 | 实测 |
+|---|---|---|
+| Node.js | ≥ 20 LTS | 22.17.0 ✓ |
+| pnpm | ≥ 9 | 10.24.0 ✓ |
+| TypeScript | ≥ 5.4 | 5.9.3 ✓ |
+| Next.js | 16.x | 16.2.6 ✓ |
 
 **pnpm 而非 npm/yarn**：磁盘占用低、依赖解析快、monorepo 友好（将来可能拆包）。
 
@@ -182,4 +203,5 @@ fast-memory/
 
 | 版本 | 日期 | 变更 | 作者 |
 |---|---|---|---|
+| 0.2 | 2026-05-23 | M1 脚手架实际安装；更新版本到 Next.js 16 / React 19 / Tailwind 4；目录结构改为 app/ 子目录；加邮件层、版本警告说明 | — |
 | 0.1 | 2026-05-23 | 初稿，确立 Next.js + Markdown + SQLite + FSRS 技术栈 | — |

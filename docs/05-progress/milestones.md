@@ -31,9 +31,10 @@ supersedes: []
 ## 当前状态
 
 🟩 **M0 文档体系搭建** · 完成
-🟩 **M0.5 首轮设计交付** · 完成（待团队确认变体选择）
+🟩 **M0.5 首轮 + 第二轮设计交付** · 完成（变体 A · 26+26 个画板）
+🟦 **M1 数据骨架 + 账户系统 + 单节点页** · 进行中
 
-下一个：🟦 **M1 数据骨架 + 账户系统 + 单节点页跑通**
+进度：Next.js 脚手架已创建 ✓ · 接下来 Prisma + 内容加载 + Auth.js
 
 ---
 
@@ -115,10 +116,10 @@ supersedes: []
 ### Done 标准
 
 **基础设施**：
-- [ ] Next.js 项目初始化（按 [`../01-architecture/tech-stack.md`](../01-architecture/tech-stack.md)）
+- [x] Next.js 项目初始化（app/ 子目录，Next 16 + Tailwind 4 + TypeScript）
 - [ ] Prisma 配置 + SQLite 本地数据库
-- [ ] 复制 [`../01-architecture/_schemas/schema.prisma`](../01-architecture/_schemas/schema.prisma) 到 `prisma/schema.prisma` 并执行 migrate
-- [ ] 复制 zod schemas 到 `src/types/`
+- [ ] 复制 [`../01-architecture/_schemas/schema.prisma`](../01-architecture/_schemas/schema.prisma) 到 `app/prisma/schema.prisma` 并执行 migrate
+- [ ] 复制 zod schemas 到 `app/src/types/`
 - [ ] CI：lint + test + content validation
 
 **F00 账户与认证**（设计在 [`../01-architecture/auth-and-account.md`](../01-architecture/auth-and-account.md)）：
@@ -290,14 +291,14 @@ supersedes: []
 
 ```
 🟩 M0    文档体系搭建              ██████████████ 100%
-🟩 M0.5  首轮设计交付              ██████████████ 100% (待变体决策)
-⬜ M1    数据骨架 + 账户 + 节点页   ░░░░░░░░░░░░░░   0%
+🟩 M0.5  设计交付（首轮 + 第二轮）  ██████████████ 100%
+🟦 M1    数据骨架 + 账户 + 节点页   █░░░░░░░░░░░░░  ~8%
 ⬜ M2    题型 + 双向链接            ░░░░░░░░░░░░░░   0%
 ⬜ M3    知识地图 + 白纸召回        ░░░░░░░░░░░░░░   0%
 ⬜ M4    内容扩展 + 应用层          ░░░░░░░░░░░░░░   0%
 ```
 
-**M0 + M0.5 已完成**。准备进入 M1（开发可与设计补稿 F00/F05 并行）。
+**M1 启动**。Next.js 脚手架完成（1/12 项），接下来：Prisma + zod schemas + 内容加载层。
 
 ## Open Questions
 
@@ -314,6 +315,7 @@ supersedes: []
 
 | 版本 | 日期 | 变更 | 作者 |
 |---|---|---|---|
+| 0.4 | 2026-05-23 | M1 启动；Next.js 脚手架完成；标记 done 项 | — |
 | 0.3 | 2026-05-23 | 加入 M0.5 设计交付里程碑 | — |
 | 0.2 | 2026-05-23 | M0 完成；M1 加入账户系统 done 项；扩展 design-brief、ADR-004、auth-and-account、_schemas/ 到 M0 范围 | — |
 | 0.1 | 2026-05-23 | 初稿，定义 M0-M4 里程碑 | — |
