@@ -37,6 +37,59 @@ supersedes: []
 
 ## 2026
 
+### 2026-05-23（第四批 · 变体决策 + 状态可视化文档同步）
+
+#### 🎯 decision · ADR-005 变体 A "含蓄专业" 作为 MVP
+
+确定 MVP 采用变体 A。理由：易用性优先、扩展性强、专业感匹配目标用户。变体 B 保留代码作为未来"古籍主题"皮肤选项（tokens 已支持运行时切换）。
+
+#### 📝 docs · 状态可视化升级同步到 docs
+
+把"○● 符号编码"升级为"横向强度条 + 颜色 + ▼ 三重编码"，同步到：
+- `_meta/design-brief.md` v0.2
+- `F01-node-page.md` v0.2
+- `F02-memory-strength.md` v0.2
+- `F04-knowledge-map.md` v0.2（含 DistributionBar 新增说明）
+
+文档与设计实现现在一致。关闭 [`REVIEW Open Issue #1 & #2`](../../design/REVIEW.md)。
+
+---
+
+### 2026-05-23（第三批 · 设计交付与评审）
+
+#### 🎨 design · 首轮设计交付物入库
+
+设计团队基于 `design-brief.md` 完成首轮设计探索，交付物在 `/design/`：
+
+- 两个视觉变体：**A 含蓄专业** / **B 古典书页**
+- 每个变体覆盖 F04 主页 / F01 节点页 / F03 题目流，桌面 + 手机
+- 一份完整的 design system（色板、字体、状态条、组件基元）
+- 共用 tokens 结构，支持运行时变体切换
+
+设计师明显内化了 design-brief —— 代码注释里出现 "NO timer, NO score" 这种自觉避坑。**12 项反模式 · 0 项违反**。
+
+#### 📝 design · 状态可视化系统升级
+
+设计师把状态可视化从「○● 符号」升级为「**横向强度条**（长度=强度）+ 颜色 + ▼ 标记」三重编码：
+- 信息密度更高（一眼看到具体强度）
+- 列表对齐更整齐
+- 仍色盲友好
+
+决定采用升级版。docs 中相关章节待同步（[`/design/REVIEW.md`](../../design/REVIEW.md) Open Issue #1）。
+
+#### 📝 docs · 设计追溯文档
+
+- `/design/README.md` — 设计稿入口
+- `/design/REVIEW.md` — 对照 design-brief 的逐项评审 + 变体推荐
+- 更新 `_meta/design-brief.md` 末尾，指向设计交付物
+- 更新里程碑：M0.5 设计交付节点
+
+#### 🎯 待决策
+
+- **变体选择**：建议 A 为主、B 作为皮肤备选（详见 REVIEW）。等团队/产品确认，确认后写 ADR-005
+
+---
+
 ### 2026-05-23（第二批 · 账户与设计简报）
 
 #### 🚀 release · 首次 push 到 GitHub
