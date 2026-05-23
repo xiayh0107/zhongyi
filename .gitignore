@@ -3,6 +3,9 @@
 *.docx
 *.doc
 
+# 设计稿上传的文档副本（避免与 docs/ 重复）
+design/uploads/
+
 # Node.js
 node_modules/
 .pnpm-store/

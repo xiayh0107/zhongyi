@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Fast Memory · 中医 — Design Exploration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  html, body { margin: 0; padding: 0; background: #2a2723; }
+  body { font-family: 'Noto Sans SC', 'PingFang SC', system-ui, sans-serif; color: #1f1c17; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  button { font-family: inherit; }
+  /* hide the canvas's own default tab bar mention if any */
+</style>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tokens.jsx"></script>
+<script type="text/babel" src="design-system.jsx"></script>
+<script type="text/babel" src="a-home.jsx"></script>
+<script type="text/babel" src="a-node.jsx"></script>
+<script type="text/babel" src="a-quiz.jsx"></script>
+<script type="text/babel" src="b-home.jsx"></script>
+<script type="text/babel" src="b-node.jsx"></script>
+<script type="text/babel" src="b-quiz.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "showVariantA": true,
+  "showVariantB": true,
+  "showDesignSystem": true,
+  "showDesktop": true,
+  "showMobile": true,
+  "barStyle": "bar"
+}/*EDITMODE-END*/;
+
+function App() {
+  const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+  return (
+    <React.Fragment>
+      <DesignCanvas>
+
+        {t.showDesignSystem && (
+          <DCSection id="ds" title="Design System" subtitle="两套色板·字体·状态条·组件基元">
+            <DCArtboard id="ds-a" label="A · 含蓄专业" width={1280} height={900}>
+              <DesignSystemSheet variant="A" />
+            </DCArtboard>
+            <DCArtboard id="ds-b" label="B · 古典书页" width={1280} height={900}>
+              <DesignSystemSheet variant="B" />
+            </DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showDesktop && t.showVariantA && (
+          <DCSection id="a-desktop" title="变体 A · 桌面" subtitle="含蓄专业 · 思源宋为标题、黑体为正文">
+            <DCArtboard id="a-home-d"  label="F04 · 主页"   width={1440} height={900}><A_Home_Desktop /></DCArtboard>
+            <DCArtboard id="a-node-d"  label="F01 · 节点页 · 肝" width={1440} height={1200}><A_Node_Desktop /></DCArtboard>
+            <DCArtboard id="a-quiz-d"  label="F03 · 题目流 · 答对态" width={1440} height={900}><A_Quiz_Desktop /></DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showDesktop && t.showVariantB && (
+          <DCSection id="b-desktop" title="变体 B · 桌面" subtitle="古典书页 · 思源宋全用 · 朱砂极少点缀">
+            <DCArtboard id="b-home-d"  label="F04 · 主页"   width={1440} height={900}><B_Home_Desktop /></DCArtboard>
+            <DCArtboard id="b-node-d"  label="F01 · 节点页 · 肝" width={1440} height={1200}><B_Node_Desktop /></DCArtboard>
+            <DCArtboard id="b-quiz-d"  label="F03 · 题目流 · 答对态" width={1440} height={900}><B_Quiz_Desktop /></DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showMobile && t.showVariantA && (
+          <DCSection id="a-mobile" title="变体 A · 手机" subtitle="单列、密度收敛、底部主 CTA 常驻">
+            <DCArtboard id="a-home-m" label="F04 · 主页"     width={390} height={844}><A_Home_Mobile /></DCArtboard>
+            <DCArtboard id="a-node-m" label="F01 · 节点页"   width={390} height={844}><A_Node_Mobile /></DCArtboard>
+            <DCArtboard id="a-quiz-m" label="F03 · 题目流"   width={390} height={844}><A_Quiz_Mobile /></DCArtboard>
+          </DCSection>
+        )}
+
+        {t.showMobile && t.showVariantB && (
+          <DCSection id="b-mobile" title="变体 B · 手机" subtitle="书页竖向韵律·朱砂极小点缀">
+            <DCArtboard id="b-home-m" label="F04 · 主页"     width={390} height={844}><B_Home_Mobile /></DCArtboard>
+            <DCArtboard id="b-node-m" label="F01 · 节点页"   width={390} height={844}><B_Node_Mobile /></DCArtboard>
+            <DCArtboard id="b-quiz-m" label="F03 · 题目流"   width={390} height={844}><B_Quiz_Mobile /></DCArtboard>
+          </DCSection>
+        )}
+
+      </DesignCanvas>
+
+      <TweaksPanel title="Tweaks">
+        <TweakSection title="显示哪些方向">
+          <TweakToggle  label="变体 A · 含蓄专业"  value={t.showVariantA}   onChange={v => setTweak('showVariantA', v)} />
+          <TweakToggle  label="变体 B · 古典书页"  value={t.showVariantB}   onChange={v => setTweak('showVariantB', v)} />
+          <TweakToggle  label="设计系统页"          value={t.showDesignSystem} onChange={v => setTweak('showDesignSystem', v)} />
+        </TweakSection>
+        <TweakSection title="尺寸">
+          <TweakToggle  label="桌面"  value={t.showDesktop} onChange={v => setTweak('showDesktop', v)} />
+          <TweakToggle  label="手机"  value={t.showMobile}  onChange={v => setTweak('showMobile', v)} />
+        </TweakSection>
+        <TweakSection title="说明">
+          <div style={{ fontSize: 11, color: '#666', lineHeight: 1.7 }}>
+            · 拖拽抓手可重排  ·  点击任一画板可全屏聚焦  ·  双击标题可重命名
+            <br/>· 状态条统一使用横向强度条：长度即强度、色彩即档位、衰减状态附 ▼ 标记
+          </div>
+        </TweakSection>
+      </TweaksPanel>
+    </React.Fragment>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+</body>
+</html>

@@ -25,11 +25,14 @@ supersedes: []
 
 | ID | 名称 | 状态 | 优先级 | 里程碑 | 依赖 |
 |---|---|---|---|---|---|
-| [F01](F01-node-page.md) | 节点页 | draft | P0 | M1 | — |
-| [F02](F02-memory-strength.md) | 记忆强度引擎 | draft | P0 | M2 | F01 |
-| [F03](F03-question-types.md) | 题型系统 | draft | P0 | M2 | F01 |
-| [F04](F04-knowledge-map.md) | 知识地图（主页） | draft | P1 | M3 | F01, F02 |
+| F00 | 账户与认证 | agreed | P0 | M1 | — |
+| [F01](F01-node-page.md) | 节点页 | draft | P0 | M1 | F00 |
+| [F02](F02-memory-strength.md) | 记忆强度引擎 | draft | P0 | M2 | F00, F01 |
+| [F03](F03-question-types.md) | 题型系统 | draft | P0 | M2 | F00, F01 |
+| [F04](F04-knowledge-map.md) | 知识地图（主页） | draft | P1 | M3 | F00, F01, F02 |
 | [F05](F05-active-recall.md) | 白纸召回 | draft | P2 | M3 | F03 |
+
+**F00 账户与认证**没有独立的 F00 文档——设计完整在 [`../01-architecture/auth-and-account.md`](../01-architecture/auth-and-account.md)（基础设施性质，归属架构层），决策在 [`../04-decisions/ADR-004-email-magic-link-auth.md`](../04-decisions/ADR-004-email-magic-link-auth.md)。后续如有 UI 层细节再补 F00 文档。
 
 ### 状态说明
 
@@ -51,6 +54,9 @@ supersedes: []
 ## 依赖图
 
 ```
+F00 账户与认证（基础设施 · 所有用户数据的前提）
+ │
+ ▼
 F01 节点页（核心抽象）
  ├── F02 记忆强度引擎（每个节点需要进度状态）
  │    └── F04 知识地图（用强度可视化）
@@ -128,4 +134,5 @@ F01 节点页（核心抽象）
 
 | 版本 | 日期 | 变更 | 作者 |
 |---|---|---|---|
+| 0.2 | 2026-05-23 | 加入 F00 账户与认证（设计文档在 auth-and-account.md） | — |
 | 0.1 | 2026-05-23 | 初稿，立 F01-F05 五个核心功能 + 未来占位 | — |

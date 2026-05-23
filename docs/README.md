@@ -73,8 +73,10 @@ supersedes: []                          # 替代了哪些旧文档
 
 ## 当前项目状态
 
-- **阶段**：M0 文档体系搭建
-- **下一里程碑**：M1 数据骨架 + 单节点页跑通
+- **阶段**：🟩 M0 文档体系完成 → 🟦 进入 M1
+- **下一里程碑**：M1 数据骨架 + 账户系统 + 单节点页跑通
+- **仓库**：https://github.com/xiayh0107/zhongyi
+- **设计师入口**：[`_meta/design-brief.md`](_meta/design-brief.md)
 - 详见 [`05-progress/milestones.md`](05-progress/milestones.md)
 
 ## 写作风格约定

@@ -1,0 +1,154 @@
+// Fast Memory · Prisma Schema
+// Version: 0.2 (2026-05-23)
+//
+// 这是完整可用的 Prisma schema。复制到 prisma/schema.prisma 即可使用。
+//
+// 设计依据：
+//   ../data-model.md           Node/Question/Progress 整体设计
+//   ../auth-and-account.md     User/Auth 表的完整设计
+//   ../../04-decisions/ADR-002 用记忆强度替代 due date
+//   ../../04-decisions/ADR-004 Email Magic Link 认证
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite" // MVP 用 sqlite；上线切 postgresql
+  url      = env("DATABASE_URL")
+}
+
+// =====================================================================
+// 用户与认证（auth-and-account.md）
+// =====================================================================
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  emailVerified DateTime?
+  name          String?
+  image         String?
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  lastLoginAt DateTime?
+
+  // 用户设置
+  prefersLocale String?  @default("zh-CN")
+  prefersTheme  String?  @default("system")
+  reminderOptIn Boolean  @default(false)
+
+  // 关联
+  accounts         Account[]
+  sessions         Session[]
+  nodeProgress     UserNodeProgress[]
+  attempts         UserQuestionAttempt[]
+  learningSessions LearningSession[]
+
+  @@index([email])
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+
+  refresh_token String? // OAuth tokens（MVP 仅 Email 时为空）
+  access_token  String?
+  expires_at    Int?
+  token_type    String?
+  scope         String?
+  id_token      String?
+  session_state String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// =====================================================================
+// 学习进度（data-model.md）
+// =====================================================================
+
+// 用户对每个节点的学习状态
+// node_id 引用 content/nodes/**/*.md 中的节点 id（不在数据库中存节点本体）
+model UserNodeProgress {
+  userId String
+  nodeId String
+
+  // 派生数值（运行时从 fsrs_* 算出，DB 中保留以便 query；可选缓存）
+  memoryStrength Float @default(0) // 0-100
+
+  // 行为元数据
+  firstVisited DateTime?
+  lastReviewed DateTime?
+  visitCount   Int       @default(0)
+  successCount Int       @default(0)
+  peakStrength Float     @default(0) // 历史最高，用于"衰减中"判定
+
+  // FSRS 内部状态（ts-fsrs 库直接读写）
+  fsrsStability  Float?
+  fsrsDifficulty Float?
+  fsrsState      String? // 'new' | 'learning' | 'review' | 'relearning'
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, nodeId])
+  @@index([userId])
+  @@index([nodeId])
+}
+
+// 每次答题的原子记录
+// question_id 引用 content/questions.json 中的题目 id
+model UserQuestionAttempt {
+  id          String   @id @default(cuid())
+  userId      String
+  questionId  String
+  nodeId      String
+  correct     Boolean
+  userAnswer  String? // JSON-encoded
+  timeMs      Int?
+  attemptedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, nodeId])
+  @@index([userId, questionId])
+  @@index([attemptedAt])
+}
+
+// 学习行为 session（不是认证 session）
+// 用于行为分析，绝不用来强制日节奏
+model LearningSession {
+  id            String    @id @default(cuid())
+  userId        String
+  startedAt     DateTime  @default(now())
+  endedAt       DateTime?
+  nodeCount     Int       @default(0)
+  questionCount Int       @default(0)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, startedAt])
+}

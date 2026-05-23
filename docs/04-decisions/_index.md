@@ -31,6 +31,7 @@ ADR 是把决策**固化为可追溯记录**的标准格式。它不是文档，
 | [ADR-001](ADR-001-tool-not-habit.md) | 工具而非习惯机器 | accepted | 全产品方向 |
 | [ADR-002](ADR-002-state-not-task.md) | 用记忆强度替代 due date | accepted | F02, F04 设计基础 |
 | [ADR-003](ADR-003-markdown-as-content-store.md) | 内容用 Markdown 文件 + Git | accepted | 整个内容工程流程 |
+| [ADR-004](ADR-004-email-magic-link-auth.md) | 用 Email Magic Link 作为认证方式 | accepted | 账户系统设计 |
 
 ---
 

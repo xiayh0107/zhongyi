@@ -37,7 +37,44 @@ supersedes: []
 
 ## 2026
 
-### 2026-05-23
+### 2026-05-23（第二批 · 账户与设计简报）
+
+#### 🚀 release · 首次 push 到 GitHub
+
+仓库上线：https://github.com/xiayh0107/zhongyi （Public）
+
+#### 🎯 decision · ADR-004 用 Email Magic Link 作为认证方式
+
+MVP 用 Email Magic Link（Auth.js + Resend），无密码、最小信息收集。OAuth 留到 MVP 后。
+
+#### 🏛 arch · 账户与认证系统设计
+
+新增 [`01-architecture/auth-and-account.md`](../01-architecture/auth-and-account.md)。完整覆盖：User/Account/Session/VerificationToken 表、认证流程、隐私边界、用户数据生命周期、删除/导出权利。
+
+#### 🏛 arch · data-model 扩展到 v0.2
+
+补充 4 张用户认证表；明确"文件存内容、数据库存用户"的边界；progress 表加 peak_strength 字段；user_sessions 重命名为 LearningSession（避免与认证 Session 混淆）。
+
+#### 📝 docs · 设计简报（给设计团队的入口）
+
+新增 [`_meta/design-brief.md`](../_meta/design-brief.md)：6 条原则速查、**反模式清单**、视觉风格方向、4 条用户旅程、状态可视化系统、技术约束。设计师只需读这一份 + 5 份必读详情即可开工。
+
+#### 🏗 infra · 可执行 Schema 文件
+
+新增 `01-architecture/_schemas/`：
+- `schema.prisma`：完整 Prisma 数据库 schema（账户 + 进度）
+- `node.frontmatter.zod.ts`：节点 frontmatter 的 Zod 校验
+- `question.zod.ts`：题目 JSON 的 Zod 校验（8 种题型 discriminated union）
+
+开发者可以直接复制到项目代码使用。
+
+#### ✅ progress · M0 文档体系完成
+
+整体 M0 状态变更：🟦 in-progress → 🟩 done。进入 M1。
+
+---
+
+### 2026-05-23（第一批 · M0 启动）
 
 #### 📝 docs · 项目文档体系建立
 

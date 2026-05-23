@@ -30,13 +30,13 @@ supersedes: []
 
 ## 当前状态
 
-🟦 **M0 文档体系搭建** · in-progress
+🟩 **M0 文档体系搭建** · 完成
 
-下一个：M1 数据骨架 + 单节点页跑通
+下一个：🟦 **M1 数据骨架 + 账户系统 + 单节点页跑通**
 
 ---
 
-## M0 · 文档体系搭建
+## M0 · 文档体系搭建 ✅
 
 > 把项目从"在脑子里"变成"在文档里"。
 
@@ -45,40 +45,57 @@ supersedes: []
 - [x] README.md 入口完成
 - [x] 文档模板（`_meta/document-template.md`）
 - [x] vision 三件套（philosophy、principles、glossary）
-- [x] 架构四件套（IA、data-model、tech-stack、system-overview）
-- [x] 5 个核心功能文档（F01-F05）
+- [x] 架构层（IA、data-model、tech-stack、system-overview、**auth-and-account**）
+- [x] 5 个核心功能文档（F01-F05）+ F00 引用到 auth-and-account
 - [x] 内容工程文档（pipeline + catalog）
-- [x] 3 个 ADR（tool-not-habit、state-not-task、markdown-store）
+- [x] 4 个 ADR（tool-not-habit、state-not-task、markdown-store、**magic-link-auth**）
+- [x] 可执行 schemas（schema.prisma + node.zod + question.zod）
+- [x] **设计简报**（design-brief.md，给设计团队的入口）
 - [x] milestones + changelog
-- [ ] 团队共识：所有 status: agreed 文档被相关方审过
-- [ ] 把这份文档推到 Git 远程仓库
+- [x] Git 仓库初始化 + push 到 https://github.com/xiayh0107/zhongyi
+- [ ] 团队共识：所有 status: agreed 文档被相关方审过（持续进行）
 
 ### 交付物
 
-完整 docs/ 目录，覆盖：
+完整 docs/ 目录（28 份文档 + 3 份 schema 文件），覆盖：
 - 产品哲学和设计原则
-- 信息架构和数据模型
-- 5 个核心功能的设计
+- 信息架构、数据模型、账户系统
+- 5 个核心功能的设计 + F00 账户
 - 内容生产流程
-- 关键决策记录
+- 4 个关键决策记录
+- 设计师专属入口（design-brief.md）
+- 可执行 Prisma + Zod schemas
 
-任何新加入项目的人，能通过 docs/ 在 1 小时内 onboard。
+任何新加入项目的人能通过 docs/ 在 1 小时内 onboard。
+设计师能通过 design-brief.md 直接开工。
 
-### 状态：基本完成（待团队 review）
+### 状态：完成
 
 ---
 
-## M1 · 数据骨架 + 单节点页
+## M1 · 数据骨架 + 账户系统 + 单节点页
 
-> 跑通**最小学习闭环**：用户能打开一个节点，看到讲解，做几道题，看到强度变化。
+> 跑通**最小学习闭环**：用户能注册、打开一个节点、看到讲解、做几道题、看到强度变化。
 
 ### Done 标准
 
 **基础设施**：
-- [ ] Next.js 项目初始化（按 tech-stack.md）
-- [ ] Prisma + SQLite 配置
-- [ ] Auth.js 配置（Email magic link）
+- [ ] Next.js 项目初始化（按 [`../01-architecture/tech-stack.md`](../01-architecture/tech-stack.md)）
+- [ ] Prisma 配置 + SQLite 本地数据库
+- [ ] 复制 [`../01-architecture/_schemas/schema.prisma`](../01-architecture/_schemas/schema.prisma) 到 `prisma/schema.prisma` 并执行 migrate
+- [ ] 复制 zod schemas 到 `src/types/`
 - [ ] CI：lint + test + content validation
+
+**F00 账户与认证**（设计在 [`../01-architecture/auth-and-account.md`](../01-architecture/auth-and-account.md)）：
+- [ ] Auth.js v5 配置（Email Provider）
+- [ ] Resend 邮件服务集成
+- [ ] Magic link 登录流程（输入邮箱 → 发邮件 → 点链接 → 登录）
+- [ ] Session 30 天保持
+- [ ] 退出登录
+- [ ] 账户删除接口（含级联删除）
+- [ ] 数据导出接口（JSON）
+- [ ] 速率限制（防滥用）
+- [ ] 登录页 / 检查邮箱页 / 错误页
 
 **内容**：
 - [ ] 完成 3 个示范节点（建议：肝 + 风邪 + 附子）
@@ -94,7 +111,7 @@ supersedes: []
 - [ ] 节点页显示当前 memory_strength
 
 **功能（F02 部分实现）**：
-- [ ] FSRS 算法集成
+- [ ] FSRS 算法集成（ts-fsrs）
 - [ ] 答题 → Rating 映射
 - [ ] memory_strength 实时派生函数
 
@@ -103,11 +120,15 @@ supersedes: []
 - 双向链接（M2）
 - 多种题型（M2）
 - 白纸召回（M3）
+- OAuth 登录（MVP 后）
+- 用户设置页（MVP+）
 
 ### 交付物
+- 用户可以注册并登录
 - 可访问 URL 形如 `/nodes/liver` 看到节点页
 - 答题闭环工作
 - 强度变化能看到
+- 用户可以删除账户、导出数据
 
 ---
 
@@ -233,12 +254,14 @@ supersedes: []
 ## 当前里程碑分布
 
 ```
-🟦 M0  文档体系搭建        ████████████░░  90%
-⬜ M1  数据骨架 + 节点页    ░░░░░░░░░░░░░░   0%
-⬜ M2  题型 + 双向链接      ░░░░░░░░░░░░░░   0%
-⬜ M3  知识地图 + 白纸召回  ░░░░░░░░░░░░░░   0%
-⬜ M4  内容扩展 + 应用层    ░░░░░░░░░░░░░░   0%
+🟩 M0  文档体系搭建              ██████████████ 100%
+⬜ M1  数据骨架 + 账户 + 节点页   ░░░░░░░░░░░░░░   0%
+⬜ M2  题型 + 双向链接            ░░░░░░░░░░░░░░   0%
+⬜ M3  知识地图 + 白纸召回        ░░░░░░░░░░░░░░   0%
+⬜ M4  内容扩展 + 应用层          ░░░░░░░░░░░░░░   0%
 ```
+
+**M0 已完成**（含后续扩展：design-brief、ADR-004、auth-and-account、_schemas/）。准备进入 M1。
 
 ## Open Questions
 
@@ -255,4 +278,5 @@ supersedes: []
 
 | 版本 | 日期 | 变更 | 作者 |
 |---|---|---|---|
+| 0.2 | 2026-05-23 | M0 完成；M1 加入账户系统 done 项；扩展 design-brief、ADR-004、auth-and-account、_schemas/ 到 M0 范围 | — |
 | 0.1 | 2026-05-23 | 初稿，定义 M0-M4 里程碑 | — |

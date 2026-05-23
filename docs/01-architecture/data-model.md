@@ -2,14 +2,16 @@
 id: ARCH-002
 type: architecture
 status: agreed
-version: 0.1
+version: 0.2
 created: 2026-05-23
 updated: 2026-05-23
 related:
   - information-architecture.md
+  - auth-and-account.md
   - ../03-content/content-pipeline.md
   - ../02-features/F02-memory-strength.md
   - ../04-decisions/ADR-003-markdown-as-content-store.md
+  - ../04-decisions/ADR-004-email-magic-link-auth.md
 depends_on:
   - information-architecture.md
 supersedes: []
@@ -17,7 +19,7 @@ supersedes: []
 
 # 数据模型
 
-> 三个核心实体：**Node（节点）/ Question（题目）/ Progress（进度）**。整个产品的数据层就是这三张表 + 一种文件存储方式。
+> 四个核心实体：**Node（节点）/ Question（题目）/ Progress（进度）/ User（用户）**。内容侧（Node/Question）用 Markdown + JSON 文件；用户侧（Progress/User）用关系数据库。
 
 ## Why
 
@@ -31,20 +33,27 @@ supersedes: []
 
 ---
 
-## 三个核心抽象
+## 核心抽象
 
 ```
-┌──────────┐ has_many ┌──────────┐ tracks ┌──────────┐
-│   Node   │─────────→│ Question │←──────│ Progress │
-└──────────┘          └──────────┘        └──────────┘
-     ↑                                          │
-     │ tracks                                   │
-     └──────────────────────────────────────────┘
+┌──────────┐ has_many ┌──────────┐                ┌──────────┐
+│   Node   │─────────→│ Question │                │   User   │
+└──────────┘          └──────────┘                └────┬─────┘
+     ↑                      ↑                          │
+     │                      │                          │ owns
+     │                      │                          ▼
+     │           ┌──────────┴──────────┐    ┌──────────────────┐
+     │           │                     │    │   Progress       │
+     │           │                     │    │  (node + ques.)  │
+     │           │                     │    └──────────────────┘
+     │           │                     │
+     └───────────┴─────tracks──────────┘
 ```
 
-- **Node**：内容侧，所有学习者共享
-- **Question**：内容侧，挂在节点上
-- **Progress**：用户侧，每个用户在每个节点 / 题目上的状态
+- **Node**（内容侧）：所有学习者共享，存 Markdown
+- **Question**（内容侧）：挂在节点上，存 JSON
+- **User**（用户侧）：账户信息（[`auth-and-account.md`](auth-and-account.md)）
+- **Progress**（用户侧）：每个用户在每个节点 / 题目上的状态
 
 ---
 
@@ -223,57 +232,144 @@ type QuestionType =
 
 ---
 
+## User & Auth Schema
+
+用户认证和账户信息。**完整设计、流程和隐私边界在 [`auth-and-account.md`](auth-and-account.md)**。本节给 schema 速查。
+
+### 表概览
+
+| 表 | 来源 | 作用 |
+|---|---|---|
+| `User` | 自定义 | 用户账户主表（email、设置） |
+| `Account` | Auth.js 标准 | OAuth 关联（MVP 仅 Email 时为空） |
+| `Session` | Auth.js 标准 | 登录会话 |
+| `VerificationToken` | Auth.js 标准 | Magic link 待验证 token |
+
+### 表：`User`
+
+```sql
+CREATE TABLE "User" (
+  id              TEXT PRIMARY KEY,
+  email           TEXT UNIQUE NOT NULL,
+  emailVerified   TIMESTAMP,
+  name            TEXT,
+  image           TEXT,
+  createdAt       TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updatedAt       TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  lastLoginAt     TIMESTAMP,
+  prefersLocale   TEXT DEFAULT 'zh-CN',
+  prefersTheme    TEXT DEFAULT 'system',
+  reminderOptIn   BOOLEAN NOT NULL DEFAULT FALSE
+);
+CREATE INDEX idx_user_email ON "User"(email);
+```
+
+### 表：`Session`
+
+```sql
+CREATE TABLE "Session" (
+  id            TEXT PRIMARY KEY,
+  sessionToken  TEXT UNIQUE NOT NULL,
+  userId        TEXT NOT NULL REFERENCES "User"(id) ON DELETE CASCADE,
+  expires       TIMESTAMP NOT NULL
+);
+CREATE INDEX idx_session_user ON "Session"(userId);
+```
+
+### 表：`Account`
+
+```sql
+CREATE TABLE "Account" (
+  id                 TEXT PRIMARY KEY,
+  userId             TEXT NOT NULL REFERENCES "User"(id) ON DELETE CASCADE,
+  type               TEXT NOT NULL,
+  provider           TEXT NOT NULL,
+  providerAccountId  TEXT NOT NULL,
+  refresh_token      TEXT,
+  access_token       TEXT,
+  expires_at         INTEGER,
+  token_type         TEXT,
+  scope              TEXT,
+  id_token           TEXT,
+  session_state      TEXT,
+  UNIQUE(provider, providerAccountId)
+);
+```
+
+### 表：`VerificationToken`
+
+```sql
+CREATE TABLE "VerificationToken" (
+  identifier  TEXT NOT NULL,
+  token       TEXT UNIQUE NOT NULL,
+  expires     TIMESTAMP NOT NULL,
+  UNIQUE(identifier, token)
+);
+```
+
+**完整 Prisma schema 在 [`_schemas/schema.prisma`](_schemas/schema.prisma)**——开发期直接复制使用。
+
+---
+
 ## Progress Schema
 
 用户侧数据，存数据库（SQLite for MVP，PostgreSQL for prod）。
 
-### 表：`user_node_progress`
+### 表：`UserNodeProgress`
 
 ```sql
-CREATE TABLE user_node_progress (
-  user_id          TEXT NOT NULL,
-  node_id          TEXT NOT NULL,
-  memory_strength  REAL NOT NULL DEFAULT 0,    -- 0-100，连续值
+CREATE TABLE "UserNodeProgress" (
+  user_id          TEXT NOT NULL REFERENCES "User"(id) ON DELETE CASCADE,
+  node_id          TEXT NOT NULL,                    -- 节点 id（Markdown 文件路径）
+  memory_strength  REAL NOT NULL DEFAULT 0,          -- 0-100，连续值（运行时派生，可选缓存）
   last_reviewed    TIMESTAMP,
   first_visited    TIMESTAMP,
   visit_count      INTEGER NOT NULL DEFAULT 0,
+  success_count    INTEGER NOT NULL DEFAULT 0,
+  peak_strength    REAL NOT NULL DEFAULT 0,          -- 历史最高强度（用于"衰减中"判定）
   -- FSRS 内部状态
   fsrs_stability   REAL,
   fsrs_difficulty  REAL,
-  fsrs_state       TEXT,                       -- "new"|"learning"|"review"|"relearning"
+  fsrs_state       TEXT,                             -- 'new'|'learning'|'review'|'relearning'
   PRIMARY KEY (user_id, node_id)
 );
 ```
 
-### 表：`user_question_attempts`
+### 表：`UserQuestionAttempt`
 
 ```sql
-CREATE TABLE user_question_attempts (
+CREATE TABLE "UserQuestionAttempt" (
   id           TEXT PRIMARY KEY,
-  user_id      TEXT NOT NULL,
-  question_id  TEXT NOT NULL,
-  node_id      TEXT NOT NULL,
+  user_id      TEXT NOT NULL REFERENCES "User"(id) ON DELETE CASCADE,
+  question_id  TEXT NOT NULL,                        -- 题目 id（content/questions.json）
+  node_id      TEXT NOT NULL,                        -- 题目所属节点
   correct      BOOLEAN NOT NULL,
-  user_answer  TEXT,                  -- JSON-encoded
+  user_answer  TEXT,                                 -- JSON-encoded
   time_ms      INTEGER,
   attempted_at TIMESTAMP NOT NULL
 );
-CREATE INDEX idx_attempts_user_node ON user_question_attempts(user_id, node_id);
+CREATE INDEX idx_attempts_user_node ON "UserQuestionAttempt"(user_id, node_id);
+CREATE INDEX idx_attempts_question ON "UserQuestionAttempt"(question_id);
 ```
 
-### 表：`user_sessions`
+### 表：`LearningSession`
+
+学习行为的 session（不是认证 session）——用于分析用户的真实学习节奏。
 
 ```sql
-CREATE TABLE user_sessions (
-  id         TEXT PRIMARY KEY,
-  user_id    TEXT NOT NULL,
-  started_at TIMESTAMP NOT NULL,
-  ended_at   TIMESTAMP,
+CREATE TABLE "LearningSession" (
+  id              TEXT PRIMARY KEY,
+  user_id         TEXT NOT NULL REFERENCES "User"(id) ON DELETE CASCADE,
+  started_at      TIMESTAMP NOT NULL,
+  ended_at        TIMESTAMP,
   -- 用于行为分析，不用来强制节奏
-  node_count INTEGER,
-  question_count INTEGER
+  node_count      INTEGER DEFAULT 0,
+  question_count  INTEGER DEFAULT 0
 );
+CREATE INDEX idx_learning_session_user ON "LearningSession"(user_id);
 ```
+
+**命名注意**：`LearningSession` 与认证 `Session` 是两个完全不同的概念。代码层不要混用变量名。
 
 ### 派生：状态档位
 
@@ -295,13 +391,24 @@ function masteryTier(p: Progress): 'untouched' | 'learned' | 'mastered' | 'fadin
 | 数据类型 | 存哪 | 理由 |
 |---|---|---|
 | Node 讲解内容 | Markdown 文件 | 人类可写 / Git 版本管理 / LLM 可生成 |
-| Node frontmatter | Markdown 文件 | 同上 |
+| Node frontmatter（含 template、relations） | Markdown 文件 | 同上 |
 | Question 题目 | JSON 文件 | 批量编辑 / 结构化校验 |
-| User progress | SQLite/PostgreSQL | 高频读写 / 用户隔离 |
-| User attempts | SQLite/PostgreSQL | 同上 |
-| Session 行为日志 | SQLite/PostgreSQL | 分析需要 |
+| User 账户信息 | 数据库 | 隐私敏感 / 用户隔离 / 频繁写 |
+| Session（认证） | 数据库 | Auth.js 要求 |
+| Account（OAuth 关联） | 数据库 | Auth.js 要求 |
+| VerificationToken | 数据库 | 短期 token，Auth.js 要求 |
+| UserNodeProgress | 数据库 | 高频读写 / 用户隔离 |
+| UserQuestionAttempt | 数据库 | 高频写 / 用户隔离 |
+| LearningSession | 数据库 | 分析需要 |
 
-详见 [`../04-decisions/ADR-003-markdown-as-content-store.md`](../04-decisions/ADR-003-markdown-as-content-store.md)。
+**清晰边界**：
+- **内容（所有用户共享、可公开）** → Markdown / JSON 文件
+- **用户数据（每用户独有、隐私敏感）** → 数据库
+
+详见：
+- [`../04-decisions/ADR-003-markdown-as-content-store.md`](../04-decisions/ADR-003-markdown-as-content-store.md) — 为什么内容用 Markdown
+- [`../04-decisions/ADR-004-email-magic-link-auth.md`](../04-decisions/ADR-004-email-magic-link-auth.md) — 为什么认证用 Magic Link
+- [`auth-and-account.md`](auth-and-account.md) — 用户数据的完整设计
 
 ---
 
@@ -353,4 +460,5 @@ function masteryTier(p: Progress): 'untouched' | 'learned' | 'mastered' | 'fadin
 
 | 版本 | 日期 | 变更 | 作者 |
 |---|---|---|---|
+| 0.2 | 2026-05-23 | 补充 User/Account/Session/VerificationToken 表；明确文件 vs 数据库边界；progress 表加 peak_strength 字段；user_sessions 改名为 LearningSession 避免与认证 Session 混淆 | — |
 | 0.1 | 2026-05-23 | 初稿，定义 Node/Question/Progress 三大 schema | — |
