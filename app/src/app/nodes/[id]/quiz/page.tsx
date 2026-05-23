@@ -1,9 +1,11 @@
-// F03 答题流（M1 仅支持 single_choice）
+// F03 答题流 — 支持 single_choice / multiple_choice / fill_in_blank / match
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getNode, getQuestionsForNode } from "@/lib/content/loader";
 import { QuizPlayer } from "./quiz-player";
+import { pickQuestions } from "./mix";
+import type { PlayableQuestion } from "./types";
 import { TOKENS_A } from "@/design/tokens";
 
 export default async function QuizPage({
@@ -15,16 +17,30 @@ export default async function QuizPage({
   const node = getNode(id);
   if (!node) notFound();
 
-  const allQuestions = getQuestionsForNode(id);
-  // M1: 只取 single_choice
-  const playable = allQuestions
-    .filter((q) => q.type === "single_choice")
-    .slice(0, 5)
-    .map((q) => ({
-      id: q.id,
-      stem: q.stem,
-      options: q.options as string[],
-    }));
+  const all = getQuestionsForNode(id);
+  const picked = pickQuestions(all, 5);
+
+  // 转换为 PlayableQuestion 形态（脱掉 zod 校验后的运行时类型）
+  const playable: PlayableQuestion[] = [];
+  for (const q of picked) {
+    if (q.type === "single_choice") {
+      playable.push({ id: q.id, type: q.type, stem: q.stem, options: q.options });
+    } else if (q.type === "multiple_choice") {
+      playable.push({ id: q.id, type: q.type, stem: q.stem, options: q.options });
+    } else if (q.type === "fill_in_blank") {
+      playable.push({ id: q.id, type: q.type, stem: q.stem });
+    } else if (q.type === "match") {
+      playable.push({
+        id: q.id,
+        type: q.type,
+        stem: q.stem,
+        options: q.options,
+      });
+    } else if (q.type === "sort") {
+      playable.push({ id: q.id, type: q.type, stem: q.stem, options: q.options });
+    }
+    // spell/derive/blank_recall 暂未支持，跳过（M3 范围）
+  }
 
   if (playable.length === 0) {
     return (

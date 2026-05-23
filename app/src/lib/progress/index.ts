@@ -8,7 +8,8 @@ import {
   ratingFromAttempt,
   type Card,
 } from "@/lib/srs";
-import { tierFromStrength, type Tier } from "@/design/tokens";
+import type { Tier } from "@/design/tokens";
+import { tierFromProgress } from "./helpers";
 
 /**
  * 从 UserNodeProgress 行恢复 FSRS Card。
@@ -76,7 +77,12 @@ export async function getNodeProgress(
   }
   const card = progressRowToCard(row);
   const strength = deriveMemoryStrength(card);
-  const tier = tierFromStrength(strength, row.peakStrength >= 60);
+  const tier = tierFromProgress({
+    strength,
+    visitCount: row.visitCount,
+    successCount: row.successCount,
+    peakStrength: row.peakStrength,
+  });
   return {
     nodeId,
     strength,
@@ -147,7 +153,7 @@ export async function recordAttempt(opts: {
   const peakStrength = Math.max(existing?.peakStrength ?? 0, afterStrength);
 
   // 4. upsert 进度
-  await prisma.userNodeProgress.upsert({
+  const updated = await prisma.userNodeProgress.upsert({
     where: { userId_nodeId: { userId, nodeId } },
     create: {
       userId,
@@ -170,7 +176,12 @@ export async function recordAttempt(opts: {
     },
   });
 
-  const tier = tierFromStrength(afterStrength, peakStrength >= 60);
+  const tier = tierFromProgress({
+    strength: afterStrength,
+    visitCount: updated.visitCount,
+    successCount: updated.successCount,
+    peakStrength: updated.peakStrength,
+  });
 
   return {
     before: beforeStrength,

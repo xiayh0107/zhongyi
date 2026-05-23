@@ -37,6 +37,55 @@ supersedes: []
 
 ## 2026
 
+### 2026-05-23（第九批 · M2 全部完成）
+
+#### ✨ feature · M2 题型扩展 + 双向链接 + 推荐
+
+8 项 done 标准全部完成：
+
+**题型扩展（F03）**
+- 5 种可玩题型：single_choice / multiple_choice / fill_in_blank / match / sort
+- 拆出 `question-views.tsx` 子组件 + `actions.ts` 用 discriminated union 严格判分
+- match：左右两列点击连线 + 错配 ✓✗ + 可清空重连
+- sort：上/下移按钮排序（避免 dnd 库依赖）+ 提交后逐位置 ✓ / 应在第 N 位
+- fill_in_blank：normalize（trim + lowercase + 去空格）容错匹配
+- multi：漏选标"应选" + 错选标 ✕
+
+**题型混合策略（mix.ts）**
+- round-robin 跨类型挑题，避免连续 3 题同类型
+- 保底至少 1 道 recall-heavy 类型（fill/match/sort）
+
+**双向链接 hover 预览**
+- 客户端事件代理 → hover 任一 `.wiki-link[data-node-id]` 显示弹窗
+- 弹窗显示目标节点 title + summary + "→ 点击进入"
+- 死链显示"尚未实现"
+
+**节点页侧栏**
+- ReviewRecommendations：推荐补强（≠ 当前节点），按 urgency 排序
+- RecentAttempts：最近 5 次答题，含对错 + 用时 + 相对时间
+
+**FSRS 完善**
+- `tierFromProgress`：完整 4 档派生（含 success_count 阈值）
+- `urgencyScore`：(peak - current) / days，用于推荐排序
+- `getRecommendedReview` + `recommendNewNode`：推荐 API
+
+**内容扩展**
+- 节点 3 → **10**：补 4 五脏（心/脾/肺/肾）+ 3 六淫（寒/湿/火）
+- 题目 30 → **100**：含 ~25 道多题型新增
+- 反向边 7 → **26**：节点间关联网络初现
+
+#### 🏗 arch · 双向链接架构
+
+- 服务端把节点页上 wiki-link 目标的 (id, title, summary, exists) 一次性传给客户端
+- 客户端 WikiLinkHover 用 `addEventListener('mouseover'/'mouseout')` 全局代理
+- 替代方案考虑过 remark plugin 把 [[id]] 转 React 组件——但需要 MDX，复杂度太高
+
+#### 🎯 decision · pnpm 安装的 `pnpm.onlyBuiltDependencies`
+
+pnpm 10 默认禁 install scripts。在 package.json 显式加白名单（@prisma/*、better-sqlite3）后 install 才能正常构建二进制。
+
+---
+
 ### 2026-05-23（第八批 · M1 全部完成）
 
 #### ✨ feature · M1 最小学习闭环跑通

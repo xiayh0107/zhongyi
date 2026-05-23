@@ -2,24 +2,74 @@
 
 import { useEffect, useRef, useState, useTransition } from "react";
 import Link from "next/link";
-import { submitAnswer } from "./actions";
+import { submitAnswer, type ClientAnswer, type Feedback } from "./actions";
+import { TYPE_LABEL, type PlayableQuestion } from "./types";
+import {
+  SingleChoiceView,
+  MultipleChoiceView,
+  FillInBlankView,
+  MatchView,
+  SortView,
+  getSingleAnswer,
+  getMultiAnswer,
+  getFillAnswer,
+  getMatchAnswer,
+  getSortAnswer,
+} from "./question-views";
 import { StatusBar } from "@/components/status-bar";
 import { TOKENS_A } from "@/design/tokens";
 
-type Q = {
-  id: string;
-  stem: string;
-  options: string[];
-};
+// ─────────────────────────────────────────────────────────
+// 本地题型 state（按 type 分支）
+// ─────────────────────────────────────────────────────────
 
-type Feedback = {
-  correct: boolean;
-  correctIndex: number;
-  why: string;
-  before: number;
-  after: number;
-  loggedIn: boolean;
-};
+type LocalState =
+  | { type: "single_choice"; picked: number | null }
+  | { type: "multiple_choice"; picked: Set<number> }
+  | { type: "fill_in_blank"; value: string }
+  | {
+      type: "match";
+      pairs: Map<number, number>;
+      selectedLeft: number | null;
+    }
+  | { type: "sort"; order: number[] };
+
+function initStateFor(q: PlayableQuestion): LocalState {
+  switch (q.type) {
+    case "single_choice":
+      return { type: "single_choice", picked: null };
+    case "multiple_choice":
+      return { type: "multiple_choice", picked: new Set() };
+    case "fill_in_blank":
+      return { type: "fill_in_blank", value: "" };
+    case "match":
+      return { type: "match", pairs: new Map(), selectedLeft: null };
+    case "sort":
+      // 初始 order = options 索引序列（用户必须重新排）
+      return { type: "sort", order: q.options.map((_, i) => i) };
+  }
+}
+
+function buildAnswer(state: LocalState, q: PlayableQuestion): ClientAnswer | null {
+  switch (state.type) {
+    case "single_choice":
+      return getSingleAnswer(state.picked);
+    case "multiple_choice":
+      return getMultiAnswer(state.picked);
+    case "fill_in_blank":
+      return getFillAnswer(state.value);
+    case "match":
+      return q.type === "match"
+        ? getMatchAnswer(state.pairs, q.options.left.length)
+        : null;
+    case "sort":
+      return getSortAnswer(state.order);
+  }
+}
+
+// ─────────────────────────────────────────────────────────
+// 主组件
+// ─────────────────────────────────────────────────────────
 
 export function QuizPlayer({
   nodeId,
@@ -28,17 +78,15 @@ export function QuizPlayer({
 }: {
   nodeId: string;
   nodeTitle: string;
-  questions: Q[];
+  questions: PlayableQuestion[];
 }) {
   const total = questions.length;
   const [idx, setIdx] = useState(0);
-  const [picked, setPicked] = useState<number | null>(null);
+  const current = questions[idx];
+
+  const [state, setState] = useState<LocalState>(() => initStateFor(current));
   const [feedback, setFeedback] = useState<Feedback | null>(null);
-  // ref 不触发 render，可在 effect 中安全初始化 / 更新（避免 setState-in-effect 警告）
   const startedAtRef = useRef<number>(0);
-  useEffect(() => {
-    startedAtRef.current = Date.now();
-  }, [idx]);
   const [, startTransition] = useTransition();
   const [stats, setStats] = useState({ correct: 0, total: 0 });
   const [done, setDone] = useState(false);
@@ -46,90 +94,36 @@ export function QuizPlayer({
     null,
   );
 
-  const current = questions[idx];
+  useEffect(() => {
+    startedAtRef.current = Date.now();
+  }, [idx]);
 
   if (done) {
-    return (
-      <div className="text-center" style={{ paddingTop: 60 }}>
-        <div
-          className="font-serif font-medium"
-          style={{ fontSize: 28, color: TOKENS_A.ink, marginBottom: 16 }}
-        >
-          测试完成
-        </div>
-        <div
-          className="font-mono"
-          style={{ fontSize: 14, color: TOKENS_A.ink2, marginBottom: 24 }}
-        >
-          答对 {stats.correct} / {stats.total}
-        </div>
-        {latestStrength && latestStrength.before !== latestStrength.after && (
-          <div
-            className="flex items-center justify-center gap-3"
-            style={{ marginBottom: 32 }}
-          >
-            <span style={{ fontSize: 13, color: TOKENS_A.ink2 }}>
-              「{nodeTitle}」强度
-            </span>
-            <span className="font-mono" style={{ fontSize: 13, color: TOKENS_A.ink }}>
-              {latestStrength.before} → {latestStrength.after}{" "}
-              {latestStrength.after > latestStrength.before ? "↑" : "↓"}
-            </span>
-          </div>
-        )}
-        <div className="flex justify-center gap-3">
-          <Link
-            href={`/nodes/${nodeId}`}
-            className="px-5 py-3"
-            style={{
-              background: TOKENS_A.ink,
-              color: TOKENS_A.paper,
-              fontSize: 13,
-              letterSpacing: "0.08em",
-              textDecoration: "none",
-            }}
-          >
-            回到节点
-          </Link>
-          <button
-            onClick={() => {
-              setIdx(0);
-              setStats({ correct: 0, total: 0 });
-              setFeedback(null);
-              setPicked(null);
-              setDone(false);
-              startedAtRef.current = Date.now();
-            }}
-            className="px-5 py-3"
-            style={{
-              background: "transparent",
-              color: TOKENS_A.ink,
-              border: `1px solid ${TOKENS_A.ink}`,
-              fontSize: 13,
-              letterSpacing: "0.08em",
-              cursor: "pointer",
-            }}
-          >
-            再来一次
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  function pickOption(i: number) {
-    if (feedback) return; // 已提交后禁用
-    setPicked(i);
+    return <QuizSummary
+      nodeId={nodeId}
+      nodeTitle={nodeTitle}
+      stats={stats}
+      latestStrength={latestStrength}
+      onRestart={() => {
+        setIdx(0);
+        setState(initStateFor(questions[0]));
+        setStats({ correct: 0, total: 0 });
+        setFeedback(null);
+        setDone(false);
+        startedAtRef.current = Date.now();
+      }}
+    />;
   }
 
   function submit() {
-    if (picked == null || feedback) return;
+    const answer = buildAnswer(state, current);
+    if (!answer || feedback) return;
     const timeMs = Date.now() - startedAtRef.current;
     startTransition(async () => {
       const f = await submitAnswer({
         nodeId,
         questionId: current.id,
-        userAnswer: picked,
+        userAnswer: answer,
         timeMs,
       });
       setFeedback(f);
@@ -145,12 +139,58 @@ export function QuizPlayer({
     if (idx + 1 >= total) {
       setDone(true);
     } else {
-      setIdx(idx + 1);
-      setPicked(null);
+      const nextIdx = idx + 1;
+      setIdx(nextIdx);
+      setState(initStateFor(questions[nextIdx]));
       setFeedback(null);
       startedAtRef.current = Date.now();
     }
   }
+
+  // 题型分支的输入回调
+  function onPick(i: number) {
+    if (feedback || state.type !== "single_choice") return;
+    setState({ type: "single_choice", picked: i });
+  }
+  function onToggle(i: number) {
+    if (feedback || state.type !== "multiple_choice") return;
+    const next = new Set(state.picked);
+    if (next.has(i)) next.delete(i);
+    else next.add(i);
+    setState({ type: "multiple_choice", picked: next });
+  }
+  function onTextChange(v: string) {
+    if (feedback || state.type !== "fill_in_blank") return;
+    setState({ type: "fill_in_blank", value: v });
+  }
+  function onLeftClick(li: number) {
+    if (feedback || state.type !== "match") return;
+    setState({ ...state, selectedLeft: state.selectedLeft === li ? null : li });
+  }
+  function onRightClick(ri: number) {
+    if (feedback || state.type !== "match") return;
+    if (state.selectedLeft == null) return;
+    const next = new Map(state.pairs);
+    // 移除任何已用此右项的旧映射
+    for (const [l, r] of next) if (r === ri) next.delete(l);
+    next.set(state.selectedLeft, ri);
+    setState({ type: "match", pairs: next, selectedLeft: null });
+  }
+  function onClearMatch() {
+    if (feedback || state.type !== "match") return;
+    setState({ type: "match", pairs: new Map(), selectedLeft: null });
+  }
+  function onSortMove(fromPos: number, direction: -1 | 1) {
+    if (feedback || state.type !== "sort") return;
+    const toPos = fromPos + direction;
+    if (toPos < 0 || toPos >= state.order.length) return;
+    const next = [...state.order];
+    [next[fromPos], next[toPos]] = [next[toPos], next[fromPos]];
+    setState({ type: "sort", order: next });
+  }
+
+  const answer = buildAnswer(state, current);
+  const canSubmit = !!answer && !feedback;
 
   return (
     <div>
@@ -164,7 +204,7 @@ export function QuizPlayer({
         </span>
         <div className="flex gap-1.5">
           {questions.map((_, i) => {
-            const state = i < idx ? "done" : i === idx ? "current" : "pending";
+            const status = i < idx ? "done" : i === idx ? "current" : "pending";
             return (
               <span
                 key={i}
@@ -172,9 +212,9 @@ export function QuizPlayer({
                   width: 18,
                   height: 4,
                   background:
-                    state === "done"
+                    status === "done"
                       ? TOKENS_A.s_mastered
-                      : state === "current"
+                      : status === "current"
                         ? TOKENS_A.ink
                         : TOKENS_A.line,
                 }}
@@ -193,7 +233,7 @@ export function QuizPlayer({
           marginBottom: 14,
         }}
       >
-        题型 · SINGLE CHOICE · 单选
+        题型 · {TYPE_LABEL[current.type]}
       </div>
 
       {/* 题干 */}
@@ -209,68 +249,54 @@ export function QuizPlayer({
         {current.stem}
       </h2>
 
-      {/* 选项 */}
-      <div className="flex flex-col gap-2.5" style={{ marginBottom: 24 }}>
-        {current.options.map((opt, i) => {
-          const isCorrect = feedback && i === feedback.correctIndex;
-          const isPicked = picked === i;
-          const isWrong = feedback && isPicked && !feedback.correct;
-          const borderColor = isCorrect
-            ? TOKENS_A.s_mastered
-            : isWrong
-              ? TOKENS_A.s_fading
-              : isPicked
-                ? TOKENS_A.ink
-                : TOKENS_A.line;
-          const bg = isCorrect
-            ? "rgba(95,124,77,0.08)"
-            : isWrong
-              ? "rgba(160,109,46,0.08)"
-              : TOKENS_A.sheet;
-          return (
-            <button
-              key={i}
-              onClick={() => pickOption(i)}
-              disabled={!!feedback}
-              className="text-left flex items-center gap-4 px-5 py-4"
-              style={{
-                background: bg,
-                border: `1px solid ${borderColor}`,
-                color: TOKENS_A.ink,
-                fontSize: 15,
-                cursor: feedback ? "default" : "pointer",
-                textAlign: "left",
-                borderRadius: 0,
-              }}
-            >
-              <span
-                className="font-mono"
-                style={{
-                  fontSize: 12,
-                  color: TOKENS_A.ink3,
-                  letterSpacing: "0.08em",
-                  width: 18,
-                }}
-              >
-                {String.fromCharCode(65 + i)}
-              </span>
-              <span className="font-serif">{opt}</span>
-              {isCorrect && (
-                <span className="ml-auto" style={{ color: TOKENS_A.s_mastered, fontSize: 16 }}>
-                  ✓
-                </span>
-              )}
-              {isWrong && (
-                <span className="ml-auto" style={{ color: TOKENS_A.s_fading, fontSize: 16 }}>
-                  ✕
-                </span>
-              )}
-            </button>
-          );
-        })}
+      {/* 题型分支 */}
+      <div style={{ marginBottom: 24 }}>
+        {current.type === "single_choice" && state.type === "single_choice" && (
+          <SingleChoiceView
+            question={current}
+            picked={state.picked}
+            feedback={feedback}
+            onPick={onPick}
+          />
+        )}
+        {current.type === "multiple_choice" && state.type === "multiple_choice" && (
+          <MultipleChoiceView
+            question={current}
+            picked={state.picked}
+            feedback={feedback}
+            onToggle={onToggle}
+          />
+        )}
+        {current.type === "fill_in_blank" && state.type === "fill_in_blank" && (
+          <FillInBlankView
+            value={state.value}
+            feedback={feedback}
+            onChange={onTextChange}
+            onSubmit={submit}
+          />
+        )}
+        {current.type === "match" && state.type === "match" && (
+          <MatchView
+            question={current}
+            pairs={state.pairs}
+            selectedLeft={state.selectedLeft}
+            feedback={feedback}
+            onLeftClick={onLeftClick}
+            onRightClick={onRightClick}
+            onClear={onClearMatch}
+          />
+        )}
+        {current.type === "sort" && state.type === "sort" && (
+          <SortView
+            question={current}
+            order={state.order}
+            feedback={feedback}
+            onMove={onSortMove}
+          />
+        )}
       </div>
 
-      {/* 反馈 / 解析 */}
+      {/* Why 反馈 */}
       {feedback && (
         <div
           className="mb-6"
@@ -301,7 +327,13 @@ export function QuizPlayer({
             >
               <span>强度：</span>
               <StatusBar
-                tier={feedback.after >= 60 ? (feedback.after >= 85 ? "mastered" : "learned") : "fading"}
+                tier={
+                  feedback.after >= 85
+                    ? "mastered"
+                    : feedback.after >= 60
+                      ? "learned"
+                      : "fading"
+                }
                 strength={feedback.after}
                 width={56}
                 showValue
@@ -313,11 +345,11 @@ export function QuizPlayer({
             </div>
           )}
           {!feedback.loggedIn && (
-            <div
-              className="mt-3"
-              style={{ fontSize: 12, color: TOKENS_A.ink3 }}
-            >
-              <Link href="/login" style={{ color: TOKENS_A.ink, textDecoration: "underline" }}>
+            <div className="mt-3" style={{ fontSize: 12, color: TOKENS_A.ink3 }}>
+              <Link
+                href="/login"
+                style={{ color: TOKENS_A.ink, textDecoration: "underline" }}
+              >
                 登录
               </Link>{" "}
               后保存你的进度。
@@ -358,14 +390,14 @@ export function QuizPlayer({
         ) : (
           <button
             onClick={submit}
-            disabled={picked == null}
+            disabled={!canSubmit}
             className="px-6 py-3"
             style={{
-              background: picked == null ? TOKENS_A.line2 : TOKENS_A.ink,
+              background: canSubmit ? TOKENS_A.ink : TOKENS_A.line2,
               color: TOKENS_A.paper,
               fontSize: 13,
               letterSpacing: "0.08em",
-              cursor: picked == null ? "not-allowed" : "pointer",
+              cursor: canSubmit ? "pointer" : "not-allowed",
               border: "none",
               borderRadius: 0,
             }}
@@ -373,6 +405,80 @@ export function QuizPlayer({
             提交
           </button>
         )}
+      </div>
+    </div>
+  );
+}
+
+function QuizSummary({
+  nodeId,
+  nodeTitle,
+  stats,
+  latestStrength,
+  onRestart,
+}: {
+  nodeId: string;
+  nodeTitle: string;
+  stats: { correct: number; total: number };
+  latestStrength: { before: number; after: number } | null;
+  onRestart: () => void;
+}) {
+  return (
+    <div className="text-center" style={{ paddingTop: 60 }}>
+      <div
+        className="font-serif font-medium"
+        style={{ fontSize: 28, color: TOKENS_A.ink, marginBottom: 16 }}
+      >
+        测试完成
+      </div>
+      <div
+        className="font-mono"
+        style={{ fontSize: 14, color: TOKENS_A.ink2, marginBottom: 24 }}
+      >
+        答对 {stats.correct} / {stats.total}
+      </div>
+      {latestStrength && latestStrength.before !== latestStrength.after && (
+        <div
+          className="flex items-center justify-center gap-3"
+          style={{ marginBottom: 32 }}
+        >
+          <span style={{ fontSize: 13, color: TOKENS_A.ink2 }}>
+            「{nodeTitle}」强度
+          </span>
+          <span className="font-mono" style={{ fontSize: 13, color: TOKENS_A.ink }}>
+            {latestStrength.before} → {latestStrength.after}{" "}
+            {latestStrength.after > latestStrength.before ? "↑" : "↓"}
+          </span>
+        </div>
+      )}
+      <div className="flex justify-center gap-3">
+        <Link
+          href={`/nodes/${nodeId}`}
+          className="px-5 py-3"
+          style={{
+            background: TOKENS_A.ink,
+            color: TOKENS_A.paper,
+            fontSize: 13,
+            letterSpacing: "0.08em",
+            textDecoration: "none",
+          }}
+        >
+          回到节点
+        </Link>
+        <button
+          onClick={onRestart}
+          className="px-5 py-3"
+          style={{
+            background: "transparent",
+            color: TOKENS_A.ink,
+            border: `1px solid ${TOKENS_A.ink}`,
+            fontSize: 13,
+            letterSpacing: "0.08em",
+            cursor: "pointer",
+          }}
+        >
+          再来一次
+        </button>
       </div>
     </div>
   );

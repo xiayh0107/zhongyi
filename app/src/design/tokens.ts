@@ -30,8 +30,10 @@ export const TIERS = {
 export type Tier = keyof typeof TIERS;
 
 /**
- * 把 strength 数值 + 是否曾达 60 → 派生档位。
- * 与 docs/02-features/F02-memory-strength.md 的 masteryTier() 一致。
+ * 简化派生：仅从 strength + 是否曾达 60 推断档位。
+ * 用于 UI 单点显示（如 wiki-link hover），不需要 success_count 等元数据。
+ *
+ * 完整派生（含 success_count 阈值）见 lib/progress/helpers.ts 的 tierFromProgress。
  */
 export function tierFromStrength(
   s: number | null | undefined,

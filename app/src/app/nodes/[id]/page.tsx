@@ -10,9 +10,15 @@ import {
   recordVisit,
   type NodeProgressSnapshot,
 } from "@/lib/progress";
+import { getRecommendedReview } from "@/lib/progress/recommend";
+import { getRecentAttempts, type RecentAttempt } from "@/lib/progress/attempts";
 import { StatusBar } from "@/components/status-bar";
 import { TemplateTable } from "@/components/template-table";
 import { TOKENS_A } from "@/design/tokens";
+import { ReviewRecommendations } from "@/components/review-recommendations";
+import { RecentAttempts } from "@/components/recent-attempts";
+import { WikiLinkHover, type WikiLinkData } from "@/components/wiki-link-hover";
+import { getContentGraph } from "@/lib/content/loader";
 
 const LAYER_LABEL: Record<string, string> = {
   L1: "L1 · 世界观",
@@ -34,15 +40,34 @@ export default async function NodePage({
   const questions = getQuestionsForNode(id);
   const backlinks = getBacklinks(id);
 
-  // 记录访问 + 取进度
+  // 记录访问 + 取进度 + 推荐补强（仅排除当前节点）
   const session = await auth();
   let progress: NodeProgressSnapshot | null = null;
+  let recommendations: Awaited<ReturnType<typeof getRecommendedReview>> = [];
+  let recentAttempts: RecentAttempt[] = [];
   if (session?.user?.id) {
     await recordVisit(session.user.id, id);
     progress = await getNodeProgress(session.user.id, id);
+    const all = await getRecommendedReview(session.user.id, 6);
+    recommendations = all.filter((r) => r.nodeId !== id).slice(0, 4);
+    recentAttempts = await getRecentAttempts(session.user.id, id, 5);
   }
 
   const bodyHtml = await renderMarkdown(node.body);
+
+  // 收集页面上所有 wiki-link 目标供 hover 预览
+  const graph = getContentGraph();
+  const linkTargetIds = new Set<string>([
+    ...node.outgoing_links,
+    ...node.relations.map((r) => r.target),
+    ...backlinks,
+  ]);
+  const linkTargets: WikiLinkData[] = Array.from(linkTargetIds).map((tid) => {
+    const target = graph.nodes.get(tid);
+    return target
+      ? { id: tid, title: target.title, summary: target.summary, exists: true }
+      : { id: tid, title: tid, summary: "", exists: false };
+  });
 
   // 关系按类型分组
   const relations = node.relations;
@@ -165,7 +190,8 @@ export default async function NodePage({
                       <Link
                         key={b}
                         href={`/nodes/${b}`}
-                        className="ml-2"
+                        className="wiki-link ml-2"
+                        data-node-id={b}
                         style={{
                           color: TOKENS_A.ink,
                           borderBottom: `1.5px solid ${TOKENS_A.s_untouched}`,
@@ -216,6 +242,12 @@ export default async function NodePage({
 
             <TemplateTable template={node.template} />
 
+            {recentAttempts.length > 0 && <RecentAttempts items={recentAttempts} />}
+
+            {recommendations.length > 0 && (
+              <ReviewRecommendations items={recommendations} />
+            )}
+
             {!session && (
               <p
                 style={{
@@ -233,6 +265,8 @@ export default async function NodePage({
           </aside>
         </div>
       </div>
+
+      <WikiLinkHover targets={linkTargets} />
     </div>
   );
 }
@@ -261,6 +295,8 @@ function RelationGroup({
         <span key={r.target} className="ml-2">
           <Link
             href={`/nodes/${r.target}`}
+            className="wiki-link"
+            data-node-id={r.target}
             style={{
               color: TOKENS_A.ink,
               borderBottom: `1.5px solid ${TOKENS_A.s_untouched}`,
