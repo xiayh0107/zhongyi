@@ -1,5 +1,7 @@
 // F01 节点页 — 设计来源：design/a-node.jsx
 
+import fs from "node:fs";
+import path from "node:path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getNode, getQuestionsForNode, getBacklinks } from "@/lib/content/loader";
@@ -62,6 +64,7 @@ export default async function NodePage({
 
   const graph = getContentGraph();
   const bodyHtml = await renderMarkdown(node.body, graph.nodes);
+  const nodeImageSrc = getNodeImageSrc(node.id);
 
   // 收集页面上所有 wiki-link 目标供 hover 预览
   const linkTargetIds = new Set<string>([
@@ -158,6 +161,33 @@ export default async function NodePage({
         {/* CTA + Template + Body */}
         <div className="mt-10 grid gap-8" style={{ gridTemplateColumns: "1fr 320px" }}>
           <div>
+            {nodeImageSrc && (
+              <figure className="mb-8">
+                <img
+                  src={nodeImageSrc}
+                  alt={`${node.title} 知识结构图`}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    display: "block",
+                    border: `1px solid ${TOKENS_A.line}`,
+                    background: TOKENS_A.paper,
+                  }}
+                />
+                <figcaption
+                  className="font-mono"
+                  style={{
+                    marginTop: 8,
+                    fontSize: 11,
+                    letterSpacing: "0.08em",
+                    color: TOKENS_A.ink3,
+                  }}
+                >
+                  知识结构图
+                </figcaption>
+              </figure>
+            )}
+
             <article
               className="prose-zh"
               style={{
@@ -295,6 +325,13 @@ export default async function NodePage({
       <WikiLinkHover targets={linkTargets} />
     </div>
   );
+}
+
+function getNodeImageSrc(nodeId: string): string | null {
+  const fileName = `${nodeId}.webp`;
+  const filePath = path.join(process.cwd(), "public", "node-images", fileName);
+  if (!fs.existsSync(filePath)) return null;
+  return `/node-images/${encodeURIComponent(fileName)}`;
 }
 
 function RelationGroup({
