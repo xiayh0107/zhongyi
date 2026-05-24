@@ -16,11 +16,11 @@ template:
     - 引火归原
   要药标签: 回阳救逆第一药
 relations:
-  - type: treats
-    target: heart-yang-deficiency
+  - type: related_to
+    target: heart
     note: 心阳虚衰 / 阳气暴脱
-  - type: treats
-    target: kidney-yang-deficiency
+  - type: related_to
+    target: kidney
     note: 命门火衰
   - type: related_to
     target: rou-gui

@@ -16,9 +16,6 @@ relations:
   - type: related_to
     target: ma-huang
     note: 组成药物
-  - type: related_to
-    target: gui-zhi
-    note: 组成药物
   - type: treats
     target: wind-evil
 recall_keypoints:

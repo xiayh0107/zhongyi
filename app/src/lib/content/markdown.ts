@@ -69,8 +69,11 @@ export async function renderMarkdown(
   const normalizedBody = normalizeCompressedTables(body);
   const withLinks = normalizedBody.replace(WIKI_LINK_RE, (_, ref) => {
     const target = resolveNodeRef(ref, nodes, titleToId);
-    const id = target?.id ?? ref;
-    const label = target?.title ?? nodeDisplayLabel(id, nodes);
+    if (!target) {
+      return escapeHtml(nodeDisplayLabel(ref, nodes));
+    }
+    const id = target.id;
+    const label = target.title;
     return `<a class="wiki-link" data-node-id="${escapeHtml(id)}" href="${nodeHref(id)}">${escapeHtml(label)}</a>`;
   });
 
