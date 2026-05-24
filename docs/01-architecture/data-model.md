@@ -163,7 +163,7 @@ updated: 2026-05-23
 
 ## Question Schema
 
-存储为单一 JSON / YAML 文件（或拆分按类别）。MVP 阶段建议单文件 `content/questions.json`，方便批量编辑。
+存储为按类别拆分的 JSON 文件：`content/questions/*.json`。旧的 `content/questions.json` 仅作为兼容占位，目录题库存在时不会被加载。
 
 ### Schema
 
@@ -341,7 +341,7 @@ CREATE TABLE "UserNodeProgress" (
 CREATE TABLE "UserQuestionAttempt" (
   id           TEXT PRIMARY KEY,
   user_id      TEXT NOT NULL REFERENCES "User"(id) ON DELETE CASCADE,
-  question_id  TEXT NOT NULL,                        -- 题目 id（content/questions.json）
+  question_id  TEXT NOT NULL,                        -- 题目 id（content/questions/*.json）
   node_id      TEXT NOT NULL,                        -- 题目所属节点
   correct      BOOLEAN NOT NULL,
   user_answer  TEXT,                                 -- JSON-encoded

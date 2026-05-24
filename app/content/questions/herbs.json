@@ -1,0 +1,1389 @@
+[
+  {
+    "id": "q-fuzi-001",
+    "node_ids": [
+      "fu-zi"
+    ],
+    "type": "single_choice",
+    "stem": "「回阳救逆第一药」指的是？",
+    "options": [
+      "麻黄",
+      "附子",
+      "干姜",
+      "肉桂",
+      "人参"
+    ],
+    "answer": 1,
+    "why": "附子性大热，能峻补元阳、回阳救逆，临床用于亡阳危证，称回阳救逆第一药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 638
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fuzi-002",
+    "node_ids": [
+      "fu-zi"
+    ],
+    "type": "single_choice",
+    "stem": "命门火衰首选用哪味药？",
+    "options": [
+      "黄芪",
+      "人参",
+      "干姜",
+      "附子",
+      "麻黄"
+    ],
+    "answer": 3,
+    "why": "附子补火助阳，专治命门火衰、肾阳不足之畏寒肢冷、阳痿等证。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fuzi-003",
+    "node_ids": [
+      "fu-zi"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不是附子的核心功效？",
+    "options": [
+      "回阳救逆",
+      "补火助阳",
+      "散寒止痛",
+      "活血化瘀",
+      "温经通脉"
+    ],
+    "answer": 3,
+    "why": "活血化瘀不是附子的核心功效。附子的功效为：回阳救逆、补火助阳、散寒止痛、温经通脉、引火归原。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 105
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fuzi-004",
+    "node_ids": [
+      "fu-zi"
+    ],
+    "type": "single_choice",
+    "stem": "附子的四气属性是？",
+    "options": [
+      "寒",
+      "凉",
+      "平",
+      "温",
+      "热"
+    ],
+    "answer": 4,
+    "why": "附子性大热，是最热的药物之一，能峻补元阳。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 105
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fuzi-005",
+    "node_ids": [
+      "fu-zi"
+    ],
+    "type": "multiple_choice",
+    "stem": "附子归经包括（多选）：",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": [
+      0,
+      2,
+      4
+    ],
+    "why": "附子归心、肾、脾经，分别对应回阳救逆（心）、补火助阳（肾）、温脾阳（脾）三大作用方向。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 105
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fuzi-006",
+    "node_ids": [
+      "fu-zi"
+    ],
+    "type": "single_choice",
+    "stem": "附子与下列哪味药相须配伍可增强回阳救逆作用？",
+    "options": [
+      "肉桂",
+      "干姜",
+      "人参",
+      "黄芪",
+      "桂枝"
+    ],
+    "answer": 1,
+    "why": "附子配干姜（四逆汤主药对），相须配伍能显著增强回阳救逆之力。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 638
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fuzi-007",
+    "node_ids": [
+      "fu-zi"
+    ],
+    "type": "single_choice",
+    "stem": "附子用药的关键注意事项是？",
+    "options": [
+      "不宜久煎",
+      "有毒，需炮制",
+      "孕妇可大量使用",
+      "可生品入药",
+      "无任何禁忌"
+    ],
+    "answer": 1,
+    "why": "生附子有毒性，必须严格炮制（炮附子或制附子）后使用，剂量控制严格。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 638
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fuzi-008",
+    "node_ids": [
+      "fu-zi"
+    ],
+    "type": "fill_in_blank",
+    "stem": "附子被称为 ___ 第一药。",
+    "answer": [
+      "回阳救逆"
+    ],
+    "why": "附子性大热，能峻补元阳，是回阳救逆第一药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 638
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fuzi-009",
+    "node_ids": [
+      "fu-zi",
+      "kidney",
+      "heart",
+      "spleen"
+    ],
+    "type": "multiple_choice",
+    "stem": "附子归哪些经？（多选）",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": [
+      0,
+      2,
+      4
+    ],
+    "why": "附子归心、肾、脾三经——分别对应回阳救逆（心）、补火助阳（肾）、温脾阳（脾）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 105
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-mahuang-001",
+    "node_ids": [
+      "ma-huang"
+    ],
+    "type": "single_choice",
+    "stem": "麻黄的主要功效不包括？",
+    "options": [
+      "发汗解表",
+      "宣肺平喘",
+      "利水消肿",
+      "活血化瘀"
+    ],
+    "answer": 3,
+    "why": "活血化瘀不是麻黄功效。麻黄三大功效：发汗、宣肺、利水。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1356
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-mahuang-002",
+    "node_ids": [
+      "ma-huang",
+      "wind-evil",
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "外感风寒表实无汗首选？",
+    "options": [
+      "桂枝",
+      "麻黄",
+      "柴胡",
+      "黄芪",
+      "防风"
+    ],
+    "answer": 1,
+    "why": "麻黄发汗力强，专治风寒表实无汗。风寒表虚有汗用桂枝。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 98
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-mahuang-003",
+    "node_ids": [
+      "ma-huang"
+    ],
+    "type": "single_choice",
+    "stem": "麻黄性归经？",
+    "options": [
+      "寒，归肝胆",
+      "温，归肺膀胱",
+      "热，归心肾",
+      "凉，归脾胃",
+      "平，归大肠肺"
+    ],
+    "answer": 1,
+    "why": "麻黄性温，辛微苦，归肺、膀胱经。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1267
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-mahuang-004",
+    "node_ids": [
+      "ma-huang"
+    ],
+    "type": "fill_in_blank",
+    "stem": "麻黄汤中麻黄与 ___ 相须配伍增强发汗。",
+    "answer": [
+      "桂枝"
+    ],
+    "why": "麻黄配桂枝（麻黄汤主药对）→ 增强发汗解表、祛风散寒。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 294
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-chaihu-001",
+    "node_ids": [
+      "chai-hu"
+    ],
+    "type": "single_choice",
+    "stem": "「少阳病」「半表半里证」首选药？",
+    "options": [
+      "麻黄",
+      "桂枝",
+      "柴胡",
+      "葛根",
+      "黄芪"
+    ],
+    "answer": 2,
+    "why": "柴胡和解少阳，是少阳半表半里证的要药（小柴胡汤主药）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 99
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-chaihu-002",
+    "node_ids": [
+      "chai-hu"
+    ],
+    "type": "multiple_choice",
+    "stem": "柴胡的三大核心功效是（多选）：",
+    "options": [
+      "疏散退热",
+      "疏肝解郁",
+      "升举阳气",
+      "活血化瘀",
+      "凉血止血"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "why": "柴胡：疏散退热、疏肝解郁、升举阳气——治少阳病、肝郁、气陷三大方向。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 230
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-chaihu-003",
+    "node_ids": [
+      "chai-hu"
+    ],
+    "type": "single_choice",
+    "stem": "「补中益气汤」中柴胡的作用是？",
+    "options": [
+      "疏散退热",
+      "疏肝解郁",
+      "升举阳气",
+      "活血化瘀"
+    ],
+    "answer": 2,
+    "why": "补中益气汤治中气下陷，柴胡升举阳气，与升麻一起把下陷之中气提起。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1161
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-huangqi-001",
+    "node_ids": [
+      "huang-qi"
+    ],
+    "type": "single_choice",
+    "stem": "「补中益气要药」是？",
+    "options": [
+      "人参",
+      "黄芪",
+      "白术",
+      "附子",
+      "甘草"
+    ],
+    "answer": 1,
+    "why": "黄芪是补中益气要药。补中益气汤中黄芪是君药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1548
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-huangqi-002",
+    "node_ids": [
+      "huang-qi"
+    ],
+    "type": "multiple_choice",
+    "stem": "黄芪的功效包括（多选）：",
+    "options": [
+      "补气升阳",
+      "固表止汗",
+      "利水消肿",
+      "托毒排脓",
+      "回阳救逆"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "回阳救逆是附子的功效。黄芪：补气升阳、固表止汗、利水消肿、生津养血、行滞通痹、托毒排脓、敛疮生肌。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 109
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-huangqi-003",
+    "node_ids": [
+      "huang-qi"
+    ],
+    "type": "single_choice",
+    "stem": "气虚自汗、易感冒首选？",
+    "options": [
+      "麻黄",
+      "桂枝",
+      "柴胡",
+      "黄芪",
+      "石膏"
+    ],
+    "answer": 3,
+    "why": "黄芪固表止汗，治卫表不固之自汗、易感冒（玉屏风散主药）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1370
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-huangqi-004",
+    "node_ids": [
+      "huang-qi"
+    ],
+    "type": "single_choice",
+    "stem": "中风偏瘫气虚血瘀首选方？",
+    "options": [
+      "补阳还五汤",
+      "六味地黄丸",
+      "桂枝汤",
+      "小柴胡汤",
+      "麻黄汤"
+    ],
+    "answer": 0,
+    "why": "补阳还五汤治气虚血瘀之中风偏瘫，黄芪是君药（重用 120g）。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 137
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-001",
+    "node_ids": [
+      "ma-huang",
+      "chai-hu",
+      "huang-qi",
+      "fu-zi"
+    ],
+    "type": "match",
+    "stem": "中药与「要药」标签对应（连线）：",
+    "options": {
+      "left": [
+        "麻黄",
+        "柴胡",
+        "黄芪",
+        "附子"
+      ],
+      "right": [
+        "补中益气要药",
+        "回阳救逆第一药",
+        "风寒感冒要药",
+        "少阳病要药"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "why": "麻黄=风寒感冒；柴胡=少阳病；黄芪=补中益气；附子=回阳救逆。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 98
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-002",
+    "node_ids": [
+      "ma-huang",
+      "huang-qi"
+    ],
+    "type": "single_choice",
+    "stem": "气虚自汗禁用下列哪味药？",
+    "options": [
+      "黄芪",
+      "白术",
+      "麻黄",
+      "党参",
+      "甘草"
+    ],
+    "answer": 2,
+    "why": "气虚自汗治应固表止汗（黄芪等）。麻黄发汗力强，气虚自汗禁用。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1267
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-003",
+    "node_ids": [
+      "fu-zi",
+      "chai-hu",
+      "ma-huang",
+      "huang-qi"
+    ],
+    "type": "multiple_choice",
+    "stem": "下列性温/热的药包括（多选）：",
+    "options": [
+      "麻黄",
+      "柴胡",
+      "黄芪",
+      "附子"
+    ],
+    "answer": [
+      0,
+      2,
+      3
+    ],
+    "why": "麻黄温、黄芪微温、附子大热；柴胡微寒。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1267
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-004",
+    "node_ids": [
+      "rou-gui",
+      "fu-zi",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "肉桂的核心功效不包括哪项？",
+    "options": [
+      "补火助阳",
+      "散寒止痛",
+      "温经通脉",
+      "引火归原",
+      "清热泻火"
+    ],
+    "answer": 4,
+    "why": "肉桂性热，功效为补火助阳、散寒止痛、温经通脉、引火归原。清热泻火是石膏等寒凉药的方向。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 105
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-005",
+    "node_ids": [
+      "chen-pi",
+      "spleen",
+      "lung",
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "陈皮的核心功效是？",
+    "options": [
+      "清热泻火、除烦止渴",
+      "理气健脾、燥湿化痰",
+      "泻热通便、凉血止血",
+      "养心补肝、宁心安神"
+    ],
+    "answer": 1,
+    "why": "陈皮性温，味辛苦，归脾、肺经，核心功效为理气健脾、燥湿化痰。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 106
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-006",
+    "node_ids": [
+      "shi-gao",
+      "lung",
+      "stomach"
+    ],
+    "type": "single_choice",
+    "stem": "石膏的要药标签最准确的是？",
+    "options": [
+      "风寒感冒要药",
+      "回阳救逆第一药",
+      "气分实热证与肺热咳喘要药",
+      "积滞便秘要药"
+    ],
+    "answer": 2,
+    "why": "石膏清热泻火、除烦止渴，为气分实热证要药，也常用于肺热咳喘。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 239
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-007",
+    "node_ids": [
+      "bai-zhu",
+      "spleen",
+      "qi"
+    ],
+    "type": "multiple_choice",
+    "stem": "白术的核心功效包括（多选）：",
+    "options": [
+      "健脾益气",
+      "燥湿利水",
+      "止汗",
+      "安胎",
+      "攻下热结"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "白术健脾益气、燥湿利水、止汗、安胎。攻下热结属于大黄、大承气汤方向。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 802
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-008",
+    "node_ids": [
+      "da-huang",
+      "large-intestine",
+      "stomach"
+    ],
+    "type": "single_choice",
+    "stem": "大黄作为「积滞便秘要药」最核心的功效是？",
+    "options": [
+      "泻热通便",
+      "温经通脉",
+      "养心安神",
+      "理气健脾"
+    ],
+    "answer": 0,
+    "why": "大黄苦寒，归脾、胃、大肠等经，核心功效之一是泻热通便，为积滞便秘要药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 817
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-009",
+    "node_ids": [
+      "suan-zao-ren",
+      "heart",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "酸枣仁最适合记作哪类要药？",
+    "options": [
+      "补中益气要药",
+      "养心安神要药",
+      "肺热咳喘要药",
+      "风寒感冒要药"
+    ],
+    "answer": 1,
+    "why": "酸枣仁养心补肝、宁心安神，兼敛汗、生津，是养心安神要药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 110
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-010",
+    "node_ids": [
+      "rou-gui",
+      "chen-pi",
+      "shi-gao",
+      "bai-zhu",
+      "da-huang",
+      "suan-zao-ren"
+    ],
+    "type": "match",
+    "stem": "中药与核心功效对应（连线）：",
+    "options": {
+      "left": [
+        "肉桂",
+        "陈皮",
+        "石膏",
+        "白术",
+        "大黄",
+        "酸枣仁"
+      ],
+      "right": [
+        "养心补肝、宁心安神",
+        "清热泻火、除烦止渴",
+        "泻热通便",
+        "理气健脾、燥湿化痰",
+        "健脾益气、燥湿利水",
+        "补火助阳、散寒止痛"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        0
+      ]
+    ],
+    "why": "肉桂温补助阳；陈皮理气化痰；石膏清热泻火；白术健脾燥湿；大黄泻热通便；酸枣仁养心安神。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 105
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-011",
+    "node_ids": [
+      "jin-yin-hua",
+      "lian-qiao",
+      "lung",
+      "heart"
+    ],
+    "type": "match",
+    "stem": "金银花、连翘与功效标签对应（连线）：",
+    "options": {
+      "left": [
+        "金银花",
+        "连翘"
+      ],
+      "right": [
+        "疮家圣药、防瘟要药",
+        "清热解毒、疏散风热"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "why": "金银花清热解毒、疏散风热；连翘清热解毒、消痈散结、疏风散热，常记为疮家圣药、防瘟要药。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 785
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-012",
+    "node_ids": [
+      "ren-shen",
+      "qi",
+      "spleen",
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "人参最核心的功效是？",
+    "options": [
+      "大补元气、复脉固脱",
+      "泻热通便",
+      "清利湿热、利胆退黄",
+      "活血行气、祛风止痛"
+    ],
+    "answer": 0,
+    "why": "人参为拯危救脱要药，核心是大补元气、复脉固脱，并能补脾益肺、益气生津。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 739
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-013",
+    "node_ids": [
+      "dang-gui",
+      "blood",
+      "liver",
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "当归的核心功效组合是？",
+    "options": [
+      "补血活血、调经止痛、润肠通便",
+      "燥湿化痰、降逆止呕、消痞散结",
+      "利水渗湿、健脾、宁心",
+      "清热解毒、疏散风热"
+    ],
+    "answer": 0,
+    "why": "当归补血活血、调经止痛、润肠通便，是妇科调经止痛要药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 108
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-014",
+    "node_ids": [
+      "chuan-xiong",
+      "qi",
+      "blood",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "川芎被称为「血中之气药」，主要因为它擅长什么？",
+    "options": [
+      "活血行气、祛风止痛",
+      "补火助阳、引火归原",
+      "健脾益气、燥湿利水",
+      "养心补肝、宁心安神"
+    ],
+    "answer": 0,
+    "why": "川芎活血行气、祛风止痛，既入血分又能行气，故有血中之气药之称。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 107
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-015",
+    "node_ids": [
+      "ban-xia",
+      "chen-pi",
+      "fu-ling",
+      "lung",
+      "spleen"
+    ],
+    "type": "multiple_choice",
+    "stem": "半夏的核心功效包括（多选）：",
+    "options": [
+      "燥湿化痰",
+      "降逆止呕",
+      "消痞散结",
+      "补血调经",
+      "清热凉血"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "why": "半夏燥湿化痰、降逆止呕、消痞散结，是湿痰寒痰要药和止呕要药。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 702
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-016",
+    "node_ids": [
+      "fu-ling",
+      "spleen",
+      "kidney",
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "茯苓的要药标签最准确的是？",
+    "options": [
+      "利水消肿要药",
+      "少阳病要药",
+      "肺热咳喘要药",
+      "风寒感冒要药"
+    ],
+    "answer": 0,
+    "why": "茯苓利水渗湿、健脾、宁心，为利水消肿要药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 665
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-017",
+    "node_ids": [
+      "yin-chen",
+      "da-huang",
+      "liver",
+      "gallbladder"
+    ],
+    "type": "single_choice",
+    "stem": "治疗黄疸要药是？",
+    "options": [
+      "茵陈",
+      "酸枣仁",
+      "肉桂",
+      "陈皮"
+    ],
+    "answer": 0,
+    "why": "茵陈清利湿热、利胆退黄，是治疗黄疸要药，并为茵陈蒿汤君药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 234
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-herbs-018",
+    "node_ids": [
+      "jin-yin-hua",
+      "lian-qiao",
+      "ren-shen",
+      "dang-gui",
+      "chuan-xiong",
+      "ban-xia",
+      "fu-ling",
+      "yin-chen"
+    ],
+    "type": "match",
+    "stem": "第二批高频中药与核心功效对应（连线）：",
+    "options": {
+      "left": [
+        "金银花",
+        "连翘",
+        "人参",
+        "当归",
+        "川芎",
+        "半夏",
+        "茯苓",
+        "茵陈"
+      ],
+      "right": [
+        "大补元气、复脉固脱",
+        "补血活血、调经止痛",
+        "利水渗湿、健脾宁心",
+        "清利湿热、利胆退黄",
+        "清热解毒、疏散风热",
+        "消痈散结、疏风散热",
+        "活血行气、祛风止痛",
+        "燥湿化痰、降逆止呕"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        3
+      ]
+    ],
+    "why": "这组对应覆盖 docx 中高频药物：金银花清热解毒疏风热；连翘消痈散结；人参大补元气；当归补血活血；川芎活血行气止痛；半夏燥湿化痰止呕；茯苓利水健脾；茵陈退黄。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 671
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-che-qian-zi-001",
+    "node_ids": [
+      "che-qian-zi"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不是车前子的核心功效？",
+    "options": [
+      "清热利尿通淋",
+      "渗湿止泻",
+      "明目",
+      "祛痰",
+      "回阳救逆"
+    ],
+    "answer": 4,
+    "why": "车前子功效为清热利尿通淋、渗湿止泻、明目、祛痰；回阳救逆属于附子等温里回阳药的方向，不是车前子功效。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 101
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qing-hao-001",
+    "node_ids": [
+      "qing-hao"
+    ],
+    "type": "single_choice",
+    "stem": "被列为「截疟要药」的是？",
+    "options": [
+      "金银花",
+      "青蒿",
+      "连翘",
+      "石膏",
+      "茵陈"
+    ],
+    "answer": 1,
+    "why": "青蒿清虚热、除骨蒸、解暑热、截疟、退黄，节点中明确标为截疟要药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 102
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-chuan-bei-mu-001",
+    "node_ids": [
+      "chuan-bei-mu"
+    ],
+    "type": "single_choice",
+    "stem": "川贝母偏长于治疗哪类咳嗽？",
+    "options": [
+      "肺热燥咳及阴虚劳嗽",
+      "寒饮伏肺咳喘",
+      "风寒表实咳喘",
+      "痰湿壅肺呕恶",
+      "肾不纳气喘促"
+    ],
+    "answer": 0,
+    "why": "川贝母药性凉润，功效清热化痰、润肺止咳，偏治肺热燥咳及阴虚劳嗽。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 103
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-ku-xing-ren-001",
+    "node_ids": [
+      "ku-xing-ren"
+    ],
+    "type": "single_choice",
+    "stem": "苦杏仁除降气止咳平喘外，还能？",
+    "options": [
+      "润肠通便",
+      "清心除烦",
+      "温经止血",
+      "补肝肾",
+      "截疟退黄"
+    ],
+    "answer": 0,
+    "why": "苦杏仁主入肺、大肠经，功效为降气止咳平喘、润肠通便。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 104
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-dan-shen-001",
+    "node_ids": [
+      "dan-shen"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不是丹参的核心功效？",
+    "options": [
+      "活血祛瘀",
+      "通经止痛",
+      "清心除烦",
+      "温经止血",
+      "养血安神"
+    ],
+    "answer": 3,
+    "why": "丹参功效为活血祛瘀、通经止痛、清心除烦、凉血消痈、养血安神；温经止血是艾叶等药的方向。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 225
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-du-huo-001",
+    "node_ids": [
+      "du-huo"
+    ],
+    "type": "single_choice",
+    "stem": "独活尤善治疗的痹痛部位是？",
+    "options": [
+      "头面部",
+      "下半身腰腿",
+      "胸胁部",
+      "咽喉部",
+      "手指末端"
+    ],
+    "answer": 1,
+    "why": "独活祛风除湿、通痹止痛，尤善下行，常用于下半身痹痛、腰腿疼痛。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 193
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-mai-dong-001",
+    "node_ids": [
+      "mai-dong"
+    ],
+    "type": "single_choice",
+    "stem": "麦冬的核心功效是？",
+    "options": [
+      "润肺清心、养阴生津",
+      "祛风除湿、通痹止痛",
+      "化瘀止血、活血定痛",
+      "温经止血、散寒止痛",
+      "清热利尿通淋、祛痰"
+    ],
+    "answer": 0,
+    "why": "麦冬润肺清心、养阴生津，主治肺燥干咳、心烦失眠、胃燥干渴。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 236
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-ai-ye-001",
+    "node_ids": [
+      "ai-ye"
+    ],
+    "type": "single_choice",
+    "stem": "胎漏下血兼手足不温，常提示可选用哪味药？",
+    "options": [
+      "青蒿",
+      "艾叶",
+      "车前子",
+      "川贝母",
+      "丹参"
+    ],
+    "answer": 1,
+    "why": "艾叶温经止血、散寒止痛，可用于虚寒性出血，节点中特别提到胎漏下血、手足不温。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 218
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-san-qi-001",
+    "node_ids": [
+      "san-qi"
+    ],
+    "type": "single_choice",
+    "stem": "「止血不留瘀，化瘀不伤正」最符合哪味药？",
+    "options": [
+      "三七",
+      "丹参",
+      "艾叶",
+      "杜仲",
+      "独活"
+    ],
+    "answer": 0,
+    "why": "三七化瘀止血、活血定痛，为内外伤出血首选、伤科要药，特点是止血不留瘀、化瘀不伤正。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 226
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-du-zhong-001",
+    "node_ids": [
+      "du-zhong"
+    ],
+    "type": "single_choice",
+    "stem": "被列为「腰部引经药」的是？",
+    "options": [
+      "杜仲",
+      "独活",
+      "川芎",
+      "柴胡",
+      "黄芪"
+    ],
+    "answer": 0,
+    "why": "杜仲补肝肾、强筋骨、安胎，节点中明确标注为腰部引经药。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 164
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

@@ -1,0 +1,533 @@
+[
+  {
+    "id": "q-formula-001",
+    "node_ids": [
+      "ma-huang-tang",
+      "ma-huang",
+      "wind-evil",
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "麻黄汤的组成是？",
+    "options": [
+      "麻黄、桂枝、杏仁、炙甘草",
+      "柴胡、黄芩、人参、半夏、生姜、大枣、炙甘草",
+      "大黄、厚朴、枳实、芒硝",
+      "白术、黄芪、酸枣仁、当归"
+    ],
+    "answer": 0,
+    "why": "麻黄汤组成是麻黄、桂枝、杏仁、炙甘草，功效发汗解表、宣肺平喘。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 240
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-002",
+    "node_ids": [
+      "xiao-chai-hu-tang",
+      "chai-hu",
+      "gallbladder"
+    ],
+    "type": "single_choice",
+    "stem": "小柴胡汤的核心功效是？",
+    "options": [
+      "峻下热结",
+      "和解少阳",
+      "益气补血、健脾宁心",
+      "发汗解表、宣肺平喘"
+    ],
+    "answer": 1,
+    "why": "小柴胡汤以柴胡为君，功效和解少阳，主治伤寒少阳证等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 624
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-003",
+    "node_ids": [
+      "gui-pi-tang",
+      "huang-qi",
+      "bai-zhu",
+      "suan-zao-ren",
+      "heart",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "归脾汤主治最典型的是？",
+    "options": [
+      "心脾气血两虚证与脾不统血证",
+      "外感风寒表实证",
+      "阳明腑实证",
+      "少阳证"
+    ],
+    "answer": 0,
+    "why": "归脾汤益气补血、健脾宁心，常用于心脾气血两虚证及脾不统血证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 241
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-004",
+    "node_ids": [
+      "da-cheng-qi-tang",
+      "da-huang",
+      "stomach",
+      "large-intestine"
+    ],
+    "type": "single_choice",
+    "stem": "大承气汤的功效是？",
+    "options": [
+      "发汗解表",
+      "和解少阳",
+      "峻下热结",
+      "温中祛寒"
+    ],
+    "answer": 2,
+    "why": "大承气汤由大黄、厚朴、枳实、芒硝组成，功效峻下热结，主治阳明腑实证等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 560
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-005",
+    "node_ids": [
+      "ma-huang-tang",
+      "xiao-chai-hu-tang",
+      "gui-pi-tang",
+      "da-cheng-qi-tang"
+    ],
+    "type": "match",
+    "stem": "方剂与功效对应（连线）：",
+    "options": {
+      "left": [
+        "麻黄汤",
+        "小柴胡汤",
+        "归脾汤",
+        "大承气汤"
+      ],
+      "right": [
+        "和解少阳",
+        "峻下热结",
+        "发汗解表、宣肺平喘",
+        "益气补血、健脾宁心"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "why": "麻黄汤发汗解表、宣肺平喘；小柴胡汤和解少阳；归脾汤益气补血、健脾宁心；大承气汤峻下热结。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 240
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-006",
+    "node_ids": [
+      "yin-chen-hao-tang",
+      "da-huang",
+      "liver",
+      "gallbladder"
+    ],
+    "type": "single_choice",
+    "stem": "茵陈蒿汤的组成是？",
+    "options": [
+      "茵陈、栀子、大黄",
+      "猪苓、泽泻、白术、茯苓、桂枝",
+      "香附、川芎、苍术、神曲、栀子",
+      "人参、干姜、白术、炙甘草"
+    ],
+    "answer": 0,
+    "why": "茵陈蒿汤组成是茵陈、栀子、大黄，主治湿热黄疸热重于湿。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 75
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-007",
+    "node_ids": [
+      "bu-yang-huan-wu-tang",
+      "huang-qi",
+      "qi",
+      "blood"
+    ],
+    "type": "single_choice",
+    "stem": "中风恢复期和后遗症期气虚血瘀，首选方是？",
+    "options": [
+      "补阳还五汤",
+      "大承气汤",
+      "麻黄汤",
+      "龙胆泻肝汤"
+    ],
+    "answer": 0,
+    "why": "docx 明确记载：中风恢复期和后遗症期，气虚血瘀治疗首选补阳还五汤。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 69
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-008",
+    "node_ids": [
+      "si-wu-tang",
+      "blood"
+    ],
+    "type": "single_choice",
+    "stem": "四物汤的组成是？",
+    "options": [
+      "熟地黄、当归、白芍、川芎",
+      "半夏、橘红、茯苓、炙甘草、生姜、乌梅",
+      "大黄、厚朴、枳实、芒硝",
+      "柴胡、黄芩、人参、半夏、生姜、大枣、炙甘草"
+    ],
+    "answer": 0,
+    "why": "四物汤组成是熟地黄、当归、白芍、川芎，是补血调血基础方。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 100
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-009",
+    "node_ids": [
+      "er-chen-tang",
+      "chen-pi",
+      "lung",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "湿痰阻肺常用哪首方？",
+    "options": [
+      "二陈汤",
+      "五苓散",
+      "归脾汤",
+      "越鞠丸"
+    ],
+    "answer": 0,
+    "why": "docx 中「湿痰阻肺用什么药」对应二陈汤，组成包括半夏、橘红、茯苓、炙甘草、生姜、乌梅。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 257
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-010",
+    "node_ids": [
+      "wu-ling-san",
+      "bai-zhu",
+      "bladder",
+      "body-fluids"
+    ],
+    "type": "single_choice",
+    "stem": "五苓散的功效是？",
+    "options": [
+      "利水渗湿，温阳化气",
+      "清泻肝胆实火，清利肝胆湿热",
+      "发汗解表，宣肺平喘",
+      "益气补血，健脾宁心"
+    ],
+    "answer": 0,
+    "why": "五苓散利水渗湿、温阳化气，常用于水湿内停、膀胱气化不利等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 484
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-011",
+    "node_ids": [
+      "li-zhong-wan",
+      "bai-zhu",
+      "spleen",
+      "stomach"
+    ],
+    "type": "single_choice",
+    "stem": "理中丸的君药是？",
+    "options": [
+      "干姜",
+      "大黄",
+      "柴胡",
+      "黄芪"
+    ],
+    "answer": 0,
+    "why": "docx 明确考点：理中丸的君药是干姜。理中丸温中祛寒、补气健脾。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 485
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-012",
+    "node_ids": [
+      "long-dan-xie-gan-tang",
+      "liver",
+      "gallbladder",
+      "chai-hu"
+    ],
+    "type": "single_choice",
+    "stem": "龙胆泻肝汤的功效是？",
+    "options": [
+      "清泻肝胆实火，清利肝胆湿热",
+      "峻下热结",
+      "和解少阳",
+      "补气活血通络"
+    ],
+    "answer": 0,
+    "why": "龙胆泻肝汤清泻肝胆实火、清利肝胆湿热。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 487
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-013",
+    "node_ids": [
+      "yue-ju-wan",
+      "qi",
+      "blood"
+    ],
+    "type": "single_choice",
+    "stem": "越鞠丸的组成是？",
+    "options": [
+      "香附、川芎、苍术、神曲、栀子",
+      "茵陈、栀子、大黄",
+      "猪苓、泽泻、白术、茯苓、桂枝",
+      "人参、干姜、白术、炙甘草"
+    ],
+    "answer": 0,
+    "why": "越鞠丸组成是香附、川芎、苍术、神曲、栀子，用于六郁证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 483
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-formula-014",
+    "node_ids": [
+      "yin-chen-hao-tang",
+      "bu-yang-huan-wu-tang",
+      "si-wu-tang",
+      "er-chen-tang",
+      "wu-ling-san",
+      "li-zhong-wan",
+      "long-dan-xie-gan-tang",
+      "yue-ju-wan"
+    ],
+    "type": "match",
+    "stem": "方剂与核心考点对应（连线）：",
+    "options": {
+      "left": [
+        "茵陈蒿汤",
+        "补阳还五汤",
+        "四物汤",
+        "二陈汤",
+        "五苓散",
+        "理中丸",
+        "龙胆泻肝汤",
+        "越鞠丸"
+      ],
+      "right": [
+        "理中君药干姜",
+        "湿热黄疸热重于湿",
+        "湿痰阻肺",
+        "行气解郁治六郁",
+        "补气活血通络",
+        "清泻肝胆实火湿热",
+        "补血调血",
+        "利水渗湿温阳化气"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        3
+      ]
+    ],
+    "why": "这组题覆盖 docx 中分散出现的方剂考点：茵陈蒿汤治湿热黄疸，补阳还五汤治中风气虚血瘀，四物汤补血调血，二陈汤治湿痰，五苓散利水，理中丸君药干姜，龙胆泻肝汤清泻肝胆，越鞠丸治六郁。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 483
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-xue-fu-zhu-yu-tang-001",
+    "node_ids": [
+      "xue-fu-zhu-yu-tang"
+    ],
+    "type": "single_choice",
+    "stem": "胸中血瘀证治疗首选方是？",
+    "options": [
+      "血府逐瘀汤",
+      "生脉散",
+      "川芎茶调散",
+      "五苓散",
+      "归脾汤"
+    ],
+    "answer": 0,
+    "why": "血府逐瘀汤活血祛瘀、行气止痛，主治胸中血瘀证，是胸中血瘀治疗首选方。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 98
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-chuan-xiong-cha-tiao-san-001",
+    "node_ids": [
+      "chuan-xiong-cha-tiao-san"
+    ],
+    "type": "single_choice",
+    "stem": "川芎茶调散主治的是？",
+    "options": [
+      "外感风邪头痛",
+      "胸中血瘀胸痛",
+      "气阴两伤汗出",
+      "湿热黄疸",
+      "脾阳虚水肿"
+    ],
+    "answer": 0,
+    "why": "川芎茶调散疏风止痛，主治外感风邪头痛，症见偏正头痛或巅顶疼痛、恶寒发热等。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 99
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-sheng-mai-san-001",
+    "node_ids": [
+      "sheng-mai-san",
+      "ren-shen",
+      "mai-dong"
+    ],
+    "type": "single_choice",
+    "stem": "生脉散的组成是？",
+    "options": [
+      "人参、麦冬、五味子",
+      "桃仁、红花、川芎",
+      "川芎、荆芥、白芷",
+      "茵陈、栀子、大黄",
+      "附子、干姜、甘草"
+    ],
+    "answer": 0,
+    "why": "生脉散由人参、麦冬、五味子组成，功效为益气生津、敛阴止汗。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 102
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

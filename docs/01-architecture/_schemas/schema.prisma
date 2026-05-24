@@ -121,7 +121,7 @@ model UserNodeProgress {
 }
 
 // 每次答题的原子记录
-// question_id 引用 content/questions.json 中的题目 id
+// question_id 引用 content/questions/*.json 中的题目 id
 model UserQuestionAttempt {
   id          String   @id @default(cuid())
   userId      String

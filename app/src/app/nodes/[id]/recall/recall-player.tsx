@@ -13,6 +13,7 @@ import {
 } from "./actions";
 import { TOKENS_A } from "@/design/tokens";
 import { StatusBar } from "@/components/status-bar";
+import { nodeHref } from "@/lib/content/links";
 
 type Stage = "intro" | "active" | "result";
 
@@ -193,7 +194,7 @@ function Intro({
           开始
         </button>
         <Link
-          href={`/nodes/${nodeId}`}
+          href={nodeHref(nodeId)}
           style={{
             fontSize: 12,
             color: TOKENS_A.ink3,
@@ -292,7 +293,7 @@ function Active({
         </div>
         <div className="flex items-center gap-4">
           <Link
-            href={`/nodes/${nodeId}`}
+            href={nodeHref(nodeId)}
             style={{
               fontSize: 12,
               color: TOKENS_A.ink3,
@@ -520,7 +521,7 @@ function Result({
               再来一次
             </button>
             <Link
-              href={`/nodes/${nodeId}`}
+              href={nodeHref(nodeId)}
               className="px-4 py-2.5"
               style={{
                 background: TOKENS_A.ink,

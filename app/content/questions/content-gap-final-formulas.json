@@ -1,0 +1,643 @@
+[
+  {
+    "id": "q-gap-final-formulas-001",
+    "node_ids": [
+      "palpitation",
+      "an-shen-ding-zhi-wan"
+    ],
+    "type": "single_choice",
+    "stem": "心虚胆怯型心悸最常用的代表方是？",
+    "options": [
+      "安神定志丸",
+      "天王补心丹",
+      "桂枝甘草龙骨牡蛎汤",
+      "黄连温胆汤"
+    ],
+    "answer": 0,
+    "why": "心虚胆怯的代表方是安神定志丸。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-002",
+    "node_ids": [
+      "palpitation",
+      "tian-wang-bu-xin-dan"
+    ],
+    "type": "single_choice",
+    "stem": "阴虚火旺型心悸最常用的代表方是？",
+    "options": [
+      "归脾汤",
+      "天王补心丹",
+      "苓桂术甘汤",
+      "桃仁红花煎"
+    ],
+    "answer": 1,
+    "why": "阴虚火旺的代表方是天王补心丹。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-003",
+    "node_ids": [
+      "palpitation",
+      "gui-zhi-gan-cao-long-gu-mu-li-tang"
+    ],
+    "type": "single_choice",
+    "stem": "心阳不振型心悸最常用的代表方是？",
+    "options": [
+      "桂枝甘草龙骨牡蛎汤",
+      "黄连温胆汤",
+      "安神定志丸",
+      "茵陈五苓散"
+    ],
+    "answer": 0,
+    "why": "心阳不振的代表方是桂枝甘草龙骨牡蛎汤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-004",
+    "node_ids": [
+      "palpitation",
+      "ling-gui-zhu-gan-tang"
+    ],
+    "type": "single_choice",
+    "stem": "水饮凌心型心悸最常用的代表方是？",
+    "options": [
+      "苓桂术甘汤",
+      "大柴胡汤",
+      "五味消毒饮",
+      "甘露消毒丹"
+    ],
+    "answer": 0,
+    "why": "水饮凌心的代表方是苓桂术甘汤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-005",
+    "node_ids": [
+      "palpitation",
+      "tao-ren-hong-hua-jian"
+    ],
+    "type": "single_choice",
+    "stem": "心血瘀阻型心悸最常用的代表方是？",
+    "options": [
+      "桃仁红花煎",
+      "安神定志丸",
+      "疏凿饮子",
+      "五苓散"
+    ],
+    "answer": 0,
+    "why": "心血瘀阻的代表方是桃仁红花煎。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-006",
+    "node_ids": [
+      "palpitation",
+      "huang-lian-wen-dan-tang"
+    ],
+    "type": "single_choice",
+    "stem": "痰火扰心型心悸最常用的代表方是？",
+    "options": [
+      "黄连温胆汤",
+      "天王补心丹",
+      "归脾汤",
+      "茵陈蒿汤"
+    ],
+    "answer": 0,
+    "why": "痰火扰心的代表方是黄连温胆汤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-007",
+    "node_ids": [
+      "palpitation",
+      "gui-pi-tang"
+    ],
+    "type": "single_choice",
+    "stem": "心血不足型心悸最常用的代表方是？",
+    "options": [
+      "归脾汤",
+      "安神定志丸",
+      "大柴胡汤",
+      "五味消毒饮"
+    ],
+    "answer": 0,
+    "why": "心血不足的代表方是归脾汤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-008",
+    "node_ids": [
+      "jaundice",
+      "ma-huang-lian-qiao-chi-xiao-dou-tang"
+    ],
+    "type": "single_choice",
+    "stem": "阳黄湿热兼表型最常用的代表方是？",
+    "options": [
+      "麻黄连翘赤小豆汤",
+      "茵陈蒿汤",
+      "茵陈五苓散",
+      "大柴胡汤"
+    ],
+    "answer": 0,
+    "why": "阳黄湿热兼表常用麻黄连翘赤小豆汤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-009",
+    "node_ids": [
+      "jaundice",
+      "gan-lu-xiao-du-dan"
+    ],
+    "type": "single_choice",
+    "stem": "阳黄湿热兼表型另一常用代表方是？",
+    "options": [
+      "甘露消毒丹",
+      "五味消毒饮",
+      "桂枝甘草龙骨牡蛎汤",
+      "苓桂术甘汤"
+    ],
+    "answer": 0,
+    "why": "阳黄湿热兼表常用甘露消毒丹。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-010",
+    "node_ids": [
+      "jaundice",
+      "yin-chen-hao-tang"
+    ],
+    "type": "single_choice",
+    "stem": "阳黄热重于湿型最常用的代表方是？",
+    "options": [
+      "茵陈蒿汤",
+      "茵陈五苓散",
+      "大柴胡汤",
+      "疏凿饮子"
+    ],
+    "answer": 0,
+    "why": "阳黄热重于湿的代表方是茵陈蒿汤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-011",
+    "node_ids": [
+      "jaundice",
+      "yin-chen-wu-ling-san"
+    ],
+    "type": "single_choice",
+    "stem": "阳黄湿重于热型最常用的代表方是？",
+    "options": [
+      "茵陈五苓散",
+      "甘露消毒丹",
+      "黄连温胆汤",
+      "安神定志丸"
+    ],
+    "answer": 0,
+    "why": "阳黄湿重于热的代表方是茵陈五苓散。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-012",
+    "node_ids": [
+      "jaundice",
+      "da-chai-hu-tang"
+    ],
+    "type": "single_choice",
+    "stem": "阳黄胆腑郁热型最常用的代表方是？",
+    "options": [
+      "大柴胡汤",
+      "五味消毒饮",
+      "桂枝甘草龙骨牡蛎汤",
+      "苓桂术甘汤"
+    ],
+    "answer": 0,
+    "why": "阳黄胆腑郁热的代表方是大柴胡汤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-013",
+    "node_ids": [
+      "edema",
+      "ma-huang-lian-qiao-chi-xiao-dou-tang"
+    ],
+    "type": "single_choice",
+    "stem": "阳水湿毒浸淫型最常用的代表方是？",
+    "options": [
+      "麻黄连翘赤小豆汤",
+      "疏凿饮子",
+      "真武汤",
+      "实脾饮"
+    ],
+    "answer": 0,
+    "why": "阳水湿毒浸淫常用麻黄连翘赤小豆汤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 18
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-014",
+    "node_ids": [
+      "edema",
+      "wu-wei-xiao-du-yin"
+    ],
+    "type": "single_choice",
+    "stem": "阳水湿毒浸淫型另一常用代表方是？",
+    "options": [
+      "五味消毒饮",
+      "甘露消毒丹",
+      "茵陈蒿汤",
+      "大柴胡汤"
+    ],
+    "answer": 0,
+    "why": "阳水湿毒浸淫常用五味消毒饮。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 18
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-015",
+    "node_ids": [
+      "edema",
+      "wind-evil",
+      "ma-huang-lian-qiao-chi-xiao-dou-tang"
+    ],
+    "type": "single_choice",
+    "stem": "阳水风水泛滥型最常用的代表方是？",
+    "options": [
+      "越婢加术汤",
+      "五苓散",
+      "疏凿饮子",
+      "实脾饮"
+    ],
+    "answer": 0,
+    "why": "阳水风水泛滥的代表方是越婢加术汤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 18
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-016",
+    "node_ids": [
+      "edema",
+      "wu-ling-san"
+    ],
+    "type": "single_choice",
+    "stem": "阳水水湿浸渍型最常用的代表方是？",
+    "options": [
+      "五苓散",
+      "真武汤",
+      "实脾饮",
+      "桂枝甘草龙骨牡蛎汤"
+    ],
+    "answer": 0,
+    "why": "阳水水湿浸渍的代表方是五苓散，题目关联茵陈五苓散以便联想黄疸湿重于热。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 18
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-017",
+    "node_ids": [
+      "edema",
+      "shu-zao-yin-zi"
+    ],
+    "type": "single_choice",
+    "stem": "阳水湿热壅盛型最常用的代表方是？",
+    "options": [
+      "疏凿饮子",
+      "五味消毒饮",
+      "麻黄连翘赤小豆汤",
+      "茵陈五苓散"
+    ],
+    "answer": 0,
+    "why": "阳水湿热壅盛的代表方是疏凿饮子。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 18
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-018",
+    "node_ids": [
+      "palpitation",
+      "an-shen-ding-zhi-wan",
+      "tian-wang-bu-xin-dan"
+    ],
+    "type": "match",
+    "stem": "请将心悸证型与代表方配对。",
+    "options": {
+      "left": [
+        "心虚胆怯",
+        "阴虚火旺"
+      ],
+      "right": [
+        "安神定志丸",
+        "天王补心丹"
+      ]
+    },
+    "answer": [
+      [0, 0],
+      [1, 1]
+    ],
+    "why": "心虚胆怯对应安神定志丸，阴虚火旺对应天王补心丹。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-019",
+    "node_ids": [
+      "palpitation",
+      "gui-zhi-gan-cao-long-gu-mu-li-tang",
+      "ling-gui-zhu-gan-tang"
+    ],
+    "type": "match",
+    "stem": "请将心悸证型与代表方配对。",
+    "options": {
+      "left": [
+        "心阳不振",
+        "水饮凌心"
+      ],
+      "right": [
+        "桂枝甘草龙骨牡蛎汤",
+        "苓桂术甘汤"
+      ]
+    },
+    "answer": [
+      [0, 0],
+      [1, 1]
+    ],
+    "why": "心阳不振对应桂枝甘草龙骨牡蛎汤，水饮凌心对应苓桂术甘汤。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-020",
+    "node_ids": [
+      "palpitation",
+      "tao-ren-hong-hua-jian",
+      "huang-lian-wen-dan-tang"
+    ],
+    "type": "match",
+    "stem": "请将心悸证型与代表方配对。",
+    "options": {
+      "left": [
+        "心血瘀阻",
+        "痰火扰心"
+      ],
+      "right": [
+        "桃仁红花煎",
+        "黄连温胆汤"
+      ]
+    },
+    "answer": [
+      [0, 0],
+      [1, 1]
+    ],
+    "why": "心血瘀阻对应桃仁红花煎，痰火扰心对应黄连温胆汤。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 16
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-021",
+    "node_ids": [
+      "jaundice",
+      "gan-lu-xiao-du-dan",
+      "ma-huang-lian-qiao-chi-xiao-dou-tang"
+    ],
+    "type": "match",
+    "stem": "请将阳黄湿热兼表相关代表方配对。",
+    "options": {
+      "left": [
+        "湿热兼表",
+        "湿热兼表之表证偏重"
+      ],
+      "right": [
+        "甘露消毒丹",
+        "麻黄连翘赤小豆汤"
+      ]
+    },
+    "answer": [
+      [0, 0],
+      [1, 1]
+    ],
+    "why": "阳黄湿热兼表常见甘露消毒丹与麻黄连翘赤小豆汤。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-022",
+    "node_ids": [
+      "jaundice",
+      "yin-chen-hao-tang",
+      "yin-chen-wu-ling-san"
+    ],
+    "type": "match",
+    "stem": "请将阳黄热偏盛与湿偏盛的代表方配对。",
+    "options": {
+      "left": [
+        "热重于湿",
+        "湿重于热"
+      ],
+      "right": [
+        "茵陈蒿汤",
+        "茵陈五苓散"
+      ]
+    },
+    "answer": [
+      [0, 0],
+      [1, 1]
+    ],
+    "why": "热重于湿对应茵陈蒿汤，湿重于热对应茵陈五苓散。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-023",
+    "node_ids": [
+      "jaundice",
+      "da-chai-hu-tang"
+    ],
+    "type": "single_choice",
+    "stem": "大柴胡汤对应的黄疸证机最准确的是？",
+    "options": [
+      "胆腑郁热",
+      "寒湿内困",
+      "脾虚湿郁",
+      "瘀血内阻"
+    ],
+    "answer": 0,
+    "why": "大柴胡汤对应阳黄中的胆腑郁热。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-formulas-024",
+    "node_ids": [
+      "edema",
+      "shu-zao-yin-zi"
+    ],
+    "type": "single_choice",
+    "stem": "疏凿饮子最对应的水肿证机是？",
+    "options": [
+      "湿热壅盛",
+      "脾阳不振",
+      "肾阳衰微",
+      "瘀水互结"
+    ],
+    "answer": 0,
+    "why": "疏凿饮子用于阳水湿热壅盛。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 18
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

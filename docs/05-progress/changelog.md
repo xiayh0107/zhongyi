@@ -37,6 +37,20 @@ supersedes: []
 
 ## 2026
 
+### 2026-05-23（上线 · 生产部署）
+
+#### 🚀 release · zhongyi.xiayh17.top 上线
+
+- 生产域名：`https://zhongyi.xiayh17.top`
+- 服务器：`47.120.23.41`（Ubuntu 24.04.4 LTS）
+- 运行方式：nginx + systemd + Next.js `next start`
+- 数据库：SQLite `/var/lib/zhongyi/prod.db`
+- HTTPS：Let's Encrypt，自动续期 timer 已启用
+- 邮件：Resend 生产发信已接入
+- 登录邮件 callback 已修复：新邮件验证成功后跳首页 `/`
+
+详见 [`deployment-status.md`](deployment-status.md)。
+
 ### 2026-05-23（第十批 · M3 全部完成 = MVP 可发布）
 
 #### ✨ feature · M3 知识地图 + 白纸召回 + 内容到 30/250

@@ -1,0 +1,477 @@
+[
+  {
+    "id": "q-gap-acu-proc-001",
+    "node_ids": [
+      "shen-men"
+    ],
+    "type": "single_choice",
+    "stem": "神门穴归哪一经？",
+    "options": [
+      "手太阴肺经",
+      "手少阴心经",
+      "足太阴脾经",
+      "足厥阴肝经"
+    ],
+    "answer": 1,
+    "why": "神门穴归手少阴心经。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 539
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-002",
+    "node_ids": [
+      "shen-men"
+    ],
+    "type": "single_choice",
+    "stem": "神门穴定位是？",
+    "options": [
+      "腕前内侧，腕掌侧远端横纹尺侧端，尺侧腕屈肌腱的桡侧缘",
+      "腕掌侧远端横纹上 2 寸，掌长肌腱与桡侧腕屈肌腱之间",
+      "小腿内侧，内踝尖上 3 寸，胫骨内侧缘后际",
+      "下腹部，脐中下 3 寸，前正中线上"
+    ],
+    "answer": 0,
+    "why": "神门定位在腕前内侧，腕掌侧远端横纹尺侧端，尺侧腕屈肌腱的桡侧缘。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 539
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-003",
+    "node_ids": [
+      "shen-men"
+    ],
+    "type": "multiple_choice",
+    "stem": "神门穴主治哪些病症（多选）？",
+    "options": [
+      "心痛",
+      "心烦",
+      "惊悸",
+      "失眠",
+      "齿痛"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "神门主治心神病症，常用于心痛、心烦、惊悸、痴呆、健忘、失眠、癫、狂、痫。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 539
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-004",
+    "node_ids": [
+      "san-yin-jiao"
+    ],
+    "type": "single_choice",
+    "stem": "三阴交穴归哪一经？",
+    "options": [
+      "足少阴肾经",
+      "足太阴脾经",
+      "足厥阴肝经",
+      "足阳明胃经"
+    ],
+    "answer": 1,
+    "why": "三阴交穴归足太阴脾经。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 543
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-005",
+    "node_ids": [
+      "san-yin-jiao"
+    ],
+    "type": "single_choice",
+    "stem": "三阴交穴定位是？",
+    "options": [
+      "小腿内侧，内踝尖上 3 寸，胫骨内侧缘后际",
+      "下腹部，脐中下 3 寸，前正中线上",
+      "腕前内侧，腕掌侧远端横纹尺侧端",
+      "手背，第 1 掌骨和第 2 掌骨之间"
+    ],
+    "answer": 0,
+    "why": "三阴交定位在小腿内侧，内踝尖上 3 寸，胫骨内侧缘后际。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 543
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-006",
+    "node_ids": [
+      "san-yin-jiao"
+    ],
+    "type": "multiple_choice",
+    "stem": "三阴交穴常用于哪些病症（多选）？",
+    "options": [
+      "月经不调",
+      "腹胀、肠鸣、泄泻",
+      "遗精、阳痿、遗尿",
+      "下肢痿痹",
+      "口眼歪斜"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "三阴交主治妇科、脾胃及肝肾相关病症，常用于月经不调、腹胀、肠鸣、泄泻、遗精、阳痿、遗尿、下肢痿痹等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 543
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-007",
+    "node_ids": [
+      "guan-yuan"
+    ],
+    "type": "single_choice",
+    "stem": "关元穴归哪一经？",
+    "options": [
+      "任脉",
+      "足太阴脾经",
+      "手少阴心经",
+      "足阳明胃经"
+    ],
+    "answer": 0,
+    "why": "关元穴归任脉。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 548
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-008",
+    "node_ids": [
+      "guan-yuan"
+    ],
+    "type": "single_choice",
+    "stem": "关元穴定位是？",
+    "options": [
+      "下腹部，脐中下 3 寸，前正中线上",
+      "下腹部，脐中上 4 寸，前正中线上",
+      "腕前内侧，腕掌侧远端横纹尺侧端",
+      "小腿外侧，犊鼻下 3 寸"
+    ],
+    "answer": 0,
+    "why": "关元定位在下腹部，脐中下 3 寸，前正中线上。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 548
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-009",
+    "node_ids": [
+      "guan-yuan"
+    ],
+    "type": "multiple_choice",
+    "stem": "关元穴主治哪些病症（多选）？",
+    "options": [
+      "疝气、少腹疼痛",
+      "癃闭、尿频",
+      "月经不调、痛经、经闭、崩漏",
+      "虚劳诸疾",
+      "耳聋、耳鸣"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "关元主治前阴、妇科及虚劳相关病症，常用于疝气、少腹疼痛、癃闭、尿频、遗精、阳痿、月经不调、痛经、经闭、崩漏、虚劳诸疾等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 548
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-010",
+    "node_ids": [
+      "needle-fainting"
+    ],
+    "type": "single_choice",
+    "stem": "发生晕针后首先应如何处理？",
+    "options": [
+      "立即继续进针",
+      "立即停止针刺",
+      "立刻拔罐",
+      "立刻艾灸"
+    ],
+    "answer": 1,
+    "why": "晕针时应立即停止针刺。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 466
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-011",
+    "node_ids": [
+      "needle-fainting"
+    ],
+    "type": "multiple_choice",
+    "stem": "晕针处理措施包括哪些（多选）？",
+    "options": [
+      "让患者平卧",
+      "轻者给予热水饮之",
+      "静卧片刻即可恢复",
+      "重者点刺或指压水沟、合谷、足三里",
+      "立即加大针刺刺激"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "晕针处理是停止针刺后让患者平卧，轻者热水饮之并静卧，重者可点刺或指压水沟、合谷、足三里等穴。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 466
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-012",
+    "node_ids": [
+      "needle-fainting"
+    ],
+    "type": "single_choice",
+    "stem": "过劳、过饥、过饱、精神过度紧张者在针刺前应怎样？",
+    "options": [
+      "优先加深进针",
+      "不宜针刺",
+      "必须行针泻法",
+      "改为拔罐即可"
+    ],
+    "answer": 1,
+    "why": "过劳、过饥、过饱、精神过度紧张者不宜针刺，以免诱发晕针。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 466
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-013",
+    "node_ids": [
+      "bone-length-measurement"
+    ],
+    "type": "single_choice",
+    "stem": "骨度分寸是指什么？",
+    "options": [
+      "按人体骨性标志折算寸数的定位方法",
+      "按经络循行顺序排序的方法",
+      "按脉象轻重判断的方法",
+      "按舌苔颜色分级的方法"
+    ],
+    "answer": 0,
+    "why": "骨度分寸是按人体骨性标志测量经穴距离的方法。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 469
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-014",
+    "node_ids": [
+      "bone-length-measurement"
+    ],
+    "type": "multiple_choice",
+    "stem": "下列哪些属于人体骨度分寸常考部位（多选）？",
+    "options": [
+      "腘横纹至外踝尖",
+      "脐中至耻骨联合",
+      "额角发际到正中线",
+      "肘横纹至腕横纹",
+      "手背第 1、2 掌骨之间"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "骨度分寸常考的部位包括腘横纹至外踝尖、脐中至耻骨联合、额角发际到正中线、肘横纹至腕横纹、肩胛骨内侧缘至后正中线等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 469
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-015",
+    "node_ids": [
+      "bone-length-measurement"
+    ],
+    "type": "multiple_choice",
+    "stem": "骨度分寸还包括哪些部位（多选）？",
+    "options": [
+      "肩胛骨内侧缘至后正中线",
+      "腘横纹至外踝尖",
+      "脐中至耻骨联合",
+      "额角发际到正中线",
+      "腕掌侧远端横纹上 2 寸"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "肩胛骨内侧缘至后正中线也属于骨度分寸常考内容。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 469
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-016",
+    "node_ids": [
+      "san-jiao"
+    ],
+    "type": "single_choice",
+    "stem": "三焦的功能概括最准确的是？",
+    "options": [
+      "主受纳腐熟",
+      "通行元气，运行水液，主持气化",
+      "贮藏和排泄胆汁",
+      "主藏血"
+    ],
+    "answer": 1,
+    "why": "三焦是水液运行的通道，通行元气并主持气化。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 827
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-017",
+    "node_ids": [
+      "san-jiao"
+    ],
+    "type": "single_choice",
+    "stem": "三焦中焦的常考表述是？",
+    "options": [
+      "如沤",
+      "如雾",
+      "如衡",
+      "如渎"
+    ],
+    "answer": 0,
+    "why": "中焦的功能可以概括为如沤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 298
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-acu-proc-018",
+    "node_ids": [
+      "san-jiao"
+    ],
+    "type": "multiple_choice",
+    "stem": "津液输布与哪些脏腑有关（多选）？",
+    "options": [
+      "脾",
+      "肺",
+      "肝",
+      "肾",
+      "三焦"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "why": "津液输布主要依靠脾、肺、肝、肾和三焦等脏腑功能的综合协调作用。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 827
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

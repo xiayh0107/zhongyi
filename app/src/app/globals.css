@@ -20,9 +20,12 @@
   --color-tier-fading:      #a06d2e;
   --color-chart-track:      #ece5d3;
 
-  --font-serif: "Noto Serif SC", "Songti SC", serif;
-  --font-sans:  "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
-  --font-mono:  "JetBrains Mono", ui-monospace, monospace;
+  --font-sans-zh:  "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+  --font-serif-zh: "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC", serif;
+  --font-mono-en:  "SFMono-Regular", "Cascadia Code", "Liberation Mono", ui-monospace, monospace;
+  --font-serif: var(--font-serif-zh);
+  --font-sans:  var(--font-sans-zh);
+  --font-mono:  var(--font-mono-en);
 }
 
 html, body {
@@ -42,4 +45,25 @@ html, body {
 }
 .wiki-link:hover {
   background: var(--color-paper);
+}
+
+.prose-zh table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 24px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.prose-zh th,
+.prose-zh td {
+  border: 1px solid var(--color-line);
+  padding: 8px 10px;
+  vertical-align: top;
+}
+
+.prose-zh th {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-weight: 600;
 }

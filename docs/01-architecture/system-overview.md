@@ -57,7 +57,7 @@ supersedes: []
 │       │                                                        │
 │       ▼                                                        │
 │   content/nodes/**/*.md (status: draft)                        │
-│   content/questions.json                                       │
+│   content/questions/*.json                                     │
 │       │                                                        │
 │       ▼                                                        │
 │   人工审校 ─── 改 status: reviewed                              │
@@ -71,7 +71,7 @@ supersedes: []
 │                       构建期（CI / 本地）                       │
 │                                                                │
 │   content/**/*.md  ────►  scripts/validate-content.ts          │
-│   content/questions.json    │ 解析 frontmatter                 │
+│   content/questions/*.json  │ 解析 frontmatter                 │
 │                             │ 解析 [[wiki-link]]               │
 │                             │ 校验引用完整性                    │
 │                             ▼                                  │
@@ -108,7 +108,7 @@ supersedes: []
 │       │                                                        │
 │   用户点击「测试自己」                                          │
 │       │                                                        │
-│       ├──► Client Component 加载 questions.json 中挂载到 liver  │
+│       ├──► Client Component 加载 content/questions/ 中挂载到 liver │
 │       │    的题目                                              │
 │       │                                                        │
 │       └──► 用户作答                                            │
@@ -128,7 +128,7 @@ supersedes: []
 
 ### 内容层（静态）
 - `content/nodes/**/*.md` — 节点内容
-- `content/questions.json` — 题库
+- `content/questions/*.json` — 按领域拆分的题库
 - `content/.build/` — 构建产物（gitignore）
 
 **所有学习者共享，不变。**

@@ -1,10 +1,14 @@
 // Auth.js v5 配置
-// MVP: Email Magic Link · 开发期 magic link 输出到控制台
+// EMAIL_DRIVER:
+//   console — 开发期，magic link 输出到 dev server stdout（不真发）
+//   resend  — 通过 Resend API 真发邮件（需 RESEND_API_KEY + EMAIL_FROM）
 
 import NextAuth, { type DefaultSession } from "next-auth";
 import Nodemailer from "next-auth/providers/nodemailer";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "@/lib/db";
+import { sendLoginEmail } from "@/lib/email/send";
+import { checkEmailRateLimit } from "@/lib/email/rate-limit";
 
 declare module "next-auth" {
   interface Session {
@@ -27,11 +31,18 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     Nodemailer({
       from: process.env.EMAIL_FROM ?? "Fast Memory <login@local.dev>",
       // Auth.js 强制要求 server 配置，但我们 override 了 sendVerificationRequest
-      // 这是一个 stub，永远不会被使用
       server: { host: "localhost", port: 1025 },
-      // MVP 开发期：不真发邮件，把 magic link 打印到 dev server 控制台
       async sendVerificationRequest({ identifier, url }) {
         const driver = process.env.EMAIL_DRIVER ?? "console";
+
+        // 速率限制：同邮箱 60 秒内最多 1 次
+        const rl = checkEmailRateLimit(identifier);
+        if (!rl.ok) {
+          throw new Error(
+            `Too many requests. Please wait ${rl.retryAfterSec}s.`,
+          );
+        }
+
         if (driver === "console") {
           console.log(
             [
@@ -48,10 +59,24 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           );
           return;
         }
-        // 生产期：接 Resend
-        throw new Error(
-          `EMAIL_DRIVER=${driver} 尚未实现。MVP 阶段请用 'console'。`,
-        );
+
+        if (driver === "resend") {
+          try {
+            const result = await sendLoginEmail({
+              to: identifier,
+              loginUrl: url,
+            });
+            console.log(
+              `[email] Resend message sent · id=${result.id} · to=${identifier}`,
+            );
+            return;
+          } catch (err) {
+            console.error(`[email] Resend send failed:`, err);
+            throw err;
+          }
+        }
+
+        throw new Error(`Unknown EMAIL_DRIVER: ${driver}`);
       },
     }),
   ],

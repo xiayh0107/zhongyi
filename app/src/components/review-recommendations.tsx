@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { StatusBar } from "./status-bar";
 import { TOKENS_A, type Tier } from "@/design/tokens";
+import { nodeHref } from "@/lib/content/links";
 
 type Item = {
   nodeId: string;
@@ -37,7 +38,7 @@ export function ReviewRecommendations({ items }: { items: Item[] }) {
         {items.map((it) => (
           <li key={it.nodeId}>
             <Link
-              href={`/nodes/${it.nodeId}`}
+              href={nodeHref(it.nodeId)}
               className="block hover:opacity-80"
               style={{ textDecoration: "none", color: TOKENS_A.ink }}
             >

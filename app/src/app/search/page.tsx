@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { searchNodes } from "@/lib/content/search";
+import { nodeHref } from "@/lib/content/links";
 import { TOKENS_A } from "@/design/tokens";
 
 export const dynamic = "force-dynamic";
@@ -114,7 +115,7 @@ export default async function SearchPage({
                 style={{ borderBottom: `1px dotted ${TOKENS_A.line}` }}
               >
                 <Link
-                  href={`/nodes/${r.nodeId}`}
+                  href={nodeHref(r.nodeId)}
                   className="block py-3 hover:opacity-80"
                   style={{ textDecoration: "none", color: TOKENS_A.ink }}
                 >

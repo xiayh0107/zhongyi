@@ -1,0 +1,2338 @@
+[
+  {
+    "id": "q-cross-001",
+    "node_ids": [
+      "liver",
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「风性主动」与下列哪个脏腑的病变最相关？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 1,
+    "why": "肝主筋，风性主动致抽搐、震颤、眩晕，最易引发肝风内动等病证。这是 [[wind-evil]] 与 [[liver]] 的内在联系。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1427
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cross-002",
+    "node_ids": [
+      "lung",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "「培土生金」体现的是？",
+    "options": [
+      "金生水",
+      "土生金",
+      "木克土",
+      "水克火",
+      "火生土"
+    ],
+    "answer": 1,
+    "why": "培土生金 = 通过补脾（土）来益肺（金），五行属土生金。脾肺气虚常合并治疗。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 857
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cross-003",
+    "node_ids": [
+      "fire-evil",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "高热神昏伴四肢抽搐、角弓反张，最可能是？",
+    "options": [
+      "心血虚",
+      "肝风内动",
+      "脾不统血",
+      "肺燥伤津",
+      "肾精不足"
+    ],
+    "answer": 1,
+    "why": "火热邪能生风，热极生风致肝风内动 → 抽搐、强直、角弓反张。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1443
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cross-004",
+    "node_ids": [
+      "spleen",
+      "lung"
+    ],
+    "type": "fill_in_blank",
+    "stem": "「___ 为水之上源」「水之下源」分别是肺和肾，中游是脾。",
+    "answer": [
+      "肺"
+    ],
+    "why": "肺为水之上源（宣发肃降通调水道）；肾为水之下源（主水）；脾运化水液在中游。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 236
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cross-005",
+    "node_ids": [
+      "heart",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "「心脾两虚」的典型临床表现？",
+    "options": [
+      "心悸失眠 + 腹胀便溏",
+      "高热抽搐",
+      "腰痛遗精",
+      "咳喘痰多",
+      "胸胁胀痛"
+    ],
+    "answer": 0,
+    "why": "心脾两虚：心悸健忘失眠多梦 + 饮食减少腹胀便溏 + 倦怠乏力 + 面色萎黄。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1402
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cross-006",
+    "node_ids": [
+      "wind-evil",
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "风寒感冒的典型症状不包括？",
+    "options": [
+      "恶寒",
+      "无汗",
+      "头身痛",
+      "鼻塞流清涕",
+      "口苦咽干"
+    ],
+    "answer": 4,
+    "why": "口苦咽干是少阳/里热表现。风寒感冒：恶寒重发热轻、无汗、头身痛、鼻塞流清涕、苔薄白脉浮紧。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1426
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cross-007",
+    "node_ids": [
+      "damp-evil",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾被湿邪所困的典型表现？",
+    "options": [
+      "头痛发热",
+      "脘痞腹胀、便溏、四肢困重",
+      "心烦失眠",
+      "咳嗽气喘",
+      "腰膝酸软"
+    ],
+    "answer": 1,
+    "why": "脾喜燥恶湿，湿困脾阳致脘痞腹胀、便溏、四肢困重、苔白腻。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1295
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-yy-001",
+    "node_ids": [
+      "yin-yang"
+    ],
+    "type": "single_choice",
+    "stem": "「无阳则阴无以生，无阴则阳无以化」体现阴阳的什么关系？",
+    "options": [
+      "对立",
+      "互根",
+      "消长",
+      "转化"
+    ],
+    "answer": 1,
+    "why": "阴阳互根——彼此以对方存在为前提。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 316
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-yy-002",
+    "node_ids": [
+      "yin-yang"
+    ],
+    "type": "single_choice",
+    "stem": "「寒极生热、热极生寒」体现的是？",
+    "options": [
+      "阴阳对立",
+      "阴阳互根",
+      "阴阳消长",
+      "阴阳转化"
+    ],
+    "answer": 3,
+    "why": "极则反——阴阳在一定条件下向对立面转化。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 603
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-yy-003",
+    "node_ids": [
+      "yin-yang"
+    ],
+    "type": "single_choice",
+    "stem": "「壮水之主，以制阳光」体现的治法是？",
+    "options": [
+      "补气活血",
+      "滋阴制阳",
+      "扶阳抑阴",
+      "清热泻火"
+    ],
+    "answer": 1,
+    "why": "壮水（肾阴）→ 制阳（阳亢），属滋阴制阳，阳病治阴。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 320
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-yy-004",
+    "node_ids": [
+      "yin-yang",
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "实热证、实寒证、虚热证、虚寒证 都属于？",
+    "options": [
+      "阴阳平衡",
+      "阴阳失调",
+      "阴阳互根",
+      "阴阳转化"
+    ],
+    "answer": 1,
+    "why": "实热（阳盛）、虚寒（阳虚）、实寒（阴盛）、虚热（阴虚）都是阴阳失调的不同表现形式。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1019
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-yy-005",
+    "node_ids": [
+      "yin-yang"
+    ],
+    "type": "multiple_choice",
+    "stem": "阴阳的基本关系包括（多选）：",
+    "options": [
+      "对立制约",
+      "互根互用",
+      "消长平衡",
+      "相互转化",
+      "完全相同"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "阴阳四大关系：对立、互根、消长、转化。「完全相同」错——阴阳本质对立。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 248
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fe-001",
+    "node_ids": [
+      "five-elements"
+    ],
+    "type": "single_choice",
+    "stem": "五行的特性「曲直」对应？",
+    "options": [
+      "木",
+      "火",
+      "土",
+      "金",
+      "水"
+    ],
+    "answer": 0,
+    "why": "木曰曲直——木有屈伸生长之性，对应肝主疏泄。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 685
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fe-002",
+    "node_ids": [
+      "five-elements"
+    ],
+    "type": "sort",
+    "stem": "按五行相生顺序（从「木」开始）：",
+    "options": [
+      "金",
+      "水",
+      "木",
+      "火",
+      "土"
+    ],
+    "answer": [
+      2,
+      3,
+      4,
+      0,
+      1
+    ],
+    "why": "相生：木火土金水。所以从木开始：木→火→土→金→水。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 288
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fe-003",
+    "node_ids": [
+      "five-elements",
+      "liver",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "肝郁乘脾体现的是？",
+    "options": [
+      "相生",
+      "相克太过（相乘）",
+      "相侮",
+      "母病及子"
+    ],
+    "answer": 1,
+    "why": "肝气过盛 → 克脾过度 → 相乘（倍克）。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1399
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fe-004",
+    "node_ids": [
+      "five-elements",
+      "kidney",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "「水能涵木」体现的是哪种关系？",
+    "options": [
+      "相克",
+      "母子相生",
+      "相侮",
+      "母病及子"
+    ],
+    "answer": 1,
+    "why": "水生木 → 肾水滋养肝木 → 母子相生。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 244
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fe-005",
+    "node_ids": [
+      "five-elements",
+      "liver",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "肝病传肾属于？",
+    "options": [
+      "相生",
+      "相克",
+      "相侮",
+      "母病及子",
+      "子病犯母"
+    ],
+    "answer": 4,
+    "why": "肝是肾之子（水生木）。肝病及肾 = 子病犯母。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 737
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-hv-001",
+    "node_ids": [
+      "holistic-view"
+    ],
+    "type": "single_choice",
+    "stem": "中医学的两大基本特点是？",
+    "options": [
+      "望闻问切 + 辨证",
+      "整体观念 + 辨证论治",
+      "阴阳 + 五行",
+      "脏腑 + 经络",
+      "气血 + 津液"
+    ],
+    "answer": 1,
+    "why": "中医基本特点：整体观念、辨证论治。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 131
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-hv-002",
+    "node_ids": [
+      "holistic-view"
+    ],
+    "type": "fill_in_blank",
+    "stem": "中医学认为人体是一个以 ___ 为中心的有机整体。",
+    "answer": [
+      "五脏"
+    ],
+    "why": "整体观念：人是以五脏为中心的有机整体。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1726
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-sd-001",
+    "node_ids": [
+      "syndrome-differentiation"
+    ],
+    "type": "single_choice",
+    "stem": "「同病异治」的依据是？",
+    "options": [
+      "疾病名相同",
+      "病机不同→证不同",
+      "症状一致",
+      "用药习惯",
+      "患者偏好"
+    ],
+    "answer": 1,
+    "why": "同病异治：同一种病因病机不同（证不同），故治法不同。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 818
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-sd-002",
+    "node_ids": [
+      "syndrome-differentiation"
+    ],
+    "type": "single_choice",
+    "stem": "「中气下陷」可用同一升提法治脱肛、胃下垂、子宫脱垂——这体现？",
+    "options": [
+      "同病异治",
+      "异病同治",
+      "辨病不辨证",
+      "西医思维",
+      "对症治疗"
+    ],
+    "answer": 1,
+    "why": "病不同但证（中气下陷）相同 → 治法相同 = 异病同治。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 866
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-sd-003",
+    "node_ids": [
+      "syndrome-differentiation"
+    ],
+    "type": "single_choice",
+    "stem": "感冒用辛温解表或辛凉解表，是哪种治则的体现？",
+    "options": [
+      "对症治疗",
+      "因人制宜",
+      "同病异治",
+      "异病同治",
+      "辨病论治"
+    ],
+    "answer": 2,
+    "why": "感冒可分风寒、风热等不同证 → 同一种病不同治 = 同病异治。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 701
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-ep-001",
+    "node_ids": [
+      "eight-principles"
+    ],
+    "type": "single_choice",
+    "stem": "八纲辨证的总纲是？",
+    "options": [
+      "表里",
+      "寒热",
+      "虚实",
+      "阴阳",
+      "气血"
+    ],
+    "answer": 3,
+    "why": "阴阳是八纲的总纲——表里寒热虚实都可归入阴阳。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1672
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-ep-002",
+    "node_ids": [
+      "eight-principles"
+    ],
+    "type": "multiple_choice",
+    "stem": "八纲包括（多选）：",
+    "options": [
+      "表里",
+      "寒热",
+      "虚实",
+      "阴阳",
+      "气血"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "八纲：表里、寒热、虚实、阴阳。气血不属于八纲。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 254
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-ep-003",
+    "node_ids": [
+      "eight-principles"
+    ],
+    "type": "match",
+    "stem": "八纲与其辨别维度的对应：",
+    "options": {
+      "left": [
+        "表里",
+        "寒热",
+        "虚实",
+        "阴阳"
+      ],
+      "right": [
+        "邪正盛衰",
+        "总属性",
+        "病位浅深",
+        "病性属阴阳"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "why": "表里=病位；寒热=病性；虚实=邪正；阴阳=总属性。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1672
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-eich-001",
+    "node_ids": [
+      "exterior-interior-cold-heat"
+    ],
+    "type": "single_choice",
+    "stem": "表证最主要的脉象是？",
+    "options": [
+      "浮",
+      "沉",
+      "迟",
+      "数",
+      "弦"
+    ],
+    "answer": 0,
+    "why": "表证脉浮——病位浅，脉气与邪争于表。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 256
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-eich-002",
+    "node_ids": [
+      "exterior-interior-cold-heat"
+    ],
+    "type": "single_choice",
+    "stem": "舌淡、苔白润滑、脉迟——是？",
+    "options": [
+      "表证",
+      "里证",
+      "寒证",
+      "热证",
+      "虚证"
+    ],
+    "answer": 2,
+    "why": "舌淡苔白润 + 脉迟 = 典型寒证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 260
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-eich-003",
+    "node_ids": [
+      "exterior-interior-cold-heat"
+    ],
+    "type": "single_choice",
+    "stem": "舌红、苔黄而干、脉数——是？",
+    "options": [
+      "表证",
+      "里证",
+      "寒证",
+      "热证",
+      "虚证"
+    ],
+    "answer": 3,
+    "why": "舌红苔黄干 + 脉数 = 典型热证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 263
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-eich-004",
+    "node_ids": [
+      "exterior-interior-cold-heat"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不是虚证的特点？",
+    "options": [
+      "病程长",
+      "脉无力",
+      "喜按",
+      "声高气粗",
+      "舌质改变"
+    ],
+    "answer": 3,
+    "why": "声高气粗是实证特点。虚证声低息微。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 170
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-eich-005",
+    "node_ids": [
+      "exterior-interior-cold-heat"
+    ],
+    "type": "single_choice",
+    "stem": "实证的典型特点是？",
+    "options": [
+      "脉细无力",
+      "疼痛喜按",
+      "形体壮实声高",
+      "面色苍白",
+      "舌淡苔少"
+    ],
+    "answer": 2,
+    "why": "实证：形体壮实、声高气粗、疼痛拒按、脉实有力。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 268
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lkty-001",
+    "node_ids": [
+      "liver-kidney-同源"
+    ],
+    "type": "single_choice",
+    "stem": "「精血同源」指哪两脏的关系？",
+    "options": [
+      "心肾",
+      "脾肾",
+      "肺肾",
+      "肝肾",
+      "心肝"
+    ],
+    "answer": 3,
+    "why": "肝藏血、肾藏精，精血同源 = 肝肾同源。又名乙癸同源。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 724
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lkty-002",
+    "node_ids": [
+      "liver-kidney-同源"
+    ],
+    "type": "single_choice",
+    "stem": "「水能涵木」中的「水」「木」分别指？",
+    "options": [
+      "肺、肝",
+      "肾、肝",
+      "膀胱、胆",
+      "脾、心",
+      "心、肝"
+    ],
+    "answer": 1,
+    "why": "肾属水，肝属木。水生木 → 肾水滋养肝木。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 244
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lkty-003",
+    "node_ids": [
+      "liver-kidney-同源",
+      "liver",
+      "kidney"
+    ],
+    "type": "multiple_choice",
+    "stem": "肝肾同源体现在哪几方面（多选）：",
+    "options": [
+      "精血同源",
+      "藏泄互用",
+      "阴阳互资互制",
+      "经脉互通",
+      "五行木水相生"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "why": "肝肾三大同源：精血同源、藏泄互用、阴阳互资互制；加五行水生木。经脉互通是泛泛说法。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 244
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-hkxj-001",
+    "node_ids": [
+      "heart-kidney-相交"
+    ],
+    "type": "single_choice",
+    "stem": "「水火既济」又名？",
+    "options": [
+      "肝肾同源",
+      "心肾相交",
+      "脾胃相合",
+      "肺肾同源",
+      "心肺相依"
+    ],
+    "answer": 1,
+    "why": "心火下温肾水、肾水上济心火 = 水火既济 = 心肾相交。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 234
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-hkxj-002",
+    "node_ids": [
+      "heart-kidney-相交"
+    ],
+    "type": "single_choice",
+    "stem": "心烦失眠、腰膝酸软、五心烦热——首选治法？",
+    "options": [
+      "温阳化气",
+      "滋阴降火、交通心肾",
+      "疏肝解郁",
+      "健脾益气",
+      "活血化瘀"
+    ],
+    "answer": 1,
+    "why": "典型心肾不交 → 治法：滋阴降火、交通心肾（黄连阿胶汤合交泰丸）。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 308
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-hkxj-003",
+    "node_ids": [
+      "heart-kidney-相交"
+    ],
+    "type": "fill_in_blank",
+    "stem": "心肾相交的核心是 ___ 火必须下降于肾、___ 水必须上济于心。",
+    "answer": [
+      "心、肾",
+      "心,肾"
+    ],
+    "why": "心火下温肾水、肾水上济心火。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 234
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syn-001",
+    "node_ids": [
+      "yin-yang",
+      "five-elements"
+    ],
+    "type": "single_choice",
+    "stem": "阴阳五行学说的核心区别是？",
+    "options": [
+      "阴阳描述对立、五行描述结构",
+      "两者完全相同",
+      "阴阳只用于诊断",
+      "五行只用于药物",
+      "阴阳更晚出现"
+    ],
+    "answer": 0,
+    "why": "阴阳学说描述事物对立面的统一；五行学说描述事物的归类与生克结构。两者从不同角度互补。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 248
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syn-002",
+    "node_ids": [
+      "holistic-view",
+      "syndrome-differentiation"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪个最能体现「整体观念」？",
+    "options": [
+      "头痛医头脚痛医脚",
+      "肝病调脾胃",
+      "对症下药",
+      "辨病不辨证",
+      "西药思维"
+    ],
+    "answer": 1,
+    "why": "肝病调脾胃——基于木克土相乘的整体思维（见肝之病，知肝传脾，当先实脾）。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 131
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syn-003",
+    "node_ids": [
+      "five-elements",
+      "spleen",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "「见肝之病，知肝传脾」依据的五行规律是？",
+    "options": [
+      "相生（木生火）",
+      "相克（木克土）",
+      "相侮（土侮木）",
+      "母病及子",
+      "无关五行"
+    ],
+    "answer": 1,
+    "why": "肝木克脾土。肝病常乘脾，是典型相克过强（相乘）的预防。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 288
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syn-004",
+    "node_ids": [
+      "five-elements",
+      "spleen",
+      "lung"
+    ],
+    "type": "fill_in_blank",
+    "stem": "「培土生金」是用 ___ 法补肺（金）。",
+    "answer": [
+      "补脾",
+      "健脾",
+      "益脾"
+    ],
+    "why": "土生金。脾虚 → 培脾土 → 助生金（肺）。即培土生金法。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 857
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syn-005",
+    "node_ids": [
+      "five-elements",
+      "heart",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "「水火既济」对应的五行关系是？",
+    "options": [
+      "相生",
+      "相克",
+      "相侮",
+      "母子相承"
+    ],
+    "answer": 1,
+    "why": "水克火。心肾相交即水（肾）火（心）相济，是五行相克的正常状态。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 234
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-eich-006",
+    "node_ids": [
+      "exterior-interior-cold-heat"
+    ],
+    "type": "match",
+    "stem": "证型与脉象对应（连线）：",
+    "options": {
+      "left": [
+        "表证",
+        "里证",
+        "寒证",
+        "热证",
+        "虚证"
+      ],
+      "right": [
+        "沉",
+        "迟",
+        "数",
+        "无力",
+        "浮"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "why": "表浮里沉、寒迟热数、虚无力。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 256
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-eich-007",
+    "node_ids": [
+      "exterior-interior-cold-heat",
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「畏寒喜暖、口淡不渴、小便清长、舌淡苔白润、脉迟」属于？",
+    "options": [
+      "表证",
+      "里实热证",
+      "里虚寒证",
+      "阳明腑实",
+      "阴虚火旺"
+    ],
+    "answer": 2,
+    "why": "全套寒象 + 脉迟 + 舌淡白 → 里虚寒证（阴证）。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 260
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-eich-008",
+    "node_ids": [
+      "exterior-interior-cold-heat",
+      "fire-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「壮热面赤、烦躁口渴喜冷饮、便秘、舌红苔黄燥、脉洪数」属于？",
+    "options": [
+      "表证",
+      "里实热证",
+      "里虚寒证",
+      "阴虚证",
+      "气虚证"
+    ],
+    "answer": 1,
+    "why": "全套热象 + 实邪表现 + 脉洪数有力 → 里实热证（阳证）。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 263
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-relations-001",
+    "node_ids": [
+      "heart",
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "心与肺的关系主要表现在？",
+    "options": [
+      "气血关系（气帅血、血载气）",
+      "升降关系",
+      "母子相生",
+      "相克关系",
+      "纳气关系"
+    ],
+    "answer": 0,
+    "why": "心主血、肺主气，二者关系是气血关系。气为血帅、血为气母。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 228
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-relations-002",
+    "node_ids": [
+      "lung",
+      "large-intestine"
+    ],
+    "type": "single_choice",
+    "stem": "便秘可由哪个脏腑功能失常引起？",
+    "options": [
+      "心失主血",
+      "肝失疏泄",
+      "脾失健运",
+      "肺失肃降",
+      "肾失纳气"
+    ],
+    "answer": 3,
+    "why": "肺与大肠相表里。肺气肃降助大肠传导；肺失肃降可致便秘。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 336
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-relations-003",
+    "node_ids": [
+      "spleen",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "脾与肾的关系是？",
+    "options": [
+      "相克",
+      "气血互生",
+      "先天后天互资",
+      "藏泄互用",
+      "气机升降"
+    ],
+    "answer": 2,
+    "why": "脾为后天之本、肾为先天之本，二者先天后天相互资生。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 246
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-relations-004",
+    "node_ids": [
+      "liver",
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "肝与肺的关系主要表现在？",
+    "options": [
+      "气机升降",
+      "气血关系",
+      "藏泄互用",
+      "相生母子",
+      "纳气与呼气"
+    ],
+    "answer": 0,
+    "why": "肝主升发、肺主肃降，二者关系主要在气机升降——左升右降。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 238
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-relations-005",
+    "node_ids": [
+      "lung",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "「肺为气之主，肾为气之根」体现的关系是？",
+    "options": [
+      "气血关系",
+      "津液代谢",
+      "呼吸纳气",
+      "升降出入",
+      "母子相生"
+    ],
+    "answer": 2,
+    "why": "肺呼气、肾纳气。肺肾配合完成呼吸——这是肺肾关系的核心。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 240
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-001",
+    "node_ids": [
+      "yin-yang",
+      "five-elements",
+      "holistic-view",
+      "syndrome-differentiation"
+    ],
+    "type": "sort",
+    "stem": "按中医学习的逻辑层级排序：阴阳 → 五行 → 整体观 → 辨证论治",
+    "options": [
+      "五行",
+      "整体观念",
+      "辨证论治",
+      "阴阳"
+    ],
+    "answer": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "why": "公理 → 推导 → 总特点 → 临床方法：阴阳→五行→整体观→辨证论治。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 248
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-002",
+    "node_ids": [
+      "heart",
+      "kidney",
+      "heart-kidney-相交"
+    ],
+    "type": "single_choice",
+    "stem": "心肾不交的核心病机是？",
+    "options": [
+      "心火亢于上 + 肾水亏于下",
+      "心阳虚 + 肾阳虚",
+      "心血瘀 + 肾精亏",
+      "心气虚 + 肾气虚"
+    ],
+    "answer": 0,
+    "why": "心肾不交：心火不能下温肾水（心火上炎）+ 肾水不能上济心火（肾水亏）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 308
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-003",
+    "node_ids": [
+      "liver",
+      "kidney",
+      "liver-kidney-同源"
+    ],
+    "type": "single_choice",
+    "stem": "肝肾同源的临床应用——「滋水涵木」是治什么证？",
+    "options": [
+      "心血瘀阻",
+      "肝阳上亢肝肾阴虚",
+      "脾胃虚寒",
+      "肺燥伤津",
+      "气虚血瘀"
+    ],
+    "answer": 1,
+    "why": "滋水（补肾阴）涵木（养肝阴抑肝阳）→ 治肝阳上亢、肝肾阴虚。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 724
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-004",
+    "node_ids": [
+      "qi",
+      "spleen",
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "宗气的生成主要依赖？",
+    "options": [
+      "心血 + 肝血",
+      "肺吸清气 + 脾化水谷之气",
+      "肾精 + 心阳",
+      "肝郁 + 脾湿",
+      "津液 + 元气"
+    ],
+    "answer": 1,
+    "why": "宗气 = 肺吸入的自然界清气 + 脾胃运化的水谷精气，在肺中合成。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 447
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-005",
+    "node_ids": [
+      "liver",
+      "heart",
+      "spleen",
+      "lung",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "「华盖」「娇脏」是哪个脏的别称？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 3,
+    "why": "肺位胸腔高位覆盖五脏六腑 → 华盖；肺叶娇嫩易被邪侵 → 娇脏。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-006",
+    "node_ids": [
+      "spleen",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪一对是「先天与后天之本」？",
+    "options": [
+      "心肺",
+      "肝脾",
+      "脾肾",
+      "心肾",
+      "肺肾"
+    ],
+    "answer": 2,
+    "why": "脾为后天之本、肾为先天之本。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 246
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-007",
+    "node_ids": [
+      "damp-evil",
+      "spleen",
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "湿邪与寒邪的共同致病特点是？",
+    "options": [
+      "损伤阳气",
+      "重浊粘滞",
+      "上炎",
+      "易致出血",
+      "趋下"
+    ],
+    "answer": 0,
+    "why": "湿邪和寒邪都属阴邪，都易损伤阳气。这是它们的共同点。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 812
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-008",
+    "node_ids": [
+      "wind-evil",
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「风寒外束、肺气壅遏」的喘咳实证首选？",
+    "options": [
+      "桂枝",
+      "麻黄",
+      "杏仁",
+      "白术",
+      "干姜"
+    ],
+    "answer": 1,
+    "why": "麻黄宣肺平喘，专治风寒外束肺气壅遏的喘咳。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1356
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-009",
+    "node_ids": [
+      "fire-evil",
+      "liver",
+      "heart"
+    ],
+    "type": "multiple_choice",
+    "stem": "火邪致病典型表现（多选）：",
+    "options": [
+      "高热",
+      "心烦狂躁",
+      "出血",
+      "抽搐",
+      "畏寒"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "火邪：炎上（高热）、扰心神（烦躁狂）、动血（出血）、生风（抽搐）。畏寒是寒证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1442
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-misc-010",
+    "node_ids": [
+      "yin-yang",
+      "exterior-interior-cold-heat"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪个组合「都属阳」？",
+    "options": [
+      "寒、虚、里",
+      "热、实、表",
+      "里、寒、虚",
+      "实、寒、表",
+      "虚、热、里"
+    ],
+    "answer": 1,
+    "why": "阳的归类：热、实、表。阴的归类：寒、虚、里。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 270
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-emaster-001",
+    "node_ids": [
+      "heart",
+      "liver",
+      "spleen",
+      "lung",
+      "kidney",
+      "yin-yang"
+    ],
+    "type": "single_choice",
+    "stem": "五脏在阴阳中的归属，下列正确的是？",
+    "options": [
+      "心肝脾肺肾全属阳",
+      "心属阳中之阳，肺属阳中之阴",
+      "心属阴中之阴",
+      "脾属阳中之阳",
+      "肾属阳中之阳"
+    ],
+    "answer": 1,
+    "why": "五脏阴阳归属：心阳中之阳、肺阳中之阴、肝阴中之阳、脾阴中之至阴、肾阴中之阴。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-emaster-002",
+    "node_ids": [
+      "heart",
+      "liver",
+      "spleen",
+      "lung",
+      "kidney",
+      "five-elements"
+    ],
+    "type": "sort",
+    "stem": "按五行相生顺序对应五脏（木→火→土→金→水）：",
+    "options": [
+      "肺",
+      "肝",
+      "脾",
+      "心",
+      "肾"
+    ],
+    "answer": [
+      1,
+      3,
+      2,
+      0,
+      4
+    ],
+    "why": "木火土金水 = 肝心脾肺肾。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 288
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-001",
+    "node_ids": [
+      "liver",
+      "liver-kidney-同源"
+    ],
+    "type": "fill_in_blank",
+    "stem": "肝肾同源又名 ___ 同源、___ 同源。",
+    "answer": [
+      "精血、乙癸",
+      "精血,乙癸"
+    ],
+    "why": "肝肾同源 = 精血同源 = 乙癸同源（天干甲乙属木对肝、壬癸属水对肾）。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 244
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-002",
+    "node_ids": [
+      "qi",
+      "blood",
+      "body-fluids"
+    ],
+    "type": "single_choice",
+    "stem": "气血津液的本质来源都是？",
+    "options": [
+      "先天之精",
+      "水谷精微",
+      "经络运行",
+      "环境影响",
+      "情志活动"
+    ],
+    "answer": 1,
+    "why": "气血津液都来自脾胃化生的水谷精微（先天之精仅是促发因素）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 611
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-003",
+    "node_ids": [
+      "heart-kidney-相交",
+      "yin-yang"
+    ],
+    "type": "single_choice",
+    "stem": "心肾相交体现的阴阳关系是？",
+    "options": [
+      "对立",
+      "互根",
+      "消长",
+      "互资互制",
+      "转化"
+    ],
+    "answer": 3,
+    "why": "心火（阳）+ 肾水（阴）互相滋养、制约 → 阴阳互资互制。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 234
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-004",
+    "node_ids": [
+      "damp-evil",
+      "spleen"
+    ],
+    "type": "fill_in_blank",
+    "stem": "脾喜 ___ 恶 ___，湿邪最易困脾。",
+    "answer": [
+      "燥、湿",
+      "燥,湿"
+    ],
+    "why": "脾喜燥恶湿 —— 湿邪最易困脾阳。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 790
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-005",
+    "node_ids": [
+      "fire-evil",
+      "blood"
+    ],
+    "type": "single_choice",
+    "stem": "「迫血妄行」的病机是？",
+    "options": [
+      "寒邪凝滞",
+      "湿邪粘滞",
+      "热邪动血",
+      "风邪游走",
+      "燥邪伤津"
+    ],
+    "answer": 2,
+    "why": "热邪能动血 —— 迫血妄行致出血。火邪生风动血。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1443
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-006",
+    "node_ids": [
+      "liver",
+      "spleen",
+      "stomach"
+    ],
+    "type": "single_choice",
+    "stem": "肝助消化体现在？",
+    "options": [
+      "肝分泌消化液",
+      "肝藏血助胃",
+      "肝疏泄助脾升胃降及胆汁排泄",
+      "肝直接吸收营养",
+      "肝主水谷运化"
+    ],
+    "answer": 2,
+    "why": "肝主疏泄调畅气机 → 助脾升胃降 + 胆汁分泌排泄。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1700
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-007",
+    "node_ids": [
+      "lung",
+      "large-intestine",
+      "body-fluids"
+    ],
+    "type": "single_choice",
+    "stem": "「水之上源」「水之下源」分别是？",
+    "options": [
+      "心、肝",
+      "脾、胃",
+      "肺、肾",
+      "三焦、膀胱",
+      "胆、小肠"
+    ],
+    "answer": 2,
+    "why": "肺为水之上源（通调水道）；肾为水之下源（主水气化）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 236
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-008",
+    "node_ids": [
+      "wind-evil",
+      "cold-evil",
+      "damp-evil",
+      "fire-evil"
+    ],
+    "type": "sort",
+    "stem": "按「六淫之首 / 易伤阳气 / 缠绵难愈 / 易致出血」对应顺序排列邪：",
+    "options": [
+      "湿",
+      "寒",
+      "火",
+      "风"
+    ],
+    "answer": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "why": "六淫之首=风；易伤阳气=寒；缠绵=湿；易致出血=火。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 212
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-009",
+    "node_ids": [
+      "five-elements",
+      "heart",
+      "liver",
+      "kidney"
+    ],
+    "type": "match",
+    "stem": "五行 + 脏 + 在体（连线对应）：",
+    "options": {
+      "left": [
+        "木 · 肝",
+        "火 · 心",
+        "水 · 肾"
+      ],
+      "right": [
+        "在体合骨",
+        "在体合筋",
+        "在体合脉"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "why": "木肝合筋；火心合脉；水肾合骨。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-010",
+    "node_ids": [
+      "qi",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "气滞最常见于哪个脏？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 1,
+    "why": "肝主疏泄、调畅气机。肝郁则气滞。气滞最常见于肝。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 824
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-011",
+    "node_ids": [
+      "qi",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "气陷最常见于哪个脏？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 2,
+    "why": "脾主升清。脾气下陷 = 气陷。最常见于脾。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 820
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-012",
+    "node_ids": [
+      "qi",
+      "stomach",
+      "lung"
+    ],
+    "type": "multiple_choice",
+    "stem": "胃气上逆可见症状（多选）：",
+    "options": [
+      "恶心呕吐",
+      "嗳气",
+      "呃逆",
+      "内脏下垂",
+      "腹胀拒按"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "why": "胃气上逆典型症状：恶心、呕吐、嗳气、呃逆。内脏下垂是气陷。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1031
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-013",
+    "node_ids": [
+      "yin-yang",
+      "exterior-interior-cold-heat"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪个组合都属阴？",
+    "options": [
+      "热实表",
+      "热实里",
+      "寒虚里",
+      "寒实表",
+      "热虚表"
+    ],
+    "answer": 2,
+    "why": "阴：寒、虚、里。寒虚里完全属阴。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 270
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-014",
+    "node_ids": [
+      "five-elements",
+      "liver",
+      "kidney",
+      "liver-kidney-同源"
+    ],
+    "type": "single_choice",
+    "stem": "肝肾同源中「乙癸」分别指？",
+    "options": [
+      "木与火",
+      "木与水",
+      "水与金",
+      "火与土",
+      "金与水"
+    ],
+    "answer": 1,
+    "why": "天干甲乙属木（肝）、壬癸属水（肾）。乙癸同源 = 木水同源 = 肝肾同源。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 244
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-015",
+    "node_ids": [
+      "liver",
+      "blood"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不是肝藏血的功能？",
+    "options": [
+      "贮藏血液",
+      "调节血量",
+      "防止出血",
+      "化生血液"
+    ],
+    "answer": 3,
+    "why": "化生血液主要靠脾运化水谷精微 + 营气。肝藏血三大功能：贮、调、防出血。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1468
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-016",
+    "node_ids": [
+      "spleen",
+      "blood"
+    ],
+    "type": "single_choice",
+    "stem": "妇女月经过多、便血、皮下出血——可能是？",
+    "options": [
+      "心血瘀阻",
+      "肝阳上亢",
+      "脾不统血",
+      "肾阳虚衰",
+      "肺燥伤津"
+    ],
+    "answer": 2,
+    "why": "脾不统血 = 摄血失司 → 各种出血（月经过多、便血、肌衄等）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1582
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-017",
+    "node_ids": [
+      "liver",
+      "fire-evil",
+      "kidney",
+      "liver-kidney-同源"
+    ],
+    "type": "single_choice",
+    "stem": "「滋水涵木」治什么证最典型？",
+    "options": [
+      "脾胃湿热",
+      "肝肾阴虚阳亢（如更年期综合征）",
+      "心火亢盛",
+      "肺燥咳嗽",
+      "肾阳虚衰"
+    ],
+    "answer": 1,
+    "why": "滋肾水 → 涵养肝木（制约肝阳）→ 治肝肾阴虚、肝阳上亢的常用法。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 724
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-018",
+    "node_ids": [
+      "qi",
+      "kidney",
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "「肺为气之主，肾为气之 ___ 」？",
+    "options": [
+      "源",
+      "根",
+      "海",
+      "宗",
+      "本"
+    ],
+    "answer": 1,
+    "why": "肺为气之主、肾为气之根。肾主纳气。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 240
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-019",
+    "node_ids": [
+      "heart",
+      "blood",
+      "syndrome-differentiation"
+    ],
+    "type": "single_choice",
+    "stem": "「血之主」「脉之宗」「神之舍」是哪个脏？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 0,
+    "why": "心为神之舍、血之主、脉之宗，为五脏之首。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-020",
+    "node_ids": [
+      "chai-hu",
+      "huang-qi",
+      "syndrome-differentiation"
+    ],
+    "type": "single_choice",
+    "stem": "补中益气汤中柴胡 + 黄芪起什么作用？",
+    "options": [
+      "发汗解表",
+      "升提中气",
+      "清热泻火",
+      "活血化瘀",
+      "滋阴降火"
+    ],
+    "answer": 1,
+    "why": "柴胡升举阳气 + 黄芪补气升阳 → 升提中气（治中气下陷）。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1161
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-021",
+    "node_ids": [
+      "he-gu",
+      "large-intestine"
+    ],
+    "type": "single_choice",
+    "stem": "合谷穴归经的脏腑表里关系是？",
+    "options": [
+      "心 - 小肠",
+      "肝 - 胆",
+      "脾 - 胃",
+      "肺 - 大肠",
+      "肾 - 膀胱"
+    ],
+    "answer": 3,
+    "why": "合谷归大肠经；大肠与肺相表里。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1077
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-022",
+    "node_ids": [
+      "wind-evil",
+      "fire-evil",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "肝风内动可由什么引起？",
+    "options": [
+      "寒邪凝滞",
+      "热极生风/血虚生风/阴虚动风/肝阳化风",
+      "湿邪困脾",
+      "燥邪伤津",
+      "气滞血瘀"
+    ],
+    "answer": 1,
+    "why": "肝风内动四类原因：肝阳化风、热极生风、阴虚动风、血虚生风。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1443
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-023",
+    "node_ids": [
+      "qi",
+      "blood",
+      "heart",
+      "liver"
+    ],
+    "type": "match",
+    "stem": "气血关系四口诀（连线）：",
+    "options": {
+      "left": [
+        "气能生血",
+        "气能行血",
+        "气能摄血",
+        "血能载气"
+      ],
+      "right": [
+        "血液运行依靠气推动",
+        "气虚出血",
+        "气依附血而行",
+        "气能化生血液"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "why": "气能生血=化生；气能行血=推动；气能摄血=固摄防出血；血能载气=气依附血。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1175
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-deep-024",
+    "node_ids": [
+      "fire-evil",
+      "heart",
+      "liver",
+      "syndrome-differentiation"
+    ],
+    "type": "single_choice",
+    "stem": "「上火」体质常见证型是？",
+    "options": [
+      "心阳虚 / 肾阳虚",
+      "心火亢盛 / 肝火上炎 / 胃火炽盛",
+      "脾肾阳虚 / 心脾两虚",
+      "肺燥 / 肠燥",
+      "气滞血瘀"
+    ],
+    "answer": 1,
+    "why": "「上火」多为实热证：心火亢盛、肝火上炎、胃火炽盛、肺胃热盛等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 184
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

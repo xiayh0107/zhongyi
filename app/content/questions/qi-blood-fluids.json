@@ -1,0 +1,686 @@
+[
+  {
+    "id": "q-qi-001",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "multiple_choice",
+    "stem": "气的五大功能包括（多选）：",
+    "options": [
+      "推动",
+      "温煦",
+      "防御",
+      "固摄",
+      "气化"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "why": "气的五大功能：推动、温煦、防御、固摄、气化。全选。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 531
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qi-002",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "自汗、遗尿、滑精等是气的什么功能减弱？",
+    "options": [
+      "推动",
+      "温煦",
+      "防御",
+      "固摄",
+      "气化"
+    ],
+    "answer": 3,
+    "why": "气的固摄作用控制液态物质流失。固摄不足→出血、自汗、遗尿、滑精。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 469
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qi-003",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "畏寒肢冷是气的什么功能减弱？",
+    "options": [
+      "推动",
+      "温煦",
+      "防御",
+      "固摄",
+      "气化"
+    ],
+    "answer": 1,
+    "why": "气的温煦作用维持体温。温煦不足→畏寒肢冷。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 443
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qi-004",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "易感冒是气的什么功能减弱？",
+    "options": [
+      "推动",
+      "温煦",
+      "防御",
+      "固摄",
+      "气化"
+    ],
+    "answer": 2,
+    "why": "气的防御作用护卫肌表。防御不足→易感冒。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 892
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qi-005",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "sort",
+    "stem": "排序「气的运动形式」（按 升 → 降 → 出 → 入 自然顺序）：",
+    "options": [
+      "出",
+      "降",
+      "入",
+      "升"
+    ],
+    "answer": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "why": "气机的四种运动：升降出入。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 443
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qi-006",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "走息道司呼吸、贯心脉行气血的是？",
+    "options": [
+      "元气",
+      "宗气",
+      "营气",
+      "卫气",
+      "中气"
+    ],
+    "answer": 1,
+    "why": "宗气积聚在胸中（膻中、气海），走息道司呼吸、贯心脉行气血。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 447
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qi-007",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "司腠理开合、防御外邪的是？",
+    "options": [
+      "元气",
+      "宗气",
+      "营气",
+      "卫气",
+      "中气"
+    ],
+    "answer": 3,
+    "why": "卫气司腠理开合、防御外邪、温养肌肤。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 697
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qi-008",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "化生血液的气是？",
+    "options": [
+      "元气",
+      "宗气",
+      "营气",
+      "卫气",
+      "中气"
+    ],
+    "answer": 2,
+    "why": "营气化生血液、营养全身（注于脉中）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 833
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qi-009",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "人体最根本、最重要的气是？",
+    "options": [
+      "元气",
+      "宗气",
+      "营气",
+      "卫气",
+      "中气"
+    ],
+    "answer": 0,
+    "why": "元气（原气、真气）是人体生命活动的原动力。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1678
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qi-010",
+    "node_ids": [
+      "qi"
+    ],
+    "type": "fill_in_blank",
+    "stem": "宗气聚集在胸中，称为「气 ___ 」或「膻 ___ 」。",
+    "answer": [
+      "海、中",
+      "海,中"
+    ],
+    "why": "宗气在胸中积聚之处称气海或膻中。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 617
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-blood-001",
+    "node_ids": [
+      "blood",
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "「气为血之帅」不包括哪一项？",
+    "options": [
+      "气能生血",
+      "气能行血",
+      "气能摄血",
+      "气能载血"
+    ],
+    "answer": 3,
+    "why": "气为血之帅 = 气能生血 + 气能行血 + 气能摄血。「载血」不存在；「血能载气」是血为气之母。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1175
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-blood-002",
+    "node_ids": [
+      "blood",
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "治疗血虚证时，常在补血药中加益气药，依据是？",
+    "options": [
+      "气能行血",
+      "气能摄血",
+      "气能生血",
+      "血能养气",
+      "血能载气"
+    ],
+    "answer": 2,
+    "why": "气能生血——补血需配益气药（如当归补血汤黄芪 5:1 当归）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 693
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-blood-003",
+    "node_ids": [
+      "blood",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾不统血导致便血、月经过多，体现气的哪个功能失常？",
+    "options": [
+      "推动",
+      "温煦",
+      "固摄（摄血）",
+      "防御",
+      "气化"
+    ],
+    "answer": 2,
+    "why": "脾统血 = 气摄血。脾不统血 = 摄血失司 → 各种出血。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1582
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-blood-004",
+    "node_ids": [
+      "blood"
+    ],
+    "type": "multiple_choice",
+    "stem": "与血液运行直接相关的脏（多选）：",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "心行血、肝藏血与调节、脾统血、肺朝百脉助行血。肾与血运无直接关系。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 744
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-blood-005",
+    "node_ids": [
+      "blood",
+      "liver",
+      "heart"
+    ],
+    "type": "multiple_choice",
+    "stem": "易出现血虚证的脏（多选）：",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "why": "心主血、肝藏血——这两脏最易血虚。心血虚 + 肝血虚是常见证型。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 973
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-bf-001",
+    "node_ids": [
+      "body-fluids",
+      "spleen",
+      "lung",
+      "kidney"
+    ],
+    "type": "multiple_choice",
+    "stem": "与津液输布有关的脏（多选）：",
+    "options": [
+      "脾",
+      "肺",
+      "肾",
+      "肝",
+      "三焦"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "why": "津液输布依靠脾、肺、肾、肝、三焦五者协作。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 955
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-bf-002",
+    "node_ids": [
+      "body-fluids"
+    ],
+    "type": "single_choice",
+    "stem": "津液输布的主要通道是？",
+    "options": [
+      "血脉",
+      "三焦",
+      "分肉",
+      "经络",
+      "腠理"
+    ],
+    "answer": 1,
+    "why": "三焦是水液运行的通道。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 836
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-bf-003",
+    "node_ids": [
+      "body-fluids",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "津液生成不足主要责之于哪个脏？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 2,
+    "why": "脾胃是津液生成的主要脏腑（运化水谷化生津液）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 611
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-bf-004",
+    "node_ids": [
+      "body-fluids",
+      "blood"
+    ],
+    "type": "single_choice",
+    "stem": "「夺汗者无血、夺血者无汗」体现？",
+    "options": [
+      "阴阳互根",
+      "气血关系",
+      "津血同源",
+      "脏腑相生",
+      "经络循行"
+    ],
+    "answer": 2,
+    "why": "津血同源——津液与血来源相似、皆属阴、相互转化。汗为津液所化，故夺汗即夺血。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 615
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-bf-005",
+    "node_ids": [
+      "body-fluids"
+    ],
+    "type": "single_choice",
+    "stem": "五液中不包括的是？",
+    "options": [
+      "汗",
+      "泪",
+      "涕",
+      "涎",
+      "尿"
+    ],
+    "answer": 4,
+    "why": "五液：汗（心）、泪（肝）、涕（肺）、涎（脾）、唾（肾）。尿不是五液。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 439
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qb-001",
+    "node_ids": [
+      "qi",
+      "blood",
+      "body-fluids"
+    ],
+    "type": "sort",
+    "stem": "按生成依赖关系排序（先有哪个）：脾运化 → 气 → 血 → 津液",
+    "options": [
+      "血",
+      "气",
+      "脾运化",
+      "津液"
+    ],
+    "answer": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "why": "脾运化水谷精微 → 化生气 → 营气化血 → 津液与血同源。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 611
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qb-002",
+    "node_ids": [
+      "qi",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾运化失司最直接影响哪种物质？",
+    "options": [
+      "元气",
+      "宗气",
+      "营气和水谷之气",
+      "卫气",
+      "津血"
+    ],
+    "answer": 2,
+    "why": "脾运化水谷 → 化生营气、水谷之气（合宗气清气成宗气）。营气最先受影响。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 595
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qb-003",
+    "node_ids": [
+      "body-fluids",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "肾在津液代谢中的作用？",
+    "options": [
+      "生成津液",
+      "蒸腾气化主宰整个代谢",
+      "输布到全身",
+      "排出汗液",
+      "调节情志"
+    ],
+    "answer": 1,
+    "why": "肾主水，蒸腾气化主宰整个津液代谢——包括尿液生成与排泄。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1153
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qb-004",
+    "node_ids": [
+      "body-fluids",
+      "spleen",
+      "lung",
+      "kidney"
+    ],
+    "type": "match",
+    "stem": "津液代谢与脏的对应（连线）：",
+    "options": {
+      "left": [
+        "生成",
+        "输布上源",
+        "气化中枢"
+      ],
+      "right": [
+        "脾胃小肠大肠",
+        "肺",
+        "肾"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "why": "生成靠脾胃小肠大肠；输布的「水之上源」是肺；气化中枢是肾。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1664
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-qb-005",
+    "node_ids": [
+      "qi",
+      "blood"
+    ],
+    "type": "single_choice",
+    "stem": "气虚的最典型表现是？",
+    "options": [
+      "剧痛",
+      "气短乏力自汗",
+      "高热",
+      "出血",
+      "瘙痒"
+    ],
+    "answer": 1,
+    "why": "气虚：少气懒言、声低息微、神疲乏力、自汗、动则诸症加重。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 265
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

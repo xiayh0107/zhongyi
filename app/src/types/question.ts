@@ -2,7 +2,7 @@
  * Fast Memory · Question Schema
  * Version: 0.2 (2026-05-23)
  *
- * 用于校验 content/questions.json 中的题目对象。
+ * 用于校验 content/questions/*.json 中的题目对象。
  * 8 种题型，每种 answer 字段类型不同，用 discriminated union 严格表达。
  *
  * 设计依据：
@@ -95,7 +95,7 @@ const DeriveSchema = BaseQuestionSchema.extend({
 
 const BlankRecallSchema = BaseQuestionSchema.extend({
   type: z.literal("blank_recall"),
-  // blank_recall 不在 questions.json 单独定义；走节点的 recall_keypoints
+  // blank_recall 不在题库 JSON 单独定义；走节点的 recall_keypoints
   // 此 schema 仅为运行时记录尝试用
   answer: z.object({
     required_ids: z.array(z.number().int().positive()).default([]),

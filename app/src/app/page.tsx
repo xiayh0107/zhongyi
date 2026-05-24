@@ -14,6 +14,7 @@ import { StatusOverview } from "@/components/home/status-overview";
 import { EntryCards } from "@/components/home/entry-cards";
 import { OutlineTree } from "@/components/home/outline-tree";
 import { WikiLinkHover, type WikiLinkData } from "@/components/wiki-link-hover";
+import { nodeHref } from "@/lib/content/links";
 import { TOKENS_A } from "@/design/tokens";
 
 async function signOutAction() {
@@ -188,7 +189,7 @@ function ReviewSidebar({
           {items.map((it) => (
             <li key={it.nodeId}>
               <Link
-                href={`/nodes/${it.nodeId}`}
+                href={nodeHref(it.nodeId)}
                 className="block hover:opacity-80 wiki-link"
                 data-node-id={it.nodeId}
                 style={{

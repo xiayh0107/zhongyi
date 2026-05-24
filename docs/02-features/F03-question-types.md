@@ -291,7 +291,7 @@ function pickQuestions(nodeId: string, n: number): Question[] {
 ## 数据依赖
 
 读：
-- `content/questions.json`（按 node_id 过滤）
+- `content/questions/*.json`（按 node_id 过滤）
 - `user_node_progress`（FSRS card 状态）
 
 写：

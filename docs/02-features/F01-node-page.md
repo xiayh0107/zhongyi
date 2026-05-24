@@ -142,7 +142,7 @@ supersedes: []
 - `content/nodes/{id}.md` → frontmatter + body
 - `content/.build/graph.json` → 该节点的所有 relations（前置/并列/关系/延伸）
 - `user_node_progress where user_id=? and node_id=?` → memory_strength, mastery_tier
-- `content/questions.json` → 挂载到该节点的题目（仅取数量）
+- `content/questions/*.json` → 挂载到该节点的题目（仅取数量）
 
 写入（用户访问时）：
 - `user_node_progress.first_visited` (if null)

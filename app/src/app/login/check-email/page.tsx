@@ -75,10 +75,6 @@ export default async function CheckEmailPage({
           </Link>
         </li>
       </ul>
-
-      <div className="mt-12 font-mono text-[11px]" style={{ color: "var(--color-ink-3)" }}>
-        提示：开发期间，magic link 输出到 dev server 控制台
-      </div>
     </AuthShell>
   );
 }

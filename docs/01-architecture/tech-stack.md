@@ -133,7 +133,10 @@ fast-memory/
 app/
 ├── content/                       ← 学习内容（Markdown + JSON）
 │   ├── nodes/
-│   ├── questions.json
+│   ├── questions/
+│   │   ├── foundations.json
+│   │   └── ...
+│   ├── questions.json              ← legacy fallback placeholder
 │   └── .build/                    ← 构建产物，gitignore
 ├── scripts/                       ← 构建/校验脚本
 │   ├── validate-content.ts

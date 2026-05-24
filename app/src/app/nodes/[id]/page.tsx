@@ -3,6 +3,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getNode, getQuestionsForNode, getBacklinks } from "@/lib/content/loader";
+import {
+  decodeNodeRouteParam,
+  nodeDisplayLabel,
+  nodeHref,
+  nodeSubpathHref,
+} from "@/lib/content/links";
 import { renderMarkdown } from "@/lib/content/markdown";
 import { auth } from "@/auth";
 import {
@@ -33,7 +39,8 @@ export default async function NodePage({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const { id } = await params;
+  const { id: rawId } = await params;
+  const id = decodeNodeRouteParam(rawId);
   const node = getNode(id);
   if (!node) notFound();
 
@@ -53,10 +60,10 @@ export default async function NodePage({
     recentAttempts = await getRecentAttempts(session.user.id, id, 5);
   }
 
-  const bodyHtml = await renderMarkdown(node.body);
+  const graph = getContentGraph();
+  const bodyHtml = await renderMarkdown(node.body, graph.nodes);
 
   // 收集页面上所有 wiki-link 目标供 hover 预览
-  const graph = getContentGraph();
   const linkTargetIds = new Set<string>([
     ...node.outgoing_links,
     ...node.relations.map((r) => r.target),
@@ -189,7 +196,7 @@ export default async function NodePage({
                     {backlinks.map((b) => (
                       <Link
                         key={b}
-                        href={`/nodes/${b}`}
+                        href={nodeHref(b)}
                         className="wiki-link ml-2"
                         data-node-id={b}
                         style={{
@@ -199,7 +206,7 @@ export default async function NodePage({
                           fontSize: 14,
                         }}
                       >
-                        {b}
+                        {nodeDisplayLabel(b, graph.nodes)}
                       </Link>
                     ))}
                   </div>
@@ -212,7 +219,7 @@ export default async function NodePage({
             <div className="flex flex-col gap-2">
               {questions.length > 0 ? (
                 <Link
-                  href={`/nodes/${id}/quiz`}
+                  href={nodeSubpathHref(id, "quiz")}
                   className="block text-center"
                   style={{
                     background: TOKENS_A.ink,
@@ -242,7 +249,7 @@ export default async function NodePage({
               )}
               {(node.recall_keypoints?.required.length ?? 0) > 0 && (
                 <Link
-                  href={`/nodes/${id}/recall`}
+                  href={nodeSubpathHref(id, "recall")}
                   className="block text-center"
                   style={{
                     background: "transparent",
@@ -298,6 +305,7 @@ function RelationGroup({
   items: { target: string; note?: string }[];
 }) {
   if (items.length === 0) return null;
+  const graph = getContentGraph();
   return (
     <div className="mb-3">
       <span
@@ -313,7 +321,7 @@ function RelationGroup({
       {items.map((r) => (
         <span key={r.target} className="ml-2">
           <Link
-            href={`/nodes/${r.target}`}
+            href={nodeHref(r.target)}
             className="wiki-link"
             data-node-id={r.target}
             style={{
@@ -324,7 +332,7 @@ function RelationGroup({
               paddingBottom: 1,
             }}
           >
-            {r.target}
+            {nodeDisplayLabel(r.target, graph.nodes)}
           </Link>
           {r.note && (
             <span style={{ fontSize: 12, color: TOKENS_A.ink3, marginLeft: 6 }}>
@@ -361,7 +369,8 @@ function TopBar() {
 
 // SEO / metadata
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+  const { id: rawId } = await params;
+  const id = decodeNodeRouteParam(rawId);
   const node = getNode(id);
   if (!node) return { title: "节点不存在 · Fast Memory" };
   return {

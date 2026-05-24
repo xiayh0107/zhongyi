@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { TOKENS_A } from "@/design/tokens";
+import { nodeHref } from "@/lib/content/links";
 
 type Common = { variant: "restore" | "new" | "resume" | "browse" };
 
@@ -64,7 +65,7 @@ export function EntryCards({
         )}
         {recommended && (
           <Card
-            href={`/nodes/${recommended.id}`}
+            href={nodeHref(recommended.id)}
             title="探索新节点"
             meta={`推荐：${recommended.title}`}
             cta="学习"
@@ -73,7 +74,7 @@ export function EntryCards({
         )}
         {resumeNode && (
           <Card
-            href={`/nodes/${resumeNode.id}`}
+            href={nodeHref(resumeNode.id)}
             title="继续上次"
             meta={resumeNode.title}
             cta="继续"

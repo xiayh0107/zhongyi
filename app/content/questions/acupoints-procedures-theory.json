@@ -1,0 +1,513 @@
+[
+  {
+    "id": "q-hegu-001",
+    "node_ids": [
+      "he-gu"
+    ],
+    "type": "single_choice",
+    "stem": "合谷穴归哪一经？",
+    "options": [
+      "手太阴肺经",
+      "手阳明大肠经",
+      "手少阴心经",
+      "手厥阴心包经",
+      "足阳明胃经"
+    ],
+    "answer": 1,
+    "why": "合谷穴归手阳明大肠经。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1077
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-hegu-002",
+    "node_ids": [
+      "he-gu"
+    ],
+    "type": "single_choice",
+    "stem": "「面口合谷收」体现合谷的什么主治？",
+    "options": [
+      "腰背病症",
+      "下肢病症",
+      "头面口腔病症",
+      "胸腹病症",
+      "皮肤病症"
+    ],
+    "answer": 2,
+    "why": "合谷是治疗头面口腔病症的要穴：齿痛、目赤、咽痛、口眼歪斜、头痛等。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1079
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-hegu-003",
+    "node_ids": [
+      "he-gu"
+    ],
+    "type": "single_choice",
+    "stem": "合谷穴定位？",
+    "options": [
+      "腕掌侧远端横纹上 3 寸",
+      "手背第 1 第 2 掌骨之间",
+      "拇指掌侧远端",
+      "小指尺侧",
+      "肘横纹外侧"
+    ],
+    "answer": 1,
+    "why": "合谷定位：手背，第 1 掌骨和第 2 掌骨之间，约平第 2 掌骨桡侧中点。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1075
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-hegu-004",
+    "node_ids": [
+      "he-gu"
+    ],
+    "type": "single_choice",
+    "stem": "哪类人群禁针合谷？",
+    "options": [
+      "儿童",
+      "老人",
+      "孕妇",
+      "高血压患者",
+      "糖尿病患者"
+    ],
+    "answer": 2,
+    "why": "合谷活血通经，能催产 → 孕妇禁针。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1079
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-acupoint-001",
+    "node_ids": [
+      "tian-shu",
+      "stomach",
+      "large-intestine"
+    ],
+    "type": "single_choice",
+    "stem": "天枢穴的定位是？",
+    "options": [
+      "脐中上 4 寸，前正中线上",
+      "横平脐中，前正中线旁开 2 寸",
+      "腕掌侧远端横纹上 2 寸，两筋之间",
+      "第 2 腰椎棘突下旁开 1.5 寸"
+    ],
+    "answer": 1,
+    "why": "天枢在腹部，横平脐中，前正中线旁开 2 寸，是足阳明胃经穴、大肠募穴。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 4
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-acupoint-002",
+    "node_ids": [
+      "zhong-wan",
+      "stomach",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "中脘穴的定位是？",
+    "options": [
+      "脐中上 4 寸，前正中线上",
+      "脐中下 3 寸，前正中线上",
+      "脐旁 2 寸",
+      "足背第 1、2 跖骨间"
+    ],
+    "answer": 0,
+    "why": "中脘属任脉，定位在上腹部，脐中上 4 寸，前正中线上。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 47
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-acupoint-003",
+    "node_ids": [
+      "nei-guan",
+      "heart",
+      "stomach"
+    ],
+    "type": "multiple_choice",
+    "stem": "内关穴的主治范围包括（多选）：",
+    "options": [
+      "心痛、心悸、胸闷",
+      "胃脘痛、呕吐、呃逆",
+      "癫狂痫",
+      "下肢痿痹、足跗肿痛",
+      "鼻燥咽干"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "why": "内关属手厥阴心包经，重点主治心胸、胃和神志病症；下肢痿痹偏太冲，鼻燥咽干是燥邪表现。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 5
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-acupoint-004",
+    "node_ids": [
+      "tai-chong",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "太冲穴归哪条经？",
+    "options": [
+      "手阳明大肠经",
+      "足阳明胃经",
+      "手厥阴心包经",
+      "足厥阴肝经",
+      "足太阳膀胱经"
+    ],
+    "answer": 3,
+    "why": "太冲属足厥阴肝经，定位在足背第 1、2 跖骨间。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 50
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-acupoint-005",
+    "node_ids": [
+      "shen-shu",
+      "kidney",
+      "bladder"
+    ],
+    "type": "single_choice",
+    "stem": "肾俞穴的定位关键是？",
+    "options": [
+      "第 2 腰椎棘突下，后正中线旁开 1.5 寸",
+      "第 7 颈椎棘突下，后正中线上",
+      "犊鼻下 3 寸，犊鼻与解溪连线上",
+      "脐中上 4 寸，前正中线上"
+    ],
+    "answer": 0,
+    "why": "肾俞属足太阳膀胱经，定位在第 2 腰椎棘突下，后正中线旁开 1.5 寸。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 56
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-acupoint-006",
+    "node_ids": [
+      "zu-san-li",
+      "stomach",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "足三里穴的定位是？",
+    "options": [
+      "腕掌侧远端横纹上 2 寸，两筋之间",
+      "小腿外侧，犊鼻下 3 寸，犊鼻与解溪连线上",
+      "足背第 1、2 跖骨间",
+      "脐旁 2 寸"
+    ],
+    "answer": 1,
+    "why": "足三里属足阳明胃经，定位在小腿外侧，犊鼻下 3 寸，犊鼻与解溪连线上。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 61
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-acupoint-007",
+    "node_ids": [
+      "tian-shu",
+      "zhong-wan",
+      "nei-guan",
+      "tai-chong",
+      "shen-shu",
+      "zu-san-li"
+    ],
+    "type": "match",
+    "stem": "穴位与归经对应（连线）：",
+    "options": {
+      "left": [
+        "天枢",
+        "中脘",
+        "内关",
+        "太冲",
+        "肾俞",
+        "足三里"
+      ],
+      "right": [
+        "任脉",
+        "足厥阴肝经",
+        "足太阳膀胱经",
+        "足阳明胃经",
+        "手厥阴心包经"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "why": "天枢与足三里同属足阳明胃经；中脘属任脉；内关属手厥阴心包经；太冲属足厥阴肝经；肾俞属足太阳膀胱经。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 47
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-acupoint-008",
+    "node_ids": [
+      "zu-san-li",
+      "tian-shu",
+      "zhong-wan"
+    ],
+    "type": "multiple_choice",
+    "stem": "下列哪些穴位常用于胃肠、腹部病症？（多选）",
+    "options": [
+      "足三里",
+      "天枢",
+      "中脘",
+      "肾俞",
+      "太冲"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "why": "足三里主治胃、脾、肠病症；天枢主治腹部与肠腑病症；中脘主治胃脘、腹部病症。肾俞偏肾与腰部，太冲偏肝经相关病症。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 47
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-procedure-001",
+    "node_ids": [
+      "shi-an-jiu"
+    ],
+    "type": "single_choice",
+    "stem": "实按灸的核心操作特点是？",
+    "options": [
+      "点燃艾条或艾柱后按压于穴位或患处",
+      "单纯用针刺入后快速提插",
+      "用罐具吸附体表",
+      "按十二经脉顺序推拿"
+    ],
+    "answer": 0,
+    "why": "实按灸属于艾灸特殊操作，核心是将点燃艾条或艾柱按压在穴位或患处，使压力、热力和药效结合。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 3
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-procedure-002",
+    "node_ids": [
+      "wen-zhen-jiu"
+    ],
+    "type": "single_choice",
+    "stem": "温针灸的特点是？",
+    "options": [
+      "针刺与艾灸结合",
+      "拔罐与刮痧结合",
+      "只用艾条悬灸",
+      "只用毫针不加温热刺激"
+    ],
+    "answer": 0,
+    "why": "温针灸是在针刺基础上配合艾灸温热刺激，属于针刺与艾灸结合的操作。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 34
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-procedure-003",
+    "node_ids": [
+      "ba-guan"
+    ],
+    "type": "single_choice",
+    "stem": "拔罐古称什么？",
+    "options": [
+      "角法",
+      "砭法",
+      "导引",
+      "按跷"
+    ],
+    "answer": 0,
+    "why": "拔罐古称角法，也称火罐疗法、吸筒疗法。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 31
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-theory-001",
+    "node_ids": [
+      "shi-er-jing-mai-liu-zhu"
+    ],
+    "type": "sort",
+    "stem": "按十二经脉流注前四步排序：",
+    "options": [
+      "足阳明胃经",
+      "手太阴肺经",
+      "足太阴脾经",
+      "手阳明大肠经"
+    ],
+    "answer": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "why": "十二经脉流注从手太阴肺经开始，接手阳明大肠经、足阳明胃经、足太阴脾经。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 32
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-theory-002",
+    "node_ids": [
+      "jing-luo-basic"
+    ],
+    "type": "sort",
+    "stem": "腹部经脉由内向外排列：",
+    "options": [
+      "足太阴脾经",
+      "足少阴肾经",
+      "任脉",
+      "足阳明胃经"
+    ],
+    "answer": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "why": "腹部经脉由内向外为任脉、足少阴肾经、足阳明胃经、足太阴脾经。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 2
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-theory-003",
+    "node_ids": [
+      "jing-luo-basic"
+    ],
+    "type": "single_choice",
+    "stem": "头痛连颈多对应哪条经？",
+    "options": [
+      "太阳经",
+      "阳明经",
+      "少阳经",
+      "厥阴经"
+    ],
+    "answer": 0,
+    "why": "docx 中头痛连颈对应太阳经，可与头项部、颈项部症状一起记。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 118
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

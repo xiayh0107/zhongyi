@@ -5,6 +5,7 @@ import Link from "next/link";
 import { StatusBar } from "@/components/status-bar";
 import { TOKENS_A } from "@/design/tokens";
 import type { OutlineGroup } from "@/lib/content/outline";
+import { nodeHref } from "@/lib/content/links";
 import type { NodeStatus } from "@/lib/progress/overview";
 
 export function OutlineTree({
@@ -64,7 +65,7 @@ export function OutlineTree({
                 return (
                   <li key={node.nodeId}>
                     <Link
-                      href={`/nodes/${node.nodeId}`}
+                      href={nodeHref(node.nodeId)}
                       className="flex items-center justify-between gap-3 py-1 hover:opacity-80"
                       style={{ textDecoration: "none", color: TOKENS_A.ink }}
                     >

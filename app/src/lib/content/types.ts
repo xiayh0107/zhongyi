@@ -3,7 +3,7 @@
 import type { NodeFrontmatter } from "@/types/node";
 import type { Question } from "@/types/question";
 
-export type LoadedNode = NodeFrontmatter & {
+export type BaseLoadedNode = NodeFrontmatter & {
   /** Markdown body（frontmatter 之外的部分） */
   body: string;
   /** body 中 [[wiki-link]] 引用到的 node ids（构建期解析） */
@@ -11,6 +11,8 @@ export type LoadedNode = NodeFrontmatter & {
   /** 文件在仓库中的相对路径（用于错误定位） */
   source_path: string;
 };
+
+export type LoadedNode = BaseLoadedNode;
 
 export type ContentGraph = {
   nodes: Map<string, LoadedNode>;

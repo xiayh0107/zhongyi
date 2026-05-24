@@ -1,0 +1,299 @@
+[
+  {
+    "id": "q-gap-final-stroke-formulas-001",
+    "node_ids": [
+      "stroke",
+      "da-qin-jiao-tang"
+    ],
+    "type": "single_choice",
+    "stem": "中风风邪痹阻经络、偏于祛风通络时，最常用的代表方是？",
+    "options": [
+      "大秦艽汤",
+      "镇肝熄风汤",
+      "涤痰汤",
+      "参附汤"
+    ],
+    "answer": 0,
+    "why": "大秦艽汤是中风低频代表方之一，重点在风邪痹阻经络、祛风通络。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-stroke-formulas-002",
+    "node_ids": [
+      "stroke",
+      "zhen-gan-xi-feng-tang"
+    ],
+    "type": "single_choice",
+    "stem": "中风肝阳上亢、肝风内动时，最常用的代表方是？",
+    "options": [
+      "羚角钩藤汤",
+      "镇肝熄风汤",
+      "苏合香丸",
+      "至宝丹"
+    ],
+    "answer": 1,
+    "why": "镇肝熄风汤对应中风肝阳上亢、肝风内动。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-stroke-formulas-003",
+    "node_ids": [
+      "stroke",
+      "zhi-bao-dan"
+    ],
+    "type": "single_choice",
+    "stem": "中风痰热内闭、神昏窍闭时，最常用的代表方是？",
+    "options": [
+      "至宝丹",
+      "涤痰汤",
+      "苏合香丸",
+      "参附汤"
+    ],
+    "answer": 0,
+    "why": "至宝丹用于中风痰热内闭，侧重清热开窍、化痰解毒。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-stroke-formulas-004",
+    "node_ids": [
+      "stroke",
+      "ling-jiao-gou-teng-tang"
+    ],
+    "type": "single_choice",
+    "stem": "中风热盛动风、肝风内动时，最常用的代表方是？",
+    "options": [
+      "大秦艽汤",
+      "羚角钩藤汤",
+      "镇肝熄风汤",
+      "涤痰汤"
+    ],
+    "answer": 1,
+    "why": "羚角钩藤汤用于中风热盛动风，侧重平肝熄风、清热养阴。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-stroke-formulas-005",
+    "node_ids": [
+      "stroke",
+      "su-he-xiang-wan"
+    ],
+    "type": "single_choice",
+    "stem": "中风寒闭、痰厥、突然昏仆时，最常用的代表方是？",
+    "options": [
+      "苏合香丸",
+      "至宝丹",
+      "大秦艽汤",
+      "参附汤"
+    ],
+    "answer": 0,
+    "why": "苏合香丸用于中风寒闭，侧重芳香开窍。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-stroke-formulas-006",
+    "node_ids": [
+      "stroke",
+      "di-tan-tang"
+    ],
+    "type": "single_choice",
+    "stem": "中风痰浊阻窍、神识昏蒙时，最常用的代表方是？",
+    "options": [
+      "涤痰汤",
+      "苏合香丸",
+      "镇肝熄风汤",
+      "羚角钩藤汤"
+    ],
+    "answer": 0,
+    "why": "涤痰汤用于中风痰浊阻窍，侧重涤痰开窍。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-stroke-formulas-007",
+    "node_ids": [
+      "stroke",
+      "can-fu-tang"
+    ],
+    "type": "single_choice",
+    "stem": "中风脱证、元气欲脱、汗出肢冷、脉微欲绝时，最常用的代表方是？",
+    "options": [
+      "参附汤",
+      "涤痰汤",
+      "苏合香丸",
+      "大秦艽汤"
+    ],
+    "answer": 0,
+    "why": "参附汤用于中风脱证，侧重回阳救逆、益气固脱。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-stroke-formulas-008",
+    "node_ids": [
+      "stroke",
+      "da-qin-jiao-tang",
+      "zhen-gan-xi-feng-tang",
+      "zhi-bao-dan",
+      "ling-jiao-gou-teng-tang"
+    ],
+    "type": "match",
+    "stem": "请将中风证型与代表方匹配。",
+    "options": {
+      "left": [
+        "中风风邪痹阻经络",
+        "中风肝阳上亢、肝风内动",
+        "中风痰热内闭",
+        "中风热盛动风"
+      ],
+      "right": [
+        "大秦艽汤",
+        "镇肝熄风汤",
+        "至宝丹",
+        "羚角钩藤汤"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "why": "这组匹配覆盖中风低频代表方中的风邪痹阻、肝阳上亢、痰热内闭、热盛动风四类辨证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-stroke-formulas-009",
+    "node_ids": [
+      "stroke",
+      "su-he-xiang-wan",
+      "di-tan-tang",
+      "can-fu-tang"
+    ],
+    "type": "multiple_choice",
+    "stem": "以下哪些属于中风低频代表方剂？",
+    "options": [
+      "大秦艽汤",
+      "镇肝熄风汤",
+      "至宝丹",
+      "羚角钩藤汤",
+      "苏合香丸",
+      "涤痰汤",
+      "参附汤",
+      "补阳还五汤",
+      "黄连温胆汤"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "why": "题干所列 7 方均为中风低频代表方；补阳还五汤、黄连温胆汤不属于这一组。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-final-stroke-formulas-010",
+    "node_ids": [
+      "stroke",
+      "zhi-bao-dan",
+      "su-he-xiang-wan"
+    ],
+    "type": "multiple_choice",
+    "stem": "中风闭证常用的开窍方有哪些？",
+    "options": [
+      "至宝丹",
+      "苏合香丸",
+      "参附汤",
+      "涤痰汤"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "why": "中风闭证常用的开窍方包括至宝丹和苏合香丸；参附汤主脱证，涤痰汤主痰浊阻窍。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

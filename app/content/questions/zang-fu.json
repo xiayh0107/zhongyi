@@ -1,0 +1,2161 @@
+[
+  {
+    "id": "q-liver-001",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "肝在志为？",
+    "options": [
+      "喜",
+      "怒",
+      "思",
+      "悲",
+      "恐"
+    ],
+    "answer": 1,
+    "why": "肝五行属木，木性条达。怒则气上，怒为肝之志。详见 [[liver]] 的系统联系。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 597
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-002",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "肝其华在？",
+    "options": [
+      "面",
+      "唇",
+      "爪",
+      "毛",
+      "发"
+    ],
+    "answer": 2,
+    "why": "肝主筋，爪为筋之余，故肝其华在爪。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 597
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-003",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "肝在液为？",
+    "options": [
+      "涕",
+      "唾",
+      "汗",
+      "涎",
+      "泪"
+    ],
+    "answer": 4,
+    "why": "肝开窍于目，目泪由肝所主，故肝在液为泪。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 597
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-004",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "肝在五行属？",
+    "options": [
+      "木",
+      "火",
+      "土",
+      "金",
+      "水"
+    ],
+    "answer": 0,
+    "why": "肝在五行属木，主升发条达。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 597
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-005",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "肝开窍于？",
+    "options": [
+      "舌",
+      "目",
+      "口",
+      "鼻",
+      "耳"
+    ],
+    "answer": 1,
+    "why": "肝开窍于目。肝之精气上注于目，故目能视物辨色。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 597
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-006",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "肝与下列哪个脏腑相表里？",
+    "options": [
+      "小肠",
+      "胃",
+      "大肠",
+      "胆",
+      "膀胱"
+    ],
+    "answer": 3,
+    "why": "肝与胆相表里。胆汁由肝之精气化生，肝胆相互配合主疏泄。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 597
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-007",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不是肝主疏泄的功能？",
+    "options": [
+      "调畅气机",
+      "维持血液和津液运行",
+      "助脾升胃降",
+      "调达情志",
+      "统摄血液"
+    ],
+    "answer": 4,
+    "why": "统摄血液（统血）是脾的功能，不是肝。肝主疏泄的 5 个功能：调畅气机、维持血液和津液运行、助脾升胃降及胆汁排泄、调达情志、调节生殖功能。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1466
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-008",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "肝主疏泄的中心环节是？",
+    "options": [
+      "藏血",
+      "调畅气机",
+      "调达情志",
+      "助消化",
+      "调节生殖"
+    ],
+    "answer": 1,
+    "why": "调畅气机是肝主疏泄的中心环节。气机调畅则其他功能（血津运行、消化、情志、生殖）都正常。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1696
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-009",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不属于肝主藏血的功能？",
+    "options": [
+      "贮藏血液",
+      "调节血量",
+      "防止出血",
+      "生成血液"
+    ],
+    "answer": 3,
+    "why": "肝主藏血包括贮藏、调节、防止出血三项功能。血液生成主要由脾胃化生水谷精微而成。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1468
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-010",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "在四季中与肝相通应的是？",
+    "options": [
+      "春",
+      "夏",
+      "长夏",
+      "秋",
+      "冬"
+    ],
+    "answer": 0,
+    "why": "肝属木，木对应春季。春主升发，与肝的疏泄升发之性一致。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 597
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-011",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "罢极之本是哪个脏？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 1,
+    "why": "肝主筋，筋束骨而利关节，主管运动。久动则疲，故肝为罢极之本。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 613
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-012",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "「将军之官」指的是？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 1,
+    "why": "《素问·灵兰秘典论》称「肝者，将军之官，谋虑出焉」。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 597
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-liver-013",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "肝在体合？",
+    "options": [
+      "脉",
+      "皮",
+      "肉",
+      "筋",
+      "骨"
+    ],
+    "answer": 3,
+    "why": "肝在体合筋，肝血滋养筋，筋束骨而利关节。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 597
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-001",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "心在五行属？",
+    "options": [
+      "木",
+      "火",
+      "土",
+      "金",
+      "水"
+    ],
+    "answer": 1,
+    "why": "心在五行属火，主宰阳气、推动血脉。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-002",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "心在志为？",
+    "options": [
+      "喜",
+      "怒",
+      "思",
+      "悲",
+      "恐"
+    ],
+    "answer": 0,
+    "why": "心在志为喜，过喜伤心。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-003",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "心在液为？",
+    "options": [
+      "涕",
+      "泪",
+      "汗",
+      "涎",
+      "唾"
+    ],
+    "answer": 2,
+    "why": "心主血脉，汗为血之余，汗液与心气血密切相关。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-004",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "心开窍于？",
+    "options": [
+      "目",
+      "舌",
+      "口",
+      "鼻",
+      "耳"
+    ],
+    "answer": 1,
+    "why": "心开窍于舌。舌为心之苗，心血上荣于舌则舌质红润。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-005",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "心与哪个腑相表里？",
+    "options": [
+      "大肠",
+      "小肠",
+      "胆",
+      "胃",
+      "膀胱"
+    ],
+    "answer": 1,
+    "why": "心与小肠互为表里，心火可下移小肠致小便短赤。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-006",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不是心的主要生理功能？",
+    "options": [
+      "主血脉",
+      "主神志",
+      "主运化",
+      "其华在面",
+      "开窍于舌"
+    ],
+    "answer": 2,
+    "why": "主运化是脾的功能，不是心。心的核心生理功能是主血脉、主神志。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-007",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "「君主之官」指的是？",
+    "options": [
+      "肝",
+      "心",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 1,
+    "why": "《素问》称心为「君主之官」「五脏之首」，主宰生命活动。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-008",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "fill_in_blank",
+    "stem": "心的两大核心生理功能：主 ___ 和主 ___ 。",
+    "answer": [
+      "血脉、神志",
+      "血脉,神志",
+      "血脉神志"
+    ],
+    "why": "心的核心生理功能：主血脉（推动血液周流）+ 主神志（主宰精神意识思维）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-001",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾在五行属？",
+    "options": [
+      "木",
+      "火",
+      "土",
+      "金",
+      "水"
+    ],
+    "answer": 2,
+    "why": "脾在五行属土，居中央，主运化。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 595
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-002",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾在志为？",
+    "options": [
+      "喜",
+      "怒",
+      "思",
+      "悲",
+      "恐"
+    ],
+    "answer": 2,
+    "why": "脾在志为思，思虑过度伤脾。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 595
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-003",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾在液为？",
+    "options": [
+      "汗",
+      "泪",
+      "涕",
+      "涎",
+      "唾"
+    ],
+    "answer": 3,
+    "why": "脾在液为涎，涎为脾之液，由口溢出。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 595
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-004",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾开窍于？",
+    "options": [
+      "目",
+      "舌",
+      "口",
+      "鼻",
+      "耳"
+    ],
+    "answer": 2,
+    "why": "脾开窍于口，其华在唇。脾气健运则口能知五味，唇红润。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 595
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-005",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "「后天之本」指的是？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 2,
+    "why": "脾胃为后天之本、气血生化之源。脾主运化水谷精微，化生气血。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 595
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-006",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "multiple_choice",
+    "stem": "脾的核心生理功能包括（多选）：",
+    "options": [
+      "主运化",
+      "主升",
+      "主统血",
+      "主纳气",
+      "主疏泄"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "why": "脾的三大功能：主运化、主升（升清+升举内脏）、主统血。主纳气是肾，主疏泄是肝。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 595
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-007",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾喜什么、恶什么？",
+    "options": [
+      "喜润恶燥",
+      "喜燥恶湿",
+      "喜温恶寒",
+      "喜凉恶热",
+      "喜动恶静"
+    ],
+    "answer": 1,
+    "why": "脾喜燥恶湿，湿邪最易困脾阳。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 790
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-008",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "fill_in_blank",
+    "stem": "脾为 ___ 之本，气血生化之源。",
+    "answer": [
+      "后天"
+    ],
+    "why": "脾为后天之本，与肾（先天之本）相对应。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 595
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lung-001",
+    "node_ids": [
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "肺在五行属？",
+    "options": [
+      "木",
+      "火",
+      "土",
+      "金",
+      "水"
+    ],
+    "answer": 3,
+    "why": "肺在五行属金，主肃降收敛。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lung-002",
+    "node_ids": [
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "肺在志为？",
+    "options": [
+      "喜",
+      "怒",
+      "思",
+      "悲忧",
+      "恐"
+    ],
+    "answer": 3,
+    "why": "肺在志为悲忧，过度悲忧伤肺。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lung-003",
+    "node_ids": [
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "肺开窍于？",
+    "options": [
+      "目",
+      "舌",
+      "口",
+      "鼻",
+      "耳"
+    ],
+    "answer": 3,
+    "why": "肺开窍于鼻。肺司呼吸，鼻为气体出入门户。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lung-004",
+    "node_ids": [
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "「华盖」「娇脏」分别指什么？",
+    "options": [
+      "心 / 肝",
+      "肺 / 肺",
+      "脾 / 肾",
+      "肝 / 心",
+      "肾 / 脾"
+    ],
+    "answer": 1,
+    "why": "肺位胸腔高位覆盖五脏六腑称「华盖」；肺叶娇嫩不耐寒热称「娇脏」。两者都指肺。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lung-005",
+    "node_ids": [
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "「水之上源」是？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 3,
+    "why": "肺通调水道，称水之上源。肺主行水。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lung-006",
+    "node_ids": [
+      "lung"
+    ],
+    "type": "multiple_choice",
+    "stem": "肺的主要生理功能包括（多选）：",
+    "options": [
+      "主气司呼吸",
+      "主宣发",
+      "主肃降",
+      "通调水道",
+      "藏精"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "肺的主要功能：主气司呼吸、主宣发肃降、通调水道、朝百脉、主治节。藏精是肾。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lung-007",
+    "node_ids": [
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "肺与下列哪个腑相表里？",
+    "options": [
+      "小肠",
+      "胆",
+      "胃",
+      "大肠",
+      "膀胱"
+    ],
+    "answer": 3,
+    "why": "肺与大肠相表里。肺气肃降助大肠传导，便秘可由肺失肃降致。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lung-008",
+    "node_ids": [
+      "lung"
+    ],
+    "type": "fill_in_blank",
+    "stem": "肺主气，包括主 ___ 之气和主 ___ 之气。",
+    "answer": [
+      "呼吸、一身",
+      "一身、呼吸"
+    ],
+    "why": "肺主气包括主呼吸之气（气体交换）和主一身之气（生成宗气 + 调节全身气机）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-001",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "肾在五行属？",
+    "options": [
+      "木",
+      "火",
+      "土",
+      "金",
+      "水"
+    ],
+    "answer": 4,
+    "why": "肾在五行属水，主水液。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 599
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-002",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "肾在志为？",
+    "options": [
+      "喜",
+      "怒",
+      "思",
+      "悲",
+      "恐"
+    ],
+    "answer": 4,
+    "why": "肾在志为恐，过度惊恐伤肾。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 599
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-003",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "肾其华在？",
+    "options": [
+      "面",
+      "唇",
+      "爪",
+      "毛",
+      "发"
+    ],
+    "answer": 4,
+    "why": "肾其华在发，发为血之余，赖肾精滋养。肾精充足则发茂润。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 599
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-004",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "肾开窍于？",
+    "options": [
+      "舌",
+      "目",
+      "口",
+      "鼻",
+      "耳及二阴"
+    ],
+    "answer": 4,
+    "why": "肾开窍于耳及二阴。肾精充足则听觉灵敏、二便正常。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 599
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-005",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "「先天之本」指的是？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 4,
+    "why": "肾藏先天之精，故称先天之本。与脾（后天之本）相对应。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 599
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-006",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "multiple_choice",
+    "stem": "肾的核心生理功能包括（多选）：",
+    "options": [
+      "藏精",
+      "主水",
+      "主纳气",
+      "主疏泄",
+      "主运化"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "why": "肾的三大核心功能：藏精、主水、主纳气。主疏泄是肝，主运化是脾。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 599
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-007",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "「水火之宅」指哪个脏？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 4,
+    "why": "肾内寓元阴元阳，称水火之宅、阴阳之本。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 587
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-008",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "fill_in_blank",
+    "stem": "「___ 者，肾之府」（《素问·脉要精微论》）。",
+    "answer": [
+      "腰"
+    ],
+    "why": "腰为肾之府。腰痛常责之于肾。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 599
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-009",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "呼多吸少、动则气短最可能是哪个脏的问题？",
+    "options": [
+      "肺失主气",
+      "肾失纳气",
+      "心不主血",
+      "肝失疏泄",
+      "脾失健运"
+    ],
+    "answer": 1,
+    "why": "肺为气之主，肾为气之根。呼多吸少、动则气短是肾不纳气的典型表现。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 829
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-zang-001",
+    "node_ids": [
+      "heart",
+      "liver",
+      "spleen",
+      "lung",
+      "kidney"
+    ],
+    "type": "match",
+    "stem": "五脏与在液的对应（连线）：",
+    "options": {
+      "left": [
+        "心",
+        "肝",
+        "脾",
+        "肺",
+        "肾"
+      ],
+      "right": [
+        "泪",
+        "汗",
+        "唾",
+        "涕",
+        "涎"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "why": "五脏在液：心-汗、肝-泪、脾-涎、肺-涕、肾-唾。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-zang-002",
+    "node_ids": [
+      "heart",
+      "liver",
+      "spleen",
+      "lung",
+      "kidney"
+    ],
+    "type": "match",
+    "stem": "五脏与开窍部位的对应（连线）：",
+    "options": {
+      "left": [
+        "心",
+        "肝",
+        "脾",
+        "肺",
+        "肾"
+      ],
+      "right": [
+        "目",
+        "口",
+        "舌",
+        "耳及二阴",
+        "鼻"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "why": "五脏开窍：心-舌、肝-目、脾-口、肺-鼻、肾-耳及二阴。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-zang-003",
+    "node_ids": [
+      "heart",
+      "liver",
+      "spleen",
+      "lung",
+      "kidney"
+    ],
+    "type": "match",
+    "stem": "五脏与在志情绪的对应（连线）：",
+    "options": {
+      "left": [
+        "心",
+        "肝",
+        "脾",
+        "肺",
+        "肾"
+      ],
+      "right": [
+        "怒",
+        "悲忧",
+        "思",
+        "恐",
+        "喜"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "why": "五脏在志：心-喜、肝-怒、脾-思、肺-悲忧、肾-恐。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-zang-004",
+    "node_ids": [
+      "heart",
+      "liver",
+      "spleen",
+      "lung",
+      "kidney"
+    ],
+    "type": "sort",
+    "stem": "按五行相生顺序排列（木 → 火 → 土 → 金 → 水）：",
+    "options": [
+      "心",
+      "脾",
+      "肝",
+      "肾",
+      "肺"
+    ],
+    "answer": [
+      2,
+      0,
+      1,
+      4,
+      3
+    ],
+    "why": "五行相生：木火土金水 → 肝心脾肺肾。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 288
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-zang-005",
+    "node_ids": [
+      "heart",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "「水火既济」「心肾相交」体现的是？",
+    "options": [
+      "相生关系",
+      "相克关系",
+      "母子关系",
+      "阴阳水火互济关系",
+      "表里关系"
+    ],
+    "answer": 3,
+    "why": "心火下温肾水、肾水上济心火，称水火既济或心肾相交，是阴阳互资互济的典型。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 234
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-009",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "「神之舍」「血之主」「脉之宗」指的是？",
+    "options": [
+      "肝",
+      "心",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 1,
+    "why": "心为神之舍、血之主、脉之宗，是五脏之首。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-heart-010",
+    "node_ids": [
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "「心藏神」中的「神」主要指？",
+    "options": [
+      "心情愉悦",
+      "精神意识思维活动",
+      "血液循环",
+      "体表光泽",
+      "营养代谢"
+    ],
+    "answer": 1,
+    "why": "「神」指精神、意识、思维等心理活动。心主神志即主宰这些活动。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1540
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-009",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾不统血的临床表现包括？",
+    "options": [
+      "剧烈头痛",
+      "皮下出血、月经过多",
+      "高热",
+      "腹胀痛",
+      "眩晕"
+    ],
+    "answer": 1,
+    "why": "脾不统血致各种出血：皮下出血、月经过多、便血、尿血、肌衄、齿衄、崩漏等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1582
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-spleen-010",
+    "node_ids": [
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "脾主升清失常会导致？",
+    "options": [
+      "关节疼痛",
+      "头晕目眩、腹胀便溏",
+      "皮肤干燥",
+      "鼻塞流涕",
+      "心烦失眠"
+    ],
+    "answer": 1,
+    "why": "脾气不升清 → 神疲乏力、头晕目眩、腹胀便溏、泄泻等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 326
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-lung-009",
+    "node_ids": [
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "「朝百脉」是哪个脏的功能？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 3,
+    "why": "全身血液通过百脉会聚于肺，进行气体交换，称肺朝百脉。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 593
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-010",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "天癸由什么化生？",
+    "options": [
+      "心血",
+      "肝精",
+      "脾气",
+      "肺津",
+      "肾精"
+    ],
+    "answer": 4,
+    "why": "肾中精气充盈到一定程度产生具有促进生殖功能成熟的物质——天癸。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1476
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-kidney-011",
+    "node_ids": [
+      "kidney",
+      "fu-zi"
+    ],
+    "type": "single_choice",
+    "stem": "命门火衰首选药物是？",
+    "options": [
+      "黄芪",
+      "人参",
+      "干姜",
+      "附子",
+      "麻黄"
+    ],
+    "answer": 3,
+    "why": "附子补火助阳，专治命门火衰、肾阳不足。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-zang-006",
+    "node_ids": [
+      "heart",
+      "liver",
+      "spleen",
+      "lung",
+      "kidney"
+    ],
+    "type": "match",
+    "stem": "五脏与其华的对应（连线）：",
+    "options": {
+      "left": [
+        "心",
+        "肝",
+        "脾",
+        "肺",
+        "肾"
+      ],
+      "right": [
+        "唇",
+        "毛",
+        "面",
+        "发",
+        "爪"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "why": "五脏其华：心-面、肝-爪、脾-唇、肺-毛、肾-发。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 591
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-zang-007",
+    "node_ids": [
+      "heart",
+      "liver",
+      "spleen",
+      "lung",
+      "kidney"
+    ],
+    "type": "sort",
+    "stem": "按五行相克顺序排列（金 → 木 → 土 → 水 → 火）：",
+    "options": [
+      "心",
+      "脾",
+      "肝",
+      "肾",
+      "肺"
+    ],
+    "answer": [
+      4,
+      2,
+      1,
+      3,
+      0
+    ],
+    "why": "五行相克：金木土水火 → 肺肝脾肾心。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 288
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-stomach-001",
+    "node_ids": [
+      "stomach"
+    ],
+    "type": "single_choice",
+    "stem": "胃的主要生理功能不包括？",
+    "options": [
+      "受纳",
+      "腐熟",
+      "通降",
+      "运化"
+    ],
+    "answer": 3,
+    "why": "运化是脾的功能。胃主受纳、腐熟水谷，以通降为和。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1682
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-stomach-002",
+    "node_ids": [
+      "stomach"
+    ],
+    "type": "single_choice",
+    "stem": "胃气以什么为顺？",
+    "options": [
+      "以升为顺",
+      "以降为和",
+      "升降同等",
+      "不升不降"
+    ],
+    "answer": 1,
+    "why": "胃主通降，以降为和。胃气上逆则恶心呕吐呃逆。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1685
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-stomach-003",
+    "node_ids": [
+      "stomach"
+    ],
+    "type": "single_choice",
+    "stem": "胃的特点是？",
+    "options": [
+      "喜燥恶湿",
+      "喜润恶燥",
+      "喜温恶寒",
+      "喜静恶动"
+    ],
+    "answer": 1,
+    "why": "胃喜润恶燥（与脾喜燥恶湿相反）。胃阴亏虚则口渴干呕。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 270
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-stomach-004",
+    "node_ids": [
+      "stomach"
+    ],
+    "type": "fill_in_blank",
+    "stem": "胃又称「水谷之 ___ 」、「太仓」。",
+    "answer": [
+      "海"
+    ],
+    "why": "胃为水谷之海，又名太仓。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1682
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-si-001",
+    "node_ids": [
+      "small-intestine"
+    ],
+    "type": "single_choice",
+    "stem": "「受盛之官」是？",
+    "options": [
+      "胃",
+      "小肠",
+      "大肠",
+      "胆",
+      "膀胱"
+    ],
+    "answer": 1,
+    "why": "小肠是受盛之官，受盛化物、泌别清浊。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 734
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-si-002",
+    "node_ids": [
+      "small-intestine"
+    ],
+    "type": "single_choice",
+    "stem": "「利小便即所以实大便」依据的是哪个脏腑的功能？",
+    "options": [
+      "肺",
+      "脾",
+      "小肠",
+      "膀胱",
+      "大肠"
+    ],
+    "answer": 2,
+    "why": "小肠泌别清浊：水液归膀胱、糟粕归大肠。利小便可帮助止泄。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 905
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-si-003",
+    "node_ids": [
+      "small-intestine"
+    ],
+    "type": "fill_in_blank",
+    "stem": "小肠的核心功能是 ___ 化物和 ___ 别清浊。",
+    "answer": [
+      "受盛、泌",
+      "受盛,泌",
+      "受盛泌"
+    ],
+    "why": "小肠受盛化物 + 泌别清浊。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 515
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gb-001",
+    "node_ids": [
+      "gallbladder"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪个既属于六腑又属于奇恒之腑？",
+    "options": [
+      "胃",
+      "小肠",
+      "胆",
+      "三焦",
+      "膀胱"
+    ],
+    "answer": 2,
+    "why": "胆同时属六腑（与肝相表里）和奇恒之腑（贮藏精汁不同于其他腑）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 529
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gb-002",
+    "node_ids": [
+      "gallbladder"
+    ],
+    "type": "single_choice",
+    "stem": "胆汁由什么化生？",
+    "options": [
+      "胃气",
+      "脾精",
+      "肝精",
+      "肾精",
+      "肺津"
+    ],
+    "answer": 2,
+    "why": "胆汁由肝之精气化生，受肝疏泄调控。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1700
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gb-003",
+    "node_ids": [
+      "gallbladder",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "胆主什么？",
+    "options": [
+      "运化",
+      "决断",
+      "藏神",
+      "纳气",
+      "升清"
+    ],
+    "answer": 1,
+    "why": "胆主决断——影响精神情志决断力。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 529
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-li-001",
+    "node_ids": [
+      "large-intestine"
+    ],
+    "type": "single_choice",
+    "stem": "「传化糟粕」是哪个脏腑的主要功能？",
+    "options": [
+      "胃",
+      "小肠",
+      "大肠",
+      "膀胱",
+      "三焦"
+    ],
+    "answer": 2,
+    "why": "大肠是传导之官，主传化糟粕。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 336
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-li-002",
+    "node_ids": [
+      "large-intestine"
+    ],
+    "type": "single_choice",
+    "stem": "大肠主什么？",
+    "options": [
+      "主津",
+      "主液",
+      "主气",
+      "主血",
+      "主神"
+    ],
+    "answer": 0,
+    "why": "大肠主津——吸收糟粕中残余水分。（小肠主液）",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 336
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-bl-001",
+    "node_ids": [
+      "bladder"
+    ],
+    "type": "single_choice",
+    "stem": "膀胱的功能依赖哪个脏的气化？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 4,
+    "why": "膀胱的开合（贮尿/排尿）依赖肾的气化。肾阳虚则尿少/尿频。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 459
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-bl-002",
+    "node_ids": [
+      "bladder",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "肾与哪个腑相表里？",
+    "options": [
+      "小肠",
+      "胃",
+      "大肠",
+      "胆",
+      "膀胱"
+    ],
+    "answer": 4,
+    "why": "肾与膀胱相表里。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 599
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fu-001",
+    "node_ids": [
+      "stomach",
+      "spleen"
+    ],
+    "type": "match",
+    "stem": "脾 vs 胃 的特性对应（连线）：",
+    "options": {
+      "left": [
+        "脾",
+        "胃"
+      ],
+      "right": [
+        "喜润恶燥·以降为和",
+        "喜燥恶湿·以升为健"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "why": "脾喜燥恶湿、以升为健；胃喜润恶燥、以降为和。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 270
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fu-002",
+    "node_ids": [
+      "stomach",
+      "spleen",
+      "small-intestine",
+      "large-intestine"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪个不是后天之本的核心脏腑？",
+    "options": [
+      "脾",
+      "胃",
+      "小肠",
+      "大肠",
+      "心"
+    ],
+    "answer": 4,
+    "why": "脾胃是后天之本，小肠/大肠都参与消化吸收。心不属此列。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 595
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fu-003",
+    "node_ids": [
+      "small-intestine",
+      "large-intestine",
+      "bladder"
+    ],
+    "type": "match",
+    "stem": "六腑与其特性对应（连线）：",
+    "options": {
+      "left": [
+        "小肠",
+        "大肠",
+        "膀胱"
+      ],
+      "right": [
+        "州都之官·主贮尿",
+        "受盛之官·主液",
+        "传导之官·主津"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "why": "小肠=受盛之官主液；大肠=传导之官主津；膀胱=州都之官主贮尿。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 515
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fu-004",
+    "node_ids": [
+      "gallbladder",
+      "stomach",
+      "small-intestine",
+      "large-intestine",
+      "bladder"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪个不属于六腑？",
+    "options": [
+      "胆",
+      "胃",
+      "小肠",
+      "三焦",
+      "脑"
+    ],
+    "answer": 4,
+    "why": "六腑：胆、胃、小肠、大肠、膀胱、三焦。脑属奇恒之腑。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 529
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fu-005",
+    "node_ids": [
+      "gallbladder"
+    ],
+    "type": "single_choice",
+    "stem": "奇恒之腑包括（下列哪个不属于奇恒之腑）：",
+    "options": [
+      "脑",
+      "髓",
+      "骨",
+      "三焦",
+      "脉"
+    ],
+    "answer": 3,
+    "why": "奇恒之腑：脑、髓、骨、脉、胆、女子胞。三焦属六腑。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 720
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

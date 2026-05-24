@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getNode } from "@/lib/content/loader";
 import { RecallPlayer } from "./recall-player";
+import { decodeNodeRouteParam, nodeHref } from "@/lib/content/links";
 import { TOKENS_A } from "@/design/tokens";
 
 export default async function RecallPage({
@@ -11,7 +12,8 @@ export default async function RecallPage({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const { id } = await params;
+  const { id: rawId } = await params;
+  const id = decodeNodeRouteParam(rawId);
   const node = getNode(id);
   if (!node) notFound();
 
@@ -37,7 +39,7 @@ export default async function RecallPage({
             白纸召回需要节点 frontmatter 中的 recall_keypoints 字段。
           </p>
           <Link
-            href={`/nodes/${id}`}
+            href={nodeHref(id)}
             style={{ color: TOKENS_A.ink, textDecoration: "underline" }}
           >
             回到节点
@@ -69,7 +71,7 @@ export default async function RecallPage({
           </span>
           <span style={{ color: TOKENS_A.line2 }}>·</span>
           <Link
-            href={`/nodes/${id}`}
+            href={nodeHref(id)}
             className="font-serif"
             style={{
               fontSize: 15,
@@ -83,7 +85,7 @@ export default async function RecallPage({
           </Link>
         </div>
         <Link
-          href={`/nodes/${id}`}
+          href={nodeHref(id)}
           className="font-mono"
           style={{
             fontSize: 11,

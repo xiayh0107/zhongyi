@@ -1,0 +1,802 @@
+[
+  {
+    "id": "q-gap-formula-syndrome-001",
+    "node_ids": [
+      "huo-xiang-zheng-qi-san",
+      "damp-evil",
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "藿香正气散的主治最准确的是哪一项？",
+    "options": [
+      "外感风寒、内伤湿滞证",
+      "风寒表实无汗证",
+      "心肾不交证",
+      "血虚阳浮发热证"
+    ],
+    "answer": 0,
+    "why": "藿香正气散用于外感风寒、内伤湿滞，偏于解表化湿、理气和中。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 104
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-002",
+    "node_ids": [
+      "huo-xiang-zheng-qi-san",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "藿香正气散的君药是？",
+    "options": [
+      "藿香",
+      "白术",
+      "陈皮",
+      "厚朴"
+    ],
+    "answer": 0,
+    "why": "藿香正气散以藿香为君，芳香化湿、兼能解表。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 104
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-003",
+    "node_ids": [
+      "gui-zhi-tang",
+      "wind-evil",
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "桂枝汤最适用于哪类表证？",
+    "options": [
+      "风寒表实证",
+      "风寒表虚证",
+      "湿热黄疸",
+      "阴虚劳咳"
+    ],
+    "answer": 1,
+    "why": "桂枝汤主治风寒表虚证，特点是有汗、恶风、脉浮缓。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 190
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-004",
+    "node_ids": [
+      "gui-zhi-tang",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "桂枝汤的君药是？",
+    "options": [
+      "桂枝",
+      "芍药",
+      "生姜",
+      "大枣"
+    ],
+    "answer": 0,
+    "why": "桂枝汤以桂枝为君，解肌发表、温经通阳。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 190
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-005",
+    "node_ids": [
+      "dang-gui-bu-xue-tang",
+      "blood",
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "当归补血汤的核心功效是？",
+    "options": [
+      "补气生血",
+      "滋阴清热",
+      "温阳利水",
+      "峻下热结"
+    ],
+    "answer": 0,
+    "why": "当归补血汤以黄芪、当归组成，重在补气生血，主治血虚阳浮发热证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 483
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-006",
+    "node_ids": [
+      "dang-gui-bu-xue-tang",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "当归补血汤的君药是？",
+    "options": [
+      "黄芪",
+      "当归",
+      "白术",
+      "熟地黄"
+    ],
+    "answer": 0,
+    "why": "当归补血汤以黄芪为君，取其大补脾肺之气，以气生血。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 483
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-007",
+    "node_ids": [
+      "du-huo-ji-sheng-tang",
+      "bi-syndrome",
+      "kidney",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "独活寄生汤主治最贴切的是？",
+    "options": [
+      "痹证日久，肝肾两虚，气血不足证",
+      "风寒表实证",
+      "心肾不交证",
+      "阳明腑实证"
+    ],
+    "answer": 0,
+    "why": "独活寄生汤用于痹证日久、肝肾两虚、气血不足之证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 588
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-008",
+    "node_ids": [
+      "du-huo-ji-sheng-tang",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "独活寄生汤的君药是？",
+    "options": [
+      "独活",
+      "桑寄生",
+      "杜仲",
+      "当归"
+    ],
+    "answer": 0,
+    "why": "独活寄生汤以独活为君，祛风湿、止痹痛。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 588
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-009",
+    "node_ids": [
+      "bai-he-gu-jin-tang",
+      "lung",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "百合固金汤更适合哪类病机？",
+    "options": [
+      "肺肾阴虚、虚火上炎之劳咳",
+      "脾阳虚衰之阴水",
+      "心气虚",
+      "外感风寒表实"
+    ],
+    "answer": 0,
+    "why": "百合固金汤滋养肺肾、止咳化痰，主治阴虚劳咳。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 213
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-010",
+    "node_ids": [
+      "huang-lian-e-jiao-tang",
+      "heart",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "黄连阿胶汤的主要治法是？",
+    "options": [
+      "滋阴清热",
+      "温阳利水",
+      "补气生血",
+      "解肌发表"
+    ],
+    "answer": 0,
+    "why": "黄连阿胶汤用于心肾不交、阴虚火旺，治以滋阴清热。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 88
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-011",
+    "node_ids": [
+      "huang-lian-e-jiao-tang",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "黄连阿胶汤的君药是？",
+    "options": [
+      "黄连",
+      "黄芩",
+      "白芍",
+      "阿胶"
+    ],
+    "answer": 0,
+    "why": "黄连阿胶汤以黄连为君，清心火、除烦热。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 88
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-012",
+    "node_ids": [
+      "jiao-tai-wan",
+      "heart",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "交泰丸的主治是？",
+    "options": [
+      "心肾不交证",
+      "脾阳不振之阴水",
+      "风寒表实证",
+      "血虚阳浮发热证"
+    ],
+    "answer": 0,
+    "why": "交泰丸黄连配肉桂，交通心肾，主治心肾不交证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 88
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-013",
+    "node_ids": [
+      "jiao-tai-wan",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "交泰丸的君药是？",
+    "options": [
+      "黄连",
+      "肉桂",
+      "阿胶",
+      "白芍"
+    ],
+    "answer": 0,
+    "why": "交泰丸以黄连为君，清心火以安神。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 88
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-014",
+    "node_ids": [
+      "zhen-wu-tang",
+      "edema",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "真武汤最典型的适应证是？",
+    "options": [
+      "肾阳虚水泛证",
+      "心肾不交证",
+      "血虚阳浮发热证",
+      "风寒表虚证"
+    ],
+    "answer": 0,
+    "why": "真武汤温阳利水、温化水气，用于肾阳虚水泛之阴水。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 19
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-015",
+    "node_ids": [
+      "zhen-wu-tang",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "真武汤的君药是？",
+    "options": [
+      "附子",
+      "茯苓",
+      "白术",
+      "白芍"
+    ],
+    "answer": 0,
+    "why": "真武汤以附子为君，温肾助阳。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 19
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-016",
+    "node_ids": [
+      "shi-pi-yin",
+      "edema",
+      "spleen"
+    ],
+    "type": "single_choice",
+    "stem": "实脾饮主要用于哪一型水肿？",
+    "options": [
+      "脾阳虚衰之阴水",
+      "风水泛滥之阳水",
+      "湿毒浸淫之阳水",
+      "湿热壅盛之阳水"
+    ],
+    "answer": 0,
+    "why": "实脾饮温阳健脾、行气利水，用于脾阳虚衰之阴水。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 19
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-017",
+    "node_ids": [
+      "shi-pi-yin",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "实脾饮的君药最恰当的是？",
+    "options": [
+      "附子、干姜",
+      "白术、茯苓",
+      "木香、厚朴",
+      "生姜、大枣"
+    ],
+    "answer": 0,
+    "why": "实脾饮以附子、干姜温阳散寒、振奋脾阳。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 19
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-018",
+    "node_ids": [
+      "yue-bi-jia-zhu-tang",
+      "edema",
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "越婢加术汤更贴近哪类证候？",
+    "options": [
+      "风水泛滥、阳水",
+      "脾阳不振之阴水",
+      "心肾不交",
+      "血虚阳浮发热"
+    ],
+    "answer": 0,
+    "why": "越婢加术汤用于风水泛滥与水湿浸渍，是阳水代表方之一。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 18
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-019",
+    "node_ids": [
+      "yue-bi-jia-zhu-tang",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "越婢加术汤的君药是？",
+    "options": [
+      "麻黄、石膏",
+      "白术、茯苓",
+      "生姜、大枣",
+      "炙甘草"
+    ],
+    "answer": 0,
+    "why": "越婢加术汤以麻黄、石膏为君，一散一清，兼顾风水与热象。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 18
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-020",
+    "node_ids": [
+      "gu-zhang",
+      "liver",
+      "spleen",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "鼓胀的核心病机最接近哪一项？",
+    "options": [
+      "气滞、血瘀、水停，久则肝脾肾亏虚",
+      "风寒束表，肺失宣降",
+      "心火亢盛，扰乱心神",
+      "湿热下注，小便涩痛"
+    ],
+    "answer": 0,
+    "why": "鼓胀以气滞、血瘀、水停为标，久则肝脾肾亏虚为本。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 58
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-021",
+    "node_ids": [
+      "gu-zhang"
+    ],
+    "type": "single_choice",
+    "stem": "鼓胀辨证最重要的三点是？",
+    "options": [
+      "辨缓急、辨虚实、辨气滞血瘀水停",
+      "辨寒热、辨表里、辨阴阳",
+      "辨气血、辨津液、辨五脏",
+      "辨风寒、辨湿热、辨燥火"
+    ],
+    "answer": 0,
+    "why": "鼓胀的辨证抓手就是缓急、虚实以及气滞血瘀水停三类偏重。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 58
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-022",
+    "node_ids": [
+      "blood-strangury",
+      "kidney",
+      "damp-evil"
+    ],
+    "type": "single_choice",
+    "stem": "血淋实证最常见的表现是？",
+    "options": [
+      "尿色红赤、尿频尿急、小便灼热涩痛，甚则夹血块",
+      "头痛如裹、肢体困重",
+      "咳嗽痰少而黏",
+      "心悸怔忡、失眠多梦"
+    ],
+    "answer": 0,
+    "why": "血淋实证多属湿热下注、热伤血络，故见尿色红赤、涩痛、夹血块。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 10
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-023",
+    "node_ids": [
+      "blood-strangury"
+    ],
+    "type": "single_choice",
+    "stem": "血淋虚证可见哪一项？",
+    "options": [
+      "腰膝酸软",
+      "身热恶风",
+      "胸胁胀痛",
+      "腹痛拒按"
+    ],
+    "answer": 0,
+    "why": "血淋虚证多见阴虚或肾虚，常伴腰膝酸软、尿痛不甚。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 10
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-024",
+    "node_ids": [
+      "heart-qi-deficiency",
+      "palpitation",
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "心气虚最典型的表现是？",
+    "options": [
+      "心悸、气短、自汗、脉虚弱",
+      "胸痛彻背、唇甲青紫",
+      "面红目赤、急躁易怒",
+      "咳痰黄稠、咽痛口渴"
+    ],
+    "answer": 0,
+    "why": "心气虚常见心悸、气短、自汗、神疲和脉虚弱。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 662
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-025",
+    "node_ids": [
+      "internal-five-evils",
+      "wind-evil",
+      "cold-evil",
+      "damp-evil",
+      "dryness-evil",
+      "fire-evil"
+    ],
+    "type": "single_choice",
+    "stem": "内生五邪指的是哪一组？",
+    "options": [
+      "内风、内寒、内湿、内燥、内火",
+      "风、寒、暑、湿、燥",
+      "气、血、津液、精、神",
+      "表、里、寒、热、虚"
+    ],
+    "answer": 0,
+    "why": "内生五邪是由内在脏腑和气血津液失调而形成的内风、内寒、内湿、内燥、内火。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 857
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-026",
+    "node_ids": [
+      "five-flavors",
+      "formula-role-herbs"
+    ],
+    "type": "single_choice",
+    "stem": "五味中“能下、能软”的是？",
+    "options": [
+      "辛",
+      "甘",
+      "酸",
+      "咸"
+    ],
+    "answer": 3,
+    "why": "咸味的主要作用是能下、能软，常用于便秘、瘿瘤、癥瘕痞块等。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 117
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-027",
+    "node_ids": [
+      "five-flavors"
+    ],
+    "type": "single_choice",
+    "stem": "“能收、能涩”对应哪一味？",
+    "options": [
+      "辛",
+      "甘",
+      "酸",
+      "苦"
+    ],
+    "answer": 2,
+    "why": "酸味的作用是收敛、固涩，常用于多汗、久咳、久泻、遗精遗尿等。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 117
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-028",
+    "node_ids": [
+      "formula-role-herbs",
+      "gui-zhi-tang",
+      "huo-xiang-zheng-qi-san"
+    ],
+    "type": "single_choice",
+    "stem": "君药的定义最准确的是？",
+    "options": [
+      "针对主病或主证起主要治疗作用的药物",
+      "负责引经、调和诸药的药物",
+      "用于消除君臣药毒烈性的药物",
+      "专门治疗兼证的药物"
+    ],
+    "answer": 0,
+    "why": "君药是方剂中针对主病或主证起主要治疗作用的药物，药力居方中之首。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 71
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-029",
+    "node_ids": [
+      "formula-role-herbs",
+      "five-flavors"
+    ],
+    "type": "multiple_choice",
+    "stem": "关于君臣佐使，哪些说法正确？",
+    "options": [
+      "君药针对主病或主证起主要治疗作用",
+      "臣药可以辅助君药加强治疗作用",
+      "佐药只能用来引经",
+      "使药可以调和诸药"
+    ],
+    "answer": [
+      0,
+      1,
+      3
+    ],
+    "why": "君药主治，臣药辅治，佐药可佐助、佐制或反佐，使药可引经或调和诸药。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 75
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-gap-formula-syndrome-030",
+    "node_ids": [
+      "gu-zhang",
+      "blood-strangury",
+      "heart-qi-deficiency",
+      "internal-five-evils",
+      "five-flavors",
+      "formula-role-herbs"
+    ],
+    "type": "match",
+    "stem": "将病证、理论与考点对应起来：",
+    "options": {
+      "left": [
+        "鼓胀",
+        "血淋",
+        "心气虚",
+        "内生五邪"
+      ],
+      "right": [
+        "内风、内寒、内湿、内燥、内火",
+        "尿色红赤、尿痛涩痛，甚则夹血块",
+        "心悸、气短、自汗、脉虚弱",
+        "腹部胀大如鼓，气滞血瘀水停"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "why": "鼓胀对应腹部胀大如鼓；血淋对应尿红赤、涩痛夹血块；心气虚对应心悸气短自汗；内生五邪对应内风内寒内湿内燥内火。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 857
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

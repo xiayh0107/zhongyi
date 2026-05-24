@@ -6,6 +6,7 @@ import { getNode, getQuestionsForNode } from "@/lib/content/loader";
 import { QuizPlayer } from "./quiz-player";
 import { pickQuestions } from "./mix";
 import type { PlayableQuestion } from "./types";
+import { decodeNodeRouteParam, nodeHref } from "@/lib/content/links";
 import { TOKENS_A } from "@/design/tokens";
 
 export default async function QuizPage({
@@ -13,7 +14,8 @@ export default async function QuizPage({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const { id } = await params;
+  const { id: rawId } = await params;
+  const id = decodeNodeRouteParam(rawId);
   const node = getNode(id);
   if (!node) notFound();
 
@@ -56,7 +58,7 @@ export default async function QuizPage({
             这个节点暂无可练习的题目
           </h1>
           <Link
-            href={`/nodes/${id}`}
+            href={nodeHref(id)}
             style={{ color: TOKENS_A.ink, textDecoration: "underline" }}
           >
             回到节点
@@ -88,7 +90,7 @@ export default async function QuizPage({
           </span>
           <span style={{ color: TOKENS_A.line2 }}>·</span>
           <Link
-            href={`/nodes/${id}`}
+            href={nodeHref(id)}
             className="font-serif"
             style={{
               fontSize: 15,
@@ -102,7 +104,7 @@ export default async function QuizPage({
           </Link>
         </div>
         <Link
-          href={`/nodes/${id}`}
+          href={nodeHref(id)}
           className="font-mono"
           style={{
             fontSize: 11,

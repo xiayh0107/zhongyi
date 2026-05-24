@@ -13,12 +13,16 @@ import {
 } from "@/types/question";
 import type { Question } from "@/types/question";
 import type { ContentGraph, LoadedNode } from "./types";
+import {
+  buildNodeTitleIndex,
+  resolveNodeRef,
+  WIKI_LINK_RE,
+} from "./links";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 const NODES_DIR = path.join(CONTENT_DIR, "nodes");
-const QUESTIONS_FILE = path.join(CONTENT_DIR, "questions.json");
-
-const WIKI_LINK_RE = /\[\[([a-z0-9-]+)\]\]/g;
+const QUESTIONS_DIR = path.join(CONTENT_DIR, "questions");
+const LEGACY_QUESTIONS_FILE = path.join(CONTENT_DIR, "questions.json");
 
 /** 递归扫描 nodes 目录下所有 .md 文件 */
 function walkMarkdownFiles(dir: string): string[] {
@@ -29,6 +33,23 @@ function walkMarkdownFiles(dir: string): string[] {
     if (entry.isDirectory()) {
       out.push(...walkMarkdownFiles(full));
     } else if (entry.isFile() && entry.name.endsWith(".md")) {
+      out.push(full);
+    }
+  }
+  return out;
+}
+
+function walkJsonFiles(dir: string): string[] {
+  const out: string[] = [];
+  if (!fs.existsSync(dir)) return out;
+  const entries = fs
+    .readdirSync(dir, { withFileTypes: true })
+    .sort((a, b) => a.name.localeCompare(b.name));
+  for (const entry of entries) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      out.push(...walkJsonFiles(full));
+    } else if (entry.isFile() && entry.name.endsWith(".json")) {
       out.push(full);
     }
   }
@@ -71,10 +92,37 @@ function loadNodeFile(filePath: string): LoadedNode {
   };
 }
 
+function loadQuestionFile(filePath: string): Question[] {
+  const raw = JSON.parse(fs.readFileSync(filePath, "utf8"));
+  try {
+    return validateQuestionBank(raw);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    throw new Error(`[${path.relative(process.cwd(), filePath)}] ${message}`);
+  }
+}
+
 function loadQuestions(): Question[] {
-  if (!fs.existsSync(QUESTIONS_FILE)) return [];
-  const raw = JSON.parse(fs.readFileSync(QUESTIONS_FILE, "utf8"));
-  return validateQuestionBank(raw);
+  const files = walkJsonFiles(QUESTIONS_DIR);
+  if (files.length > 0) {
+    return validateQuestionBank(files.flatMap(loadQuestionFile));
+  }
+
+  // Backward-compatible fallback for older checkouts.
+  if (!fs.existsSync(LEGACY_QUESTIONS_FILE)) return [];
+  return loadQuestionFile(LEGACY_QUESTIONS_FILE);
+}
+
+function normalizeNodeRefs(nodes: Map<string, LoadedNode>) {
+  const titleToId = buildNodeTitleIndex(nodes);
+
+  // 兼容正文里的 [[节点标题]]，统一转成真实 id 参与校验和反链索引。
+  for (const node of nodes.values()) {
+    node.outgoing_links = node.outgoing_links.map((link) => {
+      const target = resolveNodeRef(link, nodes, titleToId);
+      return target?.id ?? link;
+    });
+  }
 }
 
 /**
@@ -92,6 +140,8 @@ export function loadContentGraph(): ContentGraph {
     }
     nodes.set(node.id, node);
   }
+
+  normalizeNodeRefs(nodes);
 
   // 校验所有 relation 目标存在
   for (const node of nodes.values()) {

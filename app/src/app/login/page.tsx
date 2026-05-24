@@ -3,6 +3,7 @@
 
 import { AuthShell } from "@/components/auth-shell";
 import { signIn } from "@/auth";
+import { redirect } from "next/navigation";
 
 async function loginAction(formData: FormData) {
   "use server";
@@ -12,8 +13,10 @@ async function loginAction(formData: FormData) {
   }
   await signIn("nodemailer", {
     email,
-    redirectTo: "/login/check-email",
+    redirect: false,
+    redirectTo: "/",
   });
+  redirect(`/login/check-email?email=${encodeURIComponent(email)}`);
 }
 
 export default function LoginPage() {

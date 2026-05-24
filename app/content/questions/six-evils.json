@@ -1,0 +1,823 @@
+[
+  {
+    "id": "q-wind-001",
+    "node_ids": [
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪一项不是风邪的性质？",
+    "options": [
+      "阳邪",
+      "易袭阳位",
+      "善行数变",
+      "主动",
+      "粘滞重浊"
+    ],
+    "answer": 4,
+    "why": "粘滞重浊是湿邪的性质，不是风邪。风邪是阳邪，性开泄、善行数变、主动、为百病之长。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1426
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-wind-002",
+    "node_ids": [
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「六淫之首」「百病之长」指的是哪个邪？",
+    "options": [
+      "风",
+      "寒",
+      "暑",
+      "湿",
+      "燥"
+    ],
+    "answer": 0,
+    "why": "风邪最常见，且常为他邪先导，可夹他邪合而伤人，故称六淫之首、百病之长。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1426
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-wind-003",
+    "node_ids": [
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "风邪致病多侵犯人体的？",
+    "options": [
+      "下部",
+      "上部和肌表",
+      "中焦",
+      "内脏深处",
+      "骨髓"
+    ],
+    "answer": 1,
+    "why": "风为阳邪，其性轻扬开泄，易袭阳位。常侵犯头面、阳经、肌表、肺等阳位。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1426
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-wind-004",
+    "node_ids": [
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「风性主动」是指风邪具有什么特点？",
+    "options": [
+      "易使物体摇动，致病有动摇不定的特点",
+      "病位固定不移",
+      "易致皮肤瘙痒",
+      "易导致出血",
+      "易耗气伤津"
+    ],
+    "answer": 0,
+    "why": "风性主动指风具有使物体摇动的特性，致病具动摇不定的特点，如头目眩晕、抽搐、震颤等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1427
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-wind-005",
+    "node_ids": [
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「善行数变」描述风邪的哪两个特征？",
+    "options": [
+      "病位游移 + 发病急变化快",
+      "病程长 + 反复发作",
+      "症状重 + 痊愈慢",
+      "侵犯部位深 + 损伤阳气",
+      "趋下 + 易袭阴位"
+    ],
+    "answer": 0,
+    "why": "善行指病位游移而行无定处，数变指发病急、变化快。两者构成风邪「不居」「无常」的特征。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1426
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-wind-006",
+    "node_ids": [
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "风邪侵入人体多从？",
+    "options": [
+      "口鼻",
+      "皮毛",
+      "饮食",
+      "直接内生",
+      "经络"
+    ],
+    "answer": 1,
+    "why": "风邪是外邪，侵犯人体多从皮毛而入。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1426
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-wind-007",
+    "node_ids": [
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "下列症状最能体现风邪「主动」特点的是？",
+    "options": [
+      "发热恶寒",
+      "头痛鼻塞",
+      "肢体抽搐",
+      "肌肤酸痛",
+      "皮肤干燥"
+    ],
+    "answer": 2,
+    "why": "肢体抽搐是风邪致动摇不定的典型表现，体现风性主动。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1427
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-wind-008",
+    "node_ids": [
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项最能体现风邪「百病之长」的含义？",
+    "options": [
+      "风邪症状最严重",
+      "风邪最难治愈",
+      "风邪常夹带他邪合而伤人",
+      "风邪只在春季致病",
+      "风邪只致病一种病"
+    ],
+    "answer": 2,
+    "why": "「百病之长」指风邪常作为他邪的先导，与寒、湿、燥、火等合而伤人，致病极广。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1427
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cold-001",
+    "node_ids": [
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不是寒邪的性质？",
+    "options": [
+      "阴邪",
+      "易伤阳气",
+      "凝滞",
+      "收引",
+      "升散"
+    ],
+    "answer": 4,
+    "why": "升散是暑邪的性质，不是寒。寒邪性凝滞、收引、清澈，易伤阳气。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1429
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cold-002",
+    "node_ids": [
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「寒主疼痛」体现的是寒邪的哪个性质？",
+    "options": [
+      "阴邪",
+      "凝滞",
+      "收引",
+      "清澈",
+      "升散"
+    ],
+    "answer": 1,
+    "why": "寒性凝滞致气血凝滞、运行不畅，故主疼痛。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1431
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cold-003",
+    "node_ids": [
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "寒邪「主收引」最典型的表现是？",
+    "options": [
+      "剧烈疼痛",
+      "关节屈伸不利、拘急",
+      "出血",
+      "皮肤干燥",
+      "高热"
+    ],
+    "answer": 1,
+    "why": "寒主收引致筋脉拘急、关节屈伸不利，伴拘挛作痛。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1432
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cold-004",
+    "node_ids": [
+      "cold-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「清澈」指寒邪致病的分泌物有什么特点？",
+    "options": [
+      "黄稠",
+      "清稀",
+      "黏滞",
+      "腥臭",
+      "脓血"
+    ],
+    "answer": 1,
+    "why": "寒性清澈致分泌物或排泄物呈清稀状（白色、无臭、量多）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1432
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-cold-005",
+    "node_ids": [
+      "cold-evil"
+    ],
+    "type": "multiple_choice",
+    "stem": "寒邪的核心性质包括（多选）：",
+    "options": [
+      "阴邪伤阳",
+      "凝滞",
+      "收引",
+      "清澈",
+      "重浊黏滞"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "重浊黏滞是湿邪的性质。寒邪 4 大性质：阴邪伤阳、凝滞、收引、清澈。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1429
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-damp-001",
+    "node_ids": [
+      "damp-evil"
+    ],
+    "type": "single_choice",
+    "stem": "湿邪致病最具特征性的症状是？",
+    "options": [
+      "剧痛",
+      "高热",
+      "重痛",
+      "刺痛",
+      "灼痛"
+    ],
+    "answer": 2,
+    "why": "湿性重浊，致病多见沉重、重着的「重痛」。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1296
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-damp-002",
+    "node_ids": [
+      "damp-evil"
+    ],
+    "type": "single_choice",
+    "stem": "湿邪最易困伤哪个脏？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 2,
+    "why": "脾喜燥恶湿，湿邪最先困脾阳，影响脾运化。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1295
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-damp-003",
+    "node_ids": [
+      "damp-evil"
+    ],
+    "type": "single_choice",
+    "stem": "湿邪致病具有「病程缠绵」的特点，这体现的是哪个性质？",
+    "options": [
+      "重浊",
+      "黏滞",
+      "趋下",
+      "阴邪",
+      "升散"
+    ],
+    "answer": 1,
+    "why": "湿性黏滞致症状黏滞、病程缠绵——反复发作、时起时伏、难愈。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1299
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-damp-004",
+    "node_ids": [
+      "damp-evil"
+    ],
+    "type": "single_choice",
+    "stem": "湿邪「趋下」最常见的表现是？",
+    "options": [
+      "头痛",
+      "胸闷",
+      "下肢水肿",
+      "面部红肿",
+      "颈项强直"
+    ],
+    "answer": 2,
+    "why": "湿性类水趋下，致病多伤下部。下肢水肿、淋病、带下、尿浊都是典型。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1301
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-damp-005",
+    "node_ids": [
+      "damp-evil"
+    ],
+    "type": "multiple_choice",
+    "stem": "湿邪的核心性质包括（多选）：",
+    "options": [
+      "阻气机损阳气",
+      "重浊",
+      "黏滞",
+      "趋下",
+      "炎上"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "湿邪 4 大性质：阻气机损阳气、重浊、黏滞、趋下。炎上是火邪。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1293
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fire-001",
+    "node_ids": [
+      "fire-evil"
+    ],
+    "type": "single_choice",
+    "stem": "六淫中最易导致出血的是？",
+    "options": [
+      "风",
+      "寒",
+      "湿",
+      "燥",
+      "火"
+    ],
+    "answer": 4,
+    "why": "火热邪能动血——迫血妄行致各种出血证（吐血、衄血、崩漏等）。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 431
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fire-002",
+    "node_ids": [
+      "fire-evil"
+    ],
+    "type": "single_choice",
+    "stem": "火邪「炎上」致病多见于人体哪个部位？",
+    "options": [
+      "上部",
+      "中部",
+      "下部",
+      "全身均匀",
+      "深部脏腑"
+    ],
+    "answer": 0,
+    "why": "火性炎上，症状多见于人体上部：头痛、面赤、咽喉肿痛、口舌生疮等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1442
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fire-003",
+    "node_ids": [
+      "fire-evil"
+    ],
+    "type": "single_choice",
+    "stem": "下列哪项不是火邪的致病特点？",
+    "options": [
+      "扰心神",
+      "耗气伤津",
+      "生风动血",
+      "致肿疡",
+      "粘滞缠绵"
+    ],
+    "answer": 4,
+    "why": "粘滞缠绵是湿邪的特点。火邪的特点：阳邪炎上、扰心神、耗气伤津、生风动血、致肿疡。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1442
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fire-004",
+    "node_ids": [
+      "fire-evil"
+    ],
+    "type": "single_choice",
+    "stem": "火邪「生风」表现为？",
+    "options": [
+      "眩晕",
+      "高热神昏、四肢抽搐",
+      "皮肤瘙痒",
+      "鼻塞流涕",
+      "关节疼痛"
+    ],
+    "answer": 1,
+    "why": "火热生风（肝风内动）→ 高热神昏、四肢抽搐、颈项强直、角弓反张、两目上视。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1443
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-fire-005",
+    "node_ids": [
+      "fire-evil"
+    ],
+    "type": "multiple_choice",
+    "stem": "火邪的致病特点包括（多选）：",
+    "options": [
+      "炎上",
+      "扰心神",
+      "耗气伤津",
+      "生风动血",
+      "凝滞收引"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "凝滞收引是寒邪。火邪 5 大特点：炎上、扰心神、耗气伤津、生风动血、致肿疡。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1442
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-six-evils-001",
+    "node_ids": [
+      "wind-evil",
+      "cold-evil",
+      "summer-evil",
+      "damp-evil",
+      "dryness-evil",
+      "fire-evil"
+    ],
+    "type": "match",
+    "stem": "六淫与其代表性致病特点的对应（连线）：",
+    "options": {
+      "left": [
+        "风",
+        "寒",
+        "暑",
+        "湿",
+        "燥",
+        "火"
+      ],
+      "right": [
+        "阴邪伤阳气",
+        "阳邪炎上动血",
+        "百病之长",
+        "重浊黏滞趋下",
+        "炎热升散耗气伤津",
+        "干涩伤津易伤肺"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "why": "六淫为风、寒、暑、湿、燥、火：风为百病之长；寒为阴邪易伤阳；暑炎热升散、耗气伤津；湿重浊黏滞趋下；燥干涩伤津、易伤肺；火为阳邪炎上动血。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 852
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-summer-evil-001",
+    "node_ids": [
+      "summer-evil"
+    ],
+    "type": "single_choice",
+    "stem": "暑邪最典型的致病特点是？",
+    "options": [
+      "凝滞收引",
+      "炎热升散，耗气伤津",
+      "重浊黏滞",
+      "干涩伤津，易伤肺",
+      "善行数变"
+    ],
+    "answer": 1,
+    "why": "暑为阳邪，其性炎热；暑性升散，易扰神、耗气、伤津。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 708
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-summer-evil-002",
+    "node_ids": [
+      "summer-evil",
+      "damp-evil"
+    ],
+    "type": "single_choice",
+    "stem": "暑邪常兼夹哪种病邪？",
+    "options": [
+      "风",
+      "寒",
+      "湿",
+      "燥",
+      "火"
+    ],
+    "answer": 2,
+    "why": "暑多夹湿，所以除发热、烦渴外，常见四肢困倦、胸闷呕恶、大便溏泄不爽等湿阻表现。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 708
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-summer-evil-003",
+    "node_ids": [
+      "summer-evil"
+    ],
+    "type": "multiple_choice",
+    "stem": "暑邪的致病特点包括（多选）：",
+    "options": [
+      "阳邪炎热",
+      "升散",
+      "扰神",
+      "耗气伤津",
+      "纯属内生"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "暑邪是纯外邪，不是内生病邪；其核心特点为炎热、升散、扰神、耗气、伤津，且多夹湿。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 708
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-dryness-evil-001",
+    "node_ids": [
+      "dryness-evil",
+      "lung"
+    ],
+    "type": "single_choice",
+    "stem": "燥邪最易损伤哪个脏？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 3,
+    "why": "肺为娇脏，喜润恶燥；肺开窍于鼻、外合皮毛，与外界大气相通，所以燥邪最易伤肺。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 833
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-dryness-evil-002",
+    "node_ids": [
+      "dryness-evil",
+      "body-fluids"
+    ],
+    "type": "single_choice",
+    "stem": "鼻燥咽干、口唇皱裂、干咳少痰最符合哪种外邪特点？",
+    "options": [
+      "风邪",
+      "寒邪",
+      "湿邪",
+      "燥邪",
+      "火邪"
+    ],
+    "answer": 3,
+    "why": "燥性干涩，易伤津液，常见鼻燥咽干、口唇皱裂、干咳少痰、大便干结等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 710
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-dryness-evil-003",
+    "node_ids": [
+      "dryness-evil",
+      "lung",
+      "large-intestine"
+    ],
+    "type": "multiple_choice",
+    "stem": "燥邪伤肺及影响大肠时可见哪些表现？（多选）",
+    "options": [
+      "干咳或痰黏难咳",
+      "痰中带血",
+      "咽干痛",
+      "大便干燥不畅",
+      "带下黏稠臭秽"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "燥邪伤肺可见干咳、痰黏难咳、痰中带血、咽干痛；由肺影响大肠，可见大便干燥不畅。带下黏稠臭秽偏湿浊下注。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 833
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

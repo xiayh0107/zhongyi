@@ -7,6 +7,7 @@ created: 2026-05-23
 updated: 2026-05-23
 related:
   - changelog.md
+  - deployment-status.md
   - ../02-features/_index.md
   - ../03-content/node-catalog.md
 depends_on: []
@@ -35,6 +36,7 @@ supersedes: []
 🟩 **M1 数据骨架 + 账户 + 节点页** · 完成（12/12）
 🟩 **M2 题型扩展 + 双向链接** · 完成（8/8）
 🟩 **M3 知识地图 + 白纸召回** · 完成（30 节点 / 250 题 / 主页 / 搜索 / F05 三态 / 关键词匹配）
+🟩 **Production 部署** · 完成（`https://zhongyi.xiayh17.top`，详见 [`deployment-status.md`](deployment-status.md)）
 
 下一个：🟦 **M4 内容扩展 + 应用层**（L5 应用层节点：黄疸 / 心悸 / 中风 / 水肿 等病-证-方推理链）
 

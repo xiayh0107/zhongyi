@@ -18,6 +18,7 @@ import {
 } from "./question-views";
 import { StatusBar } from "@/components/status-bar";
 import { TOKENS_A } from "@/design/tokens";
+import { nodeHref } from "@/lib/content/links";
 
 // ─────────────────────────────────────────────────────────
 // 本地题型 state（按 type 分支）
@@ -361,7 +362,7 @@ export function QuizPlayer({
       {/* 操作 */}
       <div className="flex items-center justify-between">
         <Link
-          href={`/nodes/${nodeId}`}
+          href={nodeHref(nodeId)}
           style={{
             fontSize: 12,
             color: TOKENS_A.ink3,
@@ -453,7 +454,7 @@ function QuizSummary({
       )}
       <div className="flex justify-center gap-3">
         <Link
-          href={`/nodes/${nodeId}`}
+          href={nodeHref(nodeId)}
           className="px-5 py-3"
           style={{
             background: TOKENS_A.ink,

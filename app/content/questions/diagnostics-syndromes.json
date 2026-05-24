@@ -1,0 +1,889 @@
+[
+  {
+    "id": "q-syndrome-001",
+    "node_ids": [
+      "fire-evil",
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "心烦失眠、舌赤生疮、小便短赤——属于？",
+    "options": [
+      "心血虚",
+      "心火亢盛",
+      "心阴虚",
+      "心阳虚",
+      "心血瘀阻"
+    ],
+    "answer": 1,
+    "why": "心烦失眠 + 舌赤生疮 + 尿赤 + 实热 = 心火亢盛证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 184
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-002",
+    "node_ids": [
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "情志抑郁、胸胁胀痛、月经不调——首选何方？",
+    "options": [
+      "补阳还五汤",
+      "六味地黄丸",
+      "逍遥散",
+      "桂枝汤",
+      "麻黄汤"
+    ],
+    "answer": 2,
+    "why": "肝郁气滞典型证 → 逍遥散疏肝解郁、养血健脾。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 537
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-003",
+    "node_ids": [
+      "spleen",
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "脱肛、子宫脱垂、胃下垂的中医病机是？",
+    "options": [
+      "肝郁气滞",
+      "中气下陷",
+      "心血瘀阻",
+      "肾阳虚衰",
+      "脾阴不足"
+    ],
+    "answer": 1,
+    "why": "脏器下垂的核心病机是中气下陷（脾气不升）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 750
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-004",
+    "node_ids": [
+      "kidney",
+      "fu-zi"
+    ],
+    "type": "single_choice",
+    "stem": "畏寒肢冷、阳痿、五更泄泻、舌淡苔白——属于？",
+    "options": [
+      "肾阴虚",
+      "肾阳虚",
+      "脾胃虚寒",
+      "心阳虚",
+      "肝郁气滞"
+    ],
+    "answer": 1,
+    "why": "畏寒肢冷 + 阳痿 + 五更泄泻 = 典型肾阳虚（命门火衰）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 408
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-005",
+    "node_ids": [
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "潮热盗汗、腰膝酸软、五心烦热、舌红少苔——属于？",
+    "options": [
+      "肾阴虚",
+      "肾阳虚",
+      "肝阳上亢",
+      "心火亢盛",
+      "脾胃湿热"
+    ],
+    "answer": 0,
+    "why": "潮热盗汗 + 腰膝酸软 + 五心烦热 + 舌红少苔 = 典型肾阴虚。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 266
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-clinical-001",
+    "node_ids": [
+      "heart",
+      "liver",
+      "syndrome-differentiation"
+    ],
+    "type": "single_choice",
+    "stem": "心血虚最常合并？",
+    "options": [
+      "脾不统血→心脾两虚",
+      "肝阳上亢",
+      "肾阳虚",
+      "肺燥",
+      "胃热"
+    ],
+    "answer": 0,
+    "why": "脾运化生血、心主血——脾虚生血不足致心血不足 → 心脾两虚最常见。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 1402
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-clinical-002",
+    "node_ids": [
+      "damp-evil",
+      "spleen",
+      "exterior-interior-cold-heat"
+    ],
+    "type": "single_choice",
+    "stem": "湿浊困脾的舌象典型是？",
+    "options": [
+      "舌红少苔",
+      "舌淡白苔薄白",
+      "舌红绛",
+      "苔白腻或黄腻",
+      "舌紫暗有瘀点"
+    ],
+    "answer": 3,
+    "why": "湿浊在中焦 → 苔白腻或黄腻（湿热）。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 1297
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-clinical-003",
+    "node_ids": [
+      "lung",
+      "wind-evil"
+    ],
+    "type": "single_choice",
+    "stem": "外感风邪致咽痒、咳嗽——病位主要在？",
+    "options": [
+      "心",
+      "肝",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "answer": 3,
+    "why": "风邪从皮毛口鼻而入 → 多犯肺。咽痒咳嗽 = 肺系症状。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 1426
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-clinical-004",
+    "node_ids": [
+      "liver",
+      "fire-evil"
+    ],
+    "type": "single_choice",
+    "stem": "「面红目赤、口苦、急躁易怒、舌红苔黄」属于？",
+    "options": [
+      "心火亢盛",
+      "肝火上炎",
+      "胃火炽盛",
+      "肺热咳嗽",
+      "肾阴虚火旺"
+    ],
+    "answer": 1,
+    "why": "面红目赤+急躁易怒+口苦+舌红苔黄 = 肝火上炎。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 537
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-clinical-005",
+    "node_ids": [
+      "fu-zi",
+      "kidney",
+      "spleen",
+      "heart"
+    ],
+    "type": "single_choice",
+    "stem": "亡阳证（大汗淋漓、四肢厥冷、脉微欲绝）首选？",
+    "options": [
+      "人参",
+      "黄芪",
+      "附子",
+      "肉桂",
+      "麻黄"
+    ],
+    "answer": 2,
+    "why": "附子是回阳救逆第一药。亡阳证的关键用药。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 638
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-diagnostic-001",
+    "node_ids": [
+      "tongue-diagnosis",
+      "heart",
+      "lung",
+      "liver",
+      "spleen",
+      "kidney"
+    ],
+    "type": "match",
+    "stem": "舌部与脏腑分候对应（连线）：",
+    "options": {
+      "left": [
+        "舌尖",
+        "舌边",
+        "舌中",
+        "舌根"
+      ],
+      "right": [
+        "脾胃",
+        "心肺",
+        "肾",
+        "肝胆"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "why": "舌尖主心肺，舌边主肝胆，舌中主脾胃，舌根主肾。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 188
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-diagnostic-002",
+    "node_ids": [
+      "tongue-diagnosis"
+    ],
+    "type": "single_choice",
+    "stem": "正常舌象可概括为？",
+    "options": [
+      "淡红舌，薄白苔",
+      "红绛舌，黄厚苔",
+      "淡白舌，剥苔",
+      "青紫舌，腻苔"
+    ],
+    "answer": 0,
+    "why": "正常舌为淡红舌、薄白苔，提示气血调和、胃气尚充。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 200
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-diagnostic-003",
+    "node_ids": [
+      "tongue-body-colors",
+      "blood",
+      "exterior-interior-cold-heat"
+    ],
+    "type": "match",
+    "stem": "病理舌色与主病对应（连线）：",
+    "options": {
+      "left": [
+        "淡白舌",
+        "红舌",
+        "绛舌",
+        "青紫舌"
+      ],
+      "right": [
+        "阴寒、气血壅滞、瘀血",
+        "虚证、寒证",
+        "热盛、瘀",
+        "热证"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "why": "淡白主虚寒，红主热，绛主热盛与瘀，青紫主阴寒、气血壅滞、瘀血。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 712
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-diagnostic-004",
+    "node_ids": [
+      "pulse-diagnosis",
+      "liver",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "诊脉时「举、寻、按」分别对应什么？",
+    "options": [
+      "轻取、中取、沉取",
+      "沉取、中取、轻取",
+      "寸、关、尺",
+      "浮、迟、数"
+    ],
+    "answer": 0,
+    "why": "举为轻取或浮取，寻为中取，按为沉取或重取。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 8
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-diagnostic-005",
+    "node_ids": [
+      "pulse-diagnosis",
+      "liver"
+    ],
+    "type": "single_choice",
+    "stem": "弦脉常与哪个脏腑相关？",
+    "options": [
+      "心",
+      "肝胆",
+      "脾胃",
+      "肺",
+      "肾"
+    ],
+    "answer": 1,
+    "why": "docx 中问「弦脉是哪个器官」对应肝，临床常说弦脉多见肝胆病。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 204
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-diagnostic-006",
+    "node_ids": [
+      "spirit-inspection",
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "望神重点观察什么？",
+    "options": [
+      "神情、眼神、气色、体态",
+      "只观察舌苔厚薄",
+      "只观察脉率快慢",
+      "只观察腹部按诊"
+    ],
+    "answer": 0,
+    "why": "望神通过观察生命活动整体表现判断病情，重点观察神情、眼神、气色、体态等。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 167
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-diagnostic-007",
+    "node_ids": [
+      "complexion-diagnosis",
+      "spleen",
+      "damp-evil"
+    ],
+    "type": "single_choice",
+    "stem": "面黄常主什么？",
+    "options": [
+      "湿、虚、黄疸",
+      "寒凝血瘀专证",
+      "肾精亏虚专证",
+      "心火上炎专证"
+    ],
+    "answer": 0,
+    "why": "面黄主湿、虚、黄疸，多与脾失健运、水湿不化或气血乏源有关。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 153
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-node-001",
+    "node_ids": [
+      "liver-qi-stagnation",
+      "liver",
+      "qi"
+    ],
+    "type": "single_choice",
+    "stem": "情志抑郁或易怒、善太息、胸胁或少腹胀痛，最符合哪个证？",
+    "options": [
+      "肝气郁结",
+      "心火亢盛",
+      "脾阳虚",
+      "血瘀"
+    ],
+    "answer": 0,
+    "why": "肝气郁结以肝失疏泄、气机郁滞为核心，典型表现为情志抑郁或易怒、善太息、胸胁或少腹胀痛。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 666
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-node-002",
+    "node_ids": [
+      "heart-fire-flaring",
+      "heart",
+      "fire-evil"
+    ],
+    "type": "single_choice",
+    "stem": "心烦失眠、面赤口渴、舌尖红赤、口舌生疮、小便短赤，属于？",
+    "options": [
+      "心火亢盛",
+      "心血虚",
+      "心阳虚",
+      "肝气郁结"
+    ],
+    "answer": 0,
+    "why": "心火亢盛为实热证，抓心烦失眠、舌赤生疮、尿赤、苔黄脉数。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 676
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-node-003",
+    "node_ids": [
+      "spleen-yang-deficiency",
+      "spleen",
+      "kidney",
+      "cold-evil"
+    ],
+    "type": "multiple_choice",
+    "stem": "脾阳虚的辨证要点包括（多选）：",
+    "options": [
+      "脘腹冷痛，喜温喜按",
+      "畏寒肢冷",
+      "大便溏薄清稀",
+      "舌淡胖苔白滑",
+      "壮热口渴喜冷饮"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "脾阳虚是虚寒证，常见腹冷痛喜温喜按、畏寒肢冷、便溏清稀、舌淡胖苔白滑。壮热口渴喜冷饮是热证。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 27
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-node-004",
+    "node_ids": [
+      "blood-stasis",
+      "blood",
+      "qi"
+    ],
+    "type": "multiple_choice",
+    "stem": "血瘀的典型表现包括（多选）：",
+    "options": [
+      "刺痛固定不移",
+      "肿块固定较硬",
+      "舌质紫暗或有瘀点瘀斑",
+      "脉细涩或结代",
+      "舌淡苔白润"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "why": "血瘀抓固定刺痛、固定肿块、紫暗瘀斑和涩脉。舌淡苔白润偏虚寒，不是血瘀主象。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 633
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-node-005",
+    "node_ids": [
+      "heart-vessel-obstruction",
+      "heart",
+      "blood-stasis",
+      "blood"
+    ],
+    "type": "single_choice",
+    "stem": "心胸憋闷或刺痛，痛引肩背内臂，舌质紫暗，脉细涩或结代，最符合？",
+    "options": [
+      "心脉痹阻",
+      "肺气虚",
+      "脾气下陷",
+      "肾阴虚"
+    ],
+    "answer": 0,
+    "why": "心脉痹阻以心胸憋闷或刺痛、痛引肩背内臂、舌紫暗、脉细涩或结代为辨证要点。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 806
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-node-006",
+    "node_ids": [
+      "liver-wind-stirring",
+      "liver",
+      "blood",
+      "fire-evil"
+    ],
+    "type": "match",
+    "stem": "肝风内动四型与表现对应（连线）：",
+    "options": {
+      "left": [
+        "肝阳化风",
+        "热极生风",
+        "阴虚动风",
+        "血虚生风"
+      ],
+      "right": [
+        "手足蠕动、午后潮热、五心烦热",
+        "手足抽搐、颈项强直、高热神昏",
+        "眩晕欲仆、头摇肢颤、上实下虚",
+        "手足震颤、肌肉瞤动、面白无华"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "why": "肝阳化风多上实下虚；热极生风见高热抽搐强直；阴虚动风见手足蠕动与阴虚热象；血虚生风见震颤、麻木、面白无华。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 771
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-syndrome-node-007",
+    "node_ids": [
+      "liver-qi-stagnation",
+      "heart-fire-flaring",
+      "spleen-yang-deficiency",
+      "blood-stasis",
+      "heart-vessel-obstruction",
+      "liver-wind-stirring"
+    ],
+    "type": "match",
+    "stem": "证候与辨证抓手对应（连线）：",
+    "options": {
+      "left": [
+        "肝气郁结",
+        "心火亢盛",
+        "脾阳虚",
+        "血瘀",
+        "心脉痹阻",
+        "肝风内动"
+      ],
+      "right": [
+        "心烦失眠、舌赤生疮、尿赤",
+        "动摇、抽搐、强直、眩晕",
+        "情志抑郁、善太息、胸胁胀痛",
+        "腹冷痛喜温喜按、便溏清稀",
+        "固定刺痛、舌紫瘀斑、脉涩",
+        "胸痛胸闷、痛引肩背内臂"
+      ]
+    },
+    "answer": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "why": "这组题把常见证候按辨证抓手区分：肝郁看情志和胁痛，心火看心烦舌疮尿赤，脾阳虚看虚寒与便溏，血瘀看固定刺痛和瘀象，心脉痹阻看胸痛牵引，肝风内动看动摇抽搐。",
+    "difficulty": 3,
+    "source": {
+      "file": "中医.docx",
+      "line": 666
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-jaundice-001",
+    "node_ids": [
+      "jaundice",
+      "yin-chen-hao-tang"
+    ],
+    "type": "single_choice",
+    "stem": "黄疸的主要表现可概括为？",
+    "options": [
+      "身目小便俱黄",
+      "心悸失眠健忘",
+      "半身不遂口歪",
+      "关节冷痛重着",
+      "咳喘痰多胸闷"
+    ],
+    "answer": 0,
+    "why": "黄疸以身黄、目黄、小便黄为主要表现，关键病机与湿邪困阻、胆汁外溢有关。",
+    "difficulty": 1,
+    "source": {
+      "file": "中医.docx",
+      "line": 13
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-edema-001",
+    "node_ids": [
+      "edema",
+      "lung",
+      "spleen",
+      "kidney"
+    ],
+    "type": "single_choice",
+    "stem": "水肿核心病机主要责之于哪三脏气化失司？",
+    "options": [
+      "肺、脾、肾",
+      "心、肝、脾",
+      "肝、胆、胃",
+      "心、肺、肝",
+      "脾、胃、大肠"
+    ],
+    "answer": 0,
+    "why": "水肿总属肺失通调、脾失转输、肾失开阖，水液泛溢肌肤。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 18
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-stroke-001",
+    "node_ids": [
+      "stroke"
+    ],
+    "type": "single_choice",
+    "stem": "中风辨中经络与中脏腑的关键是？",
+    "options": [
+      "有无神志障碍",
+      "有无咳嗽痰多",
+      "有无腹胀便溏",
+      "有无皮肤瘙痒",
+      "有无小便黄赤"
+    ],
+    "answer": 0,
+    "why": "中风辨中经络与中脏腑，关键看有无神志障碍。无明显神志障碍多属中经络；神志昏蒙或昏仆多属中脏腑。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 17
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-palpitation-001",
+    "node_ids": [
+      "palpitation",
+      "heart",
+      "gui-pi-tang"
+    ],
+    "type": "single_choice",
+    "stem": "心血不足型心悸的代表方是？",
+    "options": [
+      "归脾汤",
+      "黄连温胆汤",
+      "苓桂术甘汤",
+      "桃仁红花煎",
+      "安神定志丸"
+    ],
+    "answer": 0,
+    "why": "心悸心血不足可见心悸、失眠、多梦、健忘，代表方为归脾汤。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 22
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "q-bi-syndrome-001",
+    "node_ids": [
+      "bi-syndrome"
+    ],
+    "type": "single_choice",
+    "stem": "痹证的基本病机是？",
+    "options": [
+      "经络痹阻，气血运行不畅",
+      "心神失养或被扰",
+      "胆汁外溢肌肤",
+      "肾失纳气",
+      "肺气上逆"
+    ],
+    "answer": 0,
+    "why": "痹证由风寒湿热痰瘀虚等因素导致经络痹阻，气血运行不畅。",
+    "difficulty": 2,
+    "source": {
+      "file": "中医.docx",
+      "line": 62
+    },
+    "status": "reviewed",
+    "created": "2026-05-23",
+    "updated": "2026-05-23"
+  }
+]

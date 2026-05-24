@@ -42,7 +42,7 @@ related:
 具体：
 
 - 节点内容存 `content/nodes/**/*.md`
-- 题目存 `content/questions.json`（结构化，集中编辑）
+- 题目存 `content/questions/*.json`（结构化，按领域拆分）
 - 用户数据（progress、attempts）仍用数据库（SQLite/PostgreSQL）
 - 构建期把 Markdown 转成派生数据（图谱、搜索索引），输出到 `content/.build/`
 
